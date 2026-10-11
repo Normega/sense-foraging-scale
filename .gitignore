@@ -1,0 +1,9 @@
+# Participant data never enter this repository (see README, "Data").
+data/
+*.rds
+*.RData
+.Rhistory
+.Rproj.user/
+output/
+raw/
+derived/

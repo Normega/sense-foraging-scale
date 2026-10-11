@@ -1,0 +1,51 @@
+﻿item,id,wording,keying,hypothesized_factor,pool5_facet,paired_with
+1,sf6_1,I feel confident in my ability to move into the sensing mode,positive,Action,Action,35
+2,sf6_2,"The sensing mode feels close at hand to me, wherever I am",positive,Mode awareness,Practice,
+3,sf6_3,"For me, the sensing mode feels different from the doing mode of planning, fixing, and achieving",positive,Mode awareness,Practice,37
+4,sf6_4,I can see how easily the doing mode becomes my default,positive,Mode awareness,Drift awareness,
+5,sf6_5,I see myself as having two gears that I can choose between: sensing and doing,positive,View,View,
+6,sf6_6,I can move into the sensing mode even in a stressful or demanding moment,positive,Action,Action,
+7,sf6_7,"Once I notice I have slipped into the doing mode without meaning to, I know how to shift back",positive,Action,Action,
+8,sf6_8,I can move into the sensing mode in new or unfamiliar places,positive,Action,Action,
+9,sf6_9,Moving into the sensing mode comes easily to me,positive,Action,Action,36
+10,sf6_10,I have a choice between the sensing mode and the doing mode,positive,View,View,
+11,sf6_11,"I value time spent in the sensing mode, rather than always focusing on getting things done",positive,View,View,43
+12,sf6_12,"Returning to the sensing mode feels worth prioritizing, even when I am busy",positive,View,View,44
+13,sf6_13,I notice quickly when I have drifted into autopilot without meaning to,positive,Mode awareness,Drift awareness,
+14,sf6_14,I can tell when a moment calls for the doing mode and when it calls for the sensing mode,positive,Mode awareness,Drift awareness,
+15,sf6_15,I understand that stress and threat naturally pull me toward familiar habits and the doing mode,positive,Stress and safety,Normalising stress,
+16,sf6_16,"Even when I am stressed, I try to make space for the sensing mode",positive,View,View under stress,45
+17,sf6_17,"When stress narrows my attention, I see it as a natural response",positive,Stress and safety,Normalising stress,41
+18,sf6_18,"When stress narrows my focus, returning to the sensing mode matters even more to me",positive,View,View under stress,
+19,sf6_19,"I can notice whether something feels pleasant, unpleasant or neutral before I react to it",positive,Noting without elaborating,Completeness,
+20,sf6_20,"What I notice in the moment feels complete on its own, without needing to add meaning to it",positive,Noting without elaborating,Completeness,40
+21,sf6_21,"I can let a sensation simply be, without figuring out what it means or where it leads",positive,Noting without elaborating,Completeness,39
+22,sf6_22,I am more able to move into the sensing mode when I feel safe and secure,positive,Stress and safety,Safety,
+23,sf6_23,Feeling unsafe or threatened makes it harder for me to stay open to my senses,positive,Stress and safety,Safety,
+24,sf6_24,I can sense when my surroundings feel safe enough to explore openly,positive,Stress and safety,Safety,42
+25,sf6_25,Time in the sensing mode leaves me with a sense of awe or wonder,positive,Reward / awe,Reward / awe,48
+26,sf6_26,Engaging my senses fully opens up new ideas or perspectives,positive,Reward / awe,Reward / awe,
+27,sf6_27,"I look forward to how sensory exploration feels, not just to getting better at it",positive,Reward / awe,Reward / awe,
+28,sf6_28,"I welcome surprise when I am in the sensing mode, rather than trying to predict or control what happens",positive,Openness,Openness,46
+29,sf6_29,I value being free from the need to have control or know what comes next,positive,Openness,Openness,47
+30,sf6_30,"I enjoy the process of discovering something new, not just the outcome of what I find",positive,Openness,Openness,
+31,sf6_31,Seeing something from a new or unexpected perspective feels valuable to me in its own right,positive,Openness,Openness,
+32,sf6_32,"When I am in the sensing mode, I am drawn to uncertainty and ambiguity",positive,Openness,Openness,
+33,sf6_33,I can put a simple word to what I am sensing without getting caught up in thinking about it,positive,Noting without elaborating,Labelling,38
+34,sf6_34,I notice when I keep doing something out of habit after it has stopped helping,positive,Mode awareness,Drift awareness,
+35,sf6_35,I question my ability to move into the sensing mode,reverse,Action,Action,1
+36,sf6_36,Moving into the sensing mode is a struggle for me,reverse,Action,Action,9
+37,sf6_37,"For me, the sensing mode and the doing mode blur together",reverse,Mode awareness,Practice,3
+38,sf6_38,"When I try to name what I am sensing, I get caught up in thinking about it",reverse,Noting without elaborating,Labelling,33
+39,sf6_39,"When I notice a sensation, I feel I have to figure out what it means",reverse,Noting without elaborating,Completeness,21
+40,sf6_40,I need to add meaning to what I notice before it feels like enough,reverse,Noting without elaborating,Completeness,20
+41,sf6_41,"When stress narrows my attention, I see it as a personal failing",reverse,Stress and safety,Normalising stress,17
+42,sf6_42,I find it hard to tell whether my surroundings are safe enough to explore openly,reverse,Stress and safety,Safety,24
+43,sf6_43,Only time spent getting things done feels worthwhile to me,reverse,View,View,11
+44,sf6_44,"When I am busy, returning to the sensing mode feels like a low priority",reverse,View,View,12
+45,sf6_45,"When I am stressed, I set the sensing mode aside until things calm down",reverse,View,View under stress,16
+46,sf6_46,"When I am in the sensing mode, I would rather predict what happens than be surprised by it",reverse,Openness,Openness,28
+47,sf6_47,I need to know what comes next to feel at ease,reverse,Openness,Openness,29
+48,sf6_48,Time in the sensing mode feels ordinary and flat to me,reverse,Reward / awe,Reward / awe,25
+,sf6_attn_disagree,"To show that you are reading each statement, please select Disagree for this one.",attention check,,,correct = 2
+,sf6_attn_agree,"To show that you are reading each statement, please select Agree for this one.",attention check,,,correct = 5
