@@ -1,0 +1,394 @@
+{
+  "slug": "sf2-ius12",
+  "name": "Uncertainty",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "ius_p1",
+      "components": [
+        {
+          "id": "ius12_01",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_02",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_05",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "ius_p2",
+      "components": [
+        {
+          "id": "ius12_07",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_08",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_11",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ius12_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "sum",
+    "note": "Carleton, Norton & Asmundson (2007). Lab-form order. Total 12-60.",
+    "subscales": [
+      {
+        "name": "Prospective",
+        "item_ids": [
+          "ius12_01",
+          "ius12_02",
+          "ius12_04",
+          "ius12_05",
+          "ius12_08",
+          "ius12_09",
+          "ius12_11"
+        ]
+      },
+      {
+        "name": "Inhibitory",
+        "item_ids": [
+          "ius12_03",
+          "ius12_06",
+          "ius12_07",
+          "ius12_10",
+          "ius12_12"
+        ]
+      }
+    ]
+  }
+}
