@@ -20,6 +20,29 @@
 - **Practitioners vs never-practitioners:** no difference on any factor (|d| ≤ .16).
 - **Robustness:** the structure holds without flagged respondents, without translating respondents, and on positive items alone (congruence .84–1.00).
 
+## Short form (decided 2026-10-11)
+
+**20 items:** four factors, five items each. Every factor mixes forward and reverse-keyed (R) items, and the selection was checked on agreement-free reliability as well as raw reliability:
+
+| Factor | Items |
+|---|---|
+| Access | 35R, 36R, 9, 8, 7 |
+| Understanding the modes | 22, 3, 15, 31, 37R |
+| Valuing and savouring | 12, 18, 11, 27, 44R |
+| Letting be | 40R, 46R, 43R, 47R, 21 |
+
+- **How it departs from the registered rules:**
+  - item 7 replaces 1, the near-duplicate of 9;
+  - 37R and 21 are added for keying balance;
+  - 27 is added for reliability.
+- **How it is presented:** one fixed order (`materials/sf-short-20.json`), the same for everyone and at every timepoint. It is the PSY240 course trial's outcome from 17 October 2026.
+- **Where new items would help:**
+  - Understanding the modes, the weakest factor, which has no working reverse item;
+  - a second Valuing reversal;
+  - forward Letting-be items.
+
+  Candidates are drafted in the findings page; if used, they would run as unscored extras in Study 2.
+
 ## Deviations from the registration
 
 1. **Country:** the postings were not filtered by country, so 69% of the sample lived outside the six planned countries.
