@@ -92,7 +92,7 @@ rel <- rbindlist(lapply(c(names(SF), "Total20", "Total15"), function(n) {
              ordinal_alpha = round((ncol(pc) / (ncol(pc) - 1)) * (1 - ncol(pc) / sum(pc)), 3), mean_r = round(mean_r(X), 3),
              alpha_anglo = round(alpha_of(X[anglo, ]), 3), alpha_other = round(alpha_of(X[!anglo, ]), 3))
 }))
-om <- suppressWarnings(omega(polychoric(k[, ids(unlist(SF))])$rho, nfactors = 4, n.obs = nrow(k), plot = FALSE))
+om <- suppressWarnings(omega(polychoric(k[, ids(unlist(SF))])$rho, nfactors = 4, n.obs = nrow(k), plot = FALSE, flip = FALSE))  # keyed already; see 05
 drop1 <- lapply(SF[c("Understanding", "LettingBe")], function(v) {
   a <- suppressWarnings(alpha(k[, ids(v)], warnings = FALSE))$alpha.drop
   data.table(item = as.integer(sub("sf6_", "", rownames(a))), alpha_if_dropped = round(a$raw_alpha, 3))

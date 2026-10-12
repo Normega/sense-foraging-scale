@@ -62,7 +62,7 @@ sub <- rbindlist(lapply(colnames(L), function(f) {
   if (length(ids) < 2) return(data.table(factor = f, n_items = length(ids)))
   Rs <- Rk[ids, ids]
   a <- psych::alpha(Rs, warnings = FALSE)$total$raw_alpha
-  o <- if (length(ids) >= 3) suppressWarnings(psych::omega(Rs, nfactors = 1, plot = FALSE)$omega.tot) else NA
+  o <- if (length(ids) >= 3) suppressWarnings(psych::omega(Rs, nfactors = 1, plot = FALSE, flip = FALSE)$omega.tot) else NA
   data.table(factor = f, n_items = length(ids), items = paste(sub("sf6_", "", ids), collapse = " "),
              ordinal_alpha = round(a, 3), ordinal_omega = round(o, 3))
 }), fill = TRUE)

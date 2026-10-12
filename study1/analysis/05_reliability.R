@@ -1,13 +1,16 @@
 # 05: reliability (Section 5, step 4): ordinal omega for each factor (group
 # omega from the bifactor decomposition of the polychoric matrix of keyed items)
 # and hierarchical omega for the pool. Short-form reliability is in 06.
+# flip = FALSE: items are already keyed. psych::omega's default (flip = TRUE) re-reverses any item
+# loading negatively on g, which put reversed items back and inflated omega_h (.70 -> .54); found by
+# the independent review, 2026-10-12.
 
 source("study1/analysis/config.R")
 A <- readRDS(sf1_path("derived", sprintf("sf1_%s.rds", SF1$mode)))
 R <- readRDS(sf1_path("derived", sprintf("polychoric_keyed_%s.rds", SF1$mode)))
 k <- SF1$k_primary
 
-om <- psych::omega(R, nfactors = k, n.obs = nrow(A$items_keyed), fm = "minres", plot = FALSE)
+om <- psych::omega(R, nfactors = k, n.obs = nrow(A$items_keyed), fm = "minres", plot = FALSE, flip = FALSE)
 groups <- data.table(factor = colnames(om$omega.group) , t(round(om$omega.group, 3)))
 res <- data.table(statistic = c("omega_hierarchical", "omega_total", "alpha"),
                   value = round(c(om$omega_h, om$omega.tot, om$alpha), 3))

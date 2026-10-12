@@ -58,6 +58,14 @@ Exclusions, attention checks, timing, posting and practice group are always the 
    - The most reliable item sets per factor (greedy α, checked on a held-out half).
    - The foraging-like items in the plain EFAs (k = 5–7) and the ESEMs with agreement (k = 4–6; run `04` with `SF1_K=5` and `6` first).
    - Writes `11_followup_study1.json`, which senseforaging.com/research/study1 renders.
+10. **`12_access_valuing`** (exploratory, **not preregistered**, real mode only, 2026-10-12): Access + Valuing and savouring as the scored scale, after Norm made it the PSY240 trial's primary outcome.
+   - Two forms: the 10 Access and Valuing items of the short form, and the 14-item form from `11`.
+   - α, ordinal α, model-based ω, score distribution, SEM and the smallest real change (MDC95).
+   - Two-factor vs one-factor CFA with and without the agreement factor (WLSMV, pairwise).
+   - Correlations with the agreement index, spirituality, religiosity, practice and age; dedicated vs never, raw and adjusted.
+   - Writes `12_access_valuing_study1.json`, which the findings page renders.
+
+**Correction (2026-10-12).** `psych::omega` re-reverses any item that loads negatively on the general factor unless `flip = FALSE`. Because the items are already keyed, that undid the keying of seven reversed items and inflated ω_h from .54 to .70 (pool) and from .50 to .66 (the 20 items). Every `omega()` call now passes `flip = FALSE`. The independent review that found it is in `docs/reviews/2026-10-12/`.
 
 **Runtime:** about 15–20 minutes in all; the ordinal EFAs and ESEMs dominate.
 
