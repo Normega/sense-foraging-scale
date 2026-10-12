@@ -14,7 +14,12 @@ Lk <- sf1_loadings(P$with_ri, P$fnames)[A$definition$items, ]
 Lk[A$definition$reversed, ] <- -Lk[A$definition$reversed, ]
 orient <- sf1_orientation(Lk)
 for (j in seq_along(P$fnames)) set(FS, j = P$fnames[j], value = FS[[P$fnames[j]]] * orient[j])
-d <- cbind(A$meta[, .(participant, practice_group, posting)], FS)
+# lavPredict scores only the cases lavaan used (respondents with every item
+# missing are dropped), so align by case index; a plain cbind recycles rows
+# and pairs scores with the wrong participants.
+idx <- lavInspect(P$with_ri, "case.idx")
+stopifnot(length(idx) == nrow(FS))
+d <- cbind(A$meta[idx, .(participant, practice_group, posting)], FS)
 
 kg <- rbindlist(lapply(P$fnames, function(f) {
   dd <- d[practice_group %in% c("current", "never")]
