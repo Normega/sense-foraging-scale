@@ -16,7 +16,7 @@ Both postings are restricted to residents of the US, UK, Canada, Australia, Irel
 
 1. Background questions (as in Study 1).
 2. The 20-item short form, in one fixed order.
-3. Six candidate items, `sf2-sfs-candidates`. They are unscored and are kept for a future version.
+3. Fourteen candidate items, `sf2-sfs-candidates`, unscored, in a per-participant order. Replacements are chosen on a random half of the sample; any revised form is checked on the other half.
 4. The validity block, in a random order for each participant:
 
    | Measure | Purpose |
