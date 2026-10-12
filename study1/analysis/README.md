@@ -50,6 +50,15 @@ Exclusions, attention checks, timing, posting and practice group are always the 
 
    It also reports position effects.
 
+9. **`11_followup`** (exploratory, **not preregistered**, real mode only): the follow-up of 11–12 October that set the short form's scoring and Study 2's candidates.
+   - Plain and ordinal α per subscale, inside and outside the six planned countries; ω for the 20 items.
+   - Practice: correlations, dedicated vs never, cross-validated prediction (AUC, R²).
+   - Demographics and religious tradition; an agreement index (each person's mean over the 14 reversed items and their partners) and correlations with it removed.
+   - Items: % agree, item–rest r, answer time and answer changes from the platform's timing record; whether saying "mode" matters.
+   - The most reliable item sets per factor (greedy α, checked on a held-out half).
+   - The foraging-like items in the plain EFAs (k = 5–7) and the ESEMs with agreement (k = 4–6; run `04` with `SF1_K=5` and `6` first).
+   - Writes `11_followup_study1.json`, which senseforaging.com/research/study1 renders.
+
 **Runtime:** about 15–20 minutes in all; the ordinal EFAs and ESEMs dominate.
 
 **Validated** on simulated data (2026-10-11): the seven factors were recovered with Tucker congruence .96–.99, and the acquiescence variance as 0.096 (true 0.10).
