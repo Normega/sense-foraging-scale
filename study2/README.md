@@ -16,7 +16,7 @@ Both postings are restricted to residents of the US, UK, Canada, Australia, Irel
 
 1. Background questions (as in Study 1).
 2. The 20-item short form, in one fixed order.
-3. Fourteen candidate items, `sf2-sfs-candidates`, unscored, in a per-participant order. Replacements are chosen on a random half of the sample; any revised form is checked on the other half.
+3. Twenty-four candidate items, `sf2-sfs-candidates`, unscored, in a per-participant order: 19 new (5 of them Forage, the seeking itself) and 5 Study 1 items with unchanged wording (`study1_item` maps them). Replacements are chosen on a random half of the sample; any revised form is checked on the other half.
 4. The validity block, in a random order for each participant:
 
    | Measure | Purpose |
