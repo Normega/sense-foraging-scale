@@ -13,7 +13,7 @@ The preregistration is drafted, not filed.
 
 One session of about 20 minutes, on Prolific, with a general posting (600) and a contemplative posting (400); 1,000 in all since
 the 12 October revision. The postings differ in framing only: no one is screened on practice, as the approved protocol says.
-Both postings are restricted to residents of the US, UK, Canada, Australia, Ireland and New Zealand.
+There is no country filter (decided 12 October): adults fluent in English anywhere, as Study 1 recruited in practice.
 
 1. Background questions (as in Study 1).
 2. The 20-item short form, in one fixed order.
