@@ -23,11 +23,13 @@ What was done the same day (Norm's decisions, 12 October):
 - **REB amendment.** The documents now report the sample increase and the face-scale format.
 - **Findings page.** It is corrected in place, with a correction note and a completed deviations list.
 
+Settled on 12 October, after this review:
+- the past-week items are repeated at the retest, which grows to about 300 completions;
+- BFI-2 Intellectual Curiosity is Forage's neighbour;
+- there is no country filter, and the amendment says so;
+- H5 is split: H5a (wellbeing) needs ΔR² ≥ .02, and H5b tests practice frequency.
+
 Still open, for Norm:
-- the past-week items at the retest;
 - non-jargon parallel items;
 - a check item before the validity block;
-- a curiosity measure for Forage;
-- whether the approved protocol names the six countries;
-- a decline option on the face-scale step;
-- a minimum ΔR² for H5.
+- a decline option on the face-scale step.

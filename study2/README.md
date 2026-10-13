@@ -8,6 +8,8 @@ The preregistration is drafted, not filed.
   `../study1/materials/sf-short-20.json`; background questions are `../study1/materials/sf-background.json`.
   The folder also holds the consent and debrief forms, for the main session and the follow-up, and
   `forms_changes.md`, which lists every change from the approved Rev2 forms.
+- `analysis/`: the analysis pipeline, with simulated, permuted and real modes. Its README gives the
+  run order, every output, and each reading of the preregistration the code had to choose.
 
 ## Design
 
