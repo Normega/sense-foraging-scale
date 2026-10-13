@@ -34,8 +34,8 @@ There is no country filter (decided 12 October): adults fluent in English anywhe
    | PSS-4 | new: criterion |
    | Three past-week behaviour items | new: criterion |
 
-**Follow-up.** About 14 days later, about 200 random completers are invited to repeat the short form, aiming
-for about 150 completions. This is a separate platform study, linked to Study 2 through `external_identity_links`.
+**Follow-up.** About 14 days later, about 400 random completers are invited to repeat the short form and the three
+past-week items, aiming for about 300 completions (raised from 200 and 150 on 12 October). This is a separate platform study, linked to Study 2 through `external_identity_links`.
 
 ## Licences
 
