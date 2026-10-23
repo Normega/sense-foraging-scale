@@ -1,6 +1,6 @@
 # Study 2: confirmatory structure, validity and stability of the short form
 
-**Status:** built on the RADlab platform, inactive, pending REB approval of the Study 2 amendment.
+**Status:** built on the RADlab platform, inactive, pending REB approval of the Study 2 amendment. Since 2026-10-23 this is Study 2b: a 500-person structure study (2a, senseforaging.com/research/study2a) runs first and fixes the statements, and the preregistration and build are revised after it.
 The preregistration is drafted, not filed.
 
 - `preregistration_draft.md`: hypotheses H1–H7 and the predicted validity matrix. Points still to settle are marked [Norm].
