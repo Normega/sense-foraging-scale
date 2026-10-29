@@ -10,7 +10,8 @@ University of Toronto REB Protocol #00051180. PI: Norman Farb (RADlab, Universit
 | Study | What | Status |
 |---|---|---|
 | [Study 1](study1/) | Exploratory factor analysis of a 48-item pool (item pool 6), Prolific, N = 500 | Data collected 2026-10-11; preregistered at [osf.io/48r2y](https://osf.io/48r2y); analysed |
-| [Study 2](study2/) | Confirmatory factor analysis of the 20-item short form, validity measures, two-week retest | Built on the platform (inactive); REB amendment and preregistration drafted |
+| [Study 2a](study2a/) | Factor structure of a revised 58-statement set, with vignettes checking the two modes, Prolific, N = 500 | Built on the platform (inactive); amendment pending; preregistration drafted |
+| [Study 2](study2/) (now 2b) | Confirmatory factor analysis of the statements 2a selects, validity measures, two-week retest | Built on the platform (inactive); to be revised after 2a |
 
 **Findings for collaborators:** https://senseforaging.com/research/study1 (unlisted).
 
@@ -21,6 +22,7 @@ University of Toronto REB Protocol #00051180. PI: Norman Farb (RADlab, Universit
   - `materials/`: the questionnaires exactly as administered (platform definitions), the item key, and the consent and debrief forms.
   - `analysis/`: the R pipeline. Its README explains modes, steps and how to run it.
 - `study2/`: materials as built, and the preregistration draft.
+- `study2a/`: the preregistration draft; `make_appendices.py` regenerates its appendices from radlab's built definitions.
 - `docs/literature/`: the literature reviews behind design decisions (6-point scale without midpoint; reverse-keyed items and acquiescence).
 - `item-development/`: earlier item pools.
 
