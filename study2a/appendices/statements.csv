@@ -1,0 +1,59 @@
+﻿id,review_id,factor,reverse_keyed,study1_id,statement,apart_from
+sf2a_01,sf6_9,Access,0,sf6_9,Moving into the sensing mode comes easily to me,sf6_36 sf6_35
+sf2a_02,sf6_36,Access,1,sf6_36,Moving into the sensing mode is a struggle for me,sf6_9 sf6_35
+sf2a_03,sf6_35,Access,1,sf6_35,I question my ability to move into the sensing mode,sf6_36 sf6_9
+sf2a_04,sf6_7,Access,0,,"When I notice I am caught up in a task, I can switch to the sights and sounds around me",N2
+sf2a_05,sf6_8,Access,0,,"In a new place, I can take in what is there, not just look for what I need to do next",A9
+sf2a_06,sfc_21,Access,0,,"Even in a stressful moment, I can be curious about what I see and hear around me",
+sf2a_07,sfc_22,Access,0,,"Even in dull places, like a waiting room, I can find something interesting to look at or listen to",
+sf2a_08,sfc_23,Access,0,,I can tell which moments in my day leave room for exploring what is around me,
+sf2a_09,N2,Access,1,,I often slip into the doing mode without meaning to,sf6_7
+sf2a_10,A9,Access,0,,I can pay attention to what I’m feeling in my body in new or unfamiliar places,sf6_8
+sf2a_11,sf6_3,Understanding,0,,"For me, exploring what I see and hear is a different state of mind from planning and fixing",
+sf2a_12,sf6_15,Understanding,0,,"When I am stressed, I notice myself falling into my usual way of rushing to fix things",U1 U4
+sf2a_13,sf6_37,Understanding,1,,The sensing and doing modes seem pretty similar to me,
+sf2a_14,sfc_8,Understanding,0,,"When I try to use the sensing mode, I notice how easily I shift back into thinking about what I have to do next",sfc_9
+sf2a_15,sfc_9,Understanding,1,,I don’t notice that I have been rushing to get things done until much later,sfc_8 U3
+sf2a_16,sfc_2,Understanding,1,,My attention works the same way whether I am stressed or relaxed,
+sf2a_17,U1,Understanding,0,,"When I am stressed, a moment of looking around out of curiosity makes me less likely to react as usual",sf6_15
+sf2a_18,U3,Understanding,0,,"When I pause to notice my body, I can feel how much I had been rushing",sfc_9
+sf2a_19,U4,Understanding,1,,"Even when I pause to take in what is around me, I react to stress the same way",sf6_15
+sf2a_20,U6,Understanding,0,,"When I feel unsafe, I lose my curiosity about what is around me",
+sf2a_21,U7,Understanding,0,,"Noticing what I can see, hear or feel often shows me something about a situation I had not thought of",
+sf2a_22,sf6_31,Valuing,0,sf6_31,Seeing something from a new or unexpected perspective feels valuable to me in its own right,
+sf2a_23,sf6_12,Valuing,0,,"Even when I am busy, it feels worth pausing to notice the sights and sounds around me",sf6_44
+sf2a_24,sf6_18,Valuing,0,,"When stress narrows my focus, looking around out of curiosity matters even more to me",
+sf2a_25,sf6_27,Valuing,0,,"I enjoy exploring the sights, sounds and textures of ordinary moments",
+sf2a_26,sf6_11,Valuing,0,,"I value time spent just looking and listening, even when there is work to do",sf6_43
+sf2a_27,sf6_44,Valuing,1,sf6_44,"When I am busy, returning to the sensing mode feels like a low priority",sf6_12
+sf2a_28,sfc_24,Valuing,0,,Looking closely at ordinary things around me often gives me a sense of wonder,
+sf2a_29,sfc_25,Valuing,0,,"When I look around out of curiosity, I enjoy noticing things I did not expect",
+sf2a_30,sfc_34,Valuing,1,,"When I try to spend time in the sensing mode, I feel I should be doing something more useful",
+sf2a_31,V10,Valuing,0,,"I enjoy taking a moment just to notice how my body feels, like my breathing, the soles of my feet, or posture",
+sf2a_32,V11,Valuing,0,,"I enjoy noticing smells in ordinary places, like rain or coffee",
+sf2a_33,sf6_43,Valuing,1,sf6_43,Only time spent getting things done feels worthwhile to me,sf6_11
+sf2a_34,sfc_18,Forage,0,,"Even on rushed days, I find moments to notice the sky or the sounds around me",N4
+sf2a_35,sfc_17,Forage,0,,"In familiar places, I get curious about details I have not noticed before",
+sf2a_36,sfc_36,Forage,0,,"Even in chores I have done many times, I notice sounds, smells or textures I had missed",
+sf2a_37,sfc_x2,Forage,1,,It never seems to be the right time to go into the sensing mode,
+sf2a_38,N7,Forage,0,,"When I am waiting somewhere, I look around out of curiosity instead of reaching for my phone",
+sf2a_39,sfc_35,Forage,0,,"During my day, I take a moment to explore what I can see, hear and touch",F10
+sf2a_40,N4,Forage,0,,"As I go about my day, I notice the light, colours and sounds around me with interest",sfc_18
+sf2a_41,N5,Forage,0,,"I have small habits of noticing what is around me, like watching the clouds on my way somewhere",
+sf2a_42,N6,Forage,1,,"When I walk somewhere familiar, I notice very little of what I pass",
+sf2a_43,F10,Forage,0,,"During my day, I notice how my breathing or body feels, just out of curiosity",sfc_35
+sf2a_44,F11,Forage,0,,"When I eat something familiar, I notice whether I still like it as much as I expect",
+sf2a_45,sfc_32,Letting be,0,,"I can pause when something starts to bother me, before I do anything about it",
+sf2a_46,sf6_40,Letting be,1,,I need to understand why I feel fleeting sensations in my body,
+sf2a_47,sf6_47,Letting be,1,,I don’t like going to events unless I know the full itinerary,
+sf2a_48,sf6_21,Letting be,0,sf6_21,"I can let a sensation simply be, without figuring out what it means or where it leads",sfc_14
+sf2a_49,sfc_10,Letting be,0,,"When something feels unpleasant, I first notice it without trying to change it",
+sf2a_50,sfc_12,Letting be,1,,"When I notice something, I start explaining it to myself straight away",sfc_14
+sf2a_51,sfc_14,Letting be,1,,"When I notice something, I have trouble just letting it be",sfc_12 sf6_21
+sf2a_52,sfc_26,Letting be,0,,"When I notice a sensation, I take it in for a moment before deciding what to do about it",sfc_13
+sf2a_53,sfc_28,Letting be,0,,"When something unexpected happens, I pause and take in what is happening before I react",sfc_31
+sf2a_54,sfc_29,Letting be,0,,"When I notice a problem, I let it be for a moment before trying to fix it",sfc_30
+sf2a_55,sfc_30,Letting be,1,,"As soon as I notice something, I feel I have to do something about it",sfc_29
+sf2a_56,sfc_31,Letting be,1,,I react to things before I have really taken them in,sfc_28
+sf2a_57,L15,Letting be,0,,"When a sensation in my body is hard to name, I stay curious about it for a while",
+sf2a_58,sfc_13,Letting be,1,,"When I notice a sensation, my mind quickly moves on to thoughts about it",sfc_26

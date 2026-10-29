@@ -22,7 +22,7 @@ University of Toronto REB Protocol #00051180. PI: Norman Farb (RADlab, Universit
   - `materials/`: the questionnaires exactly as administered (platform definitions), the item key, and the consent and debrief forms.
   - `analysis/`: the R pipeline. Its README explains modes, steps and how to run it.
 - `study2/`: materials as built, and the preregistration draft.
-- `study2a/`: the preregistration draft; `make_appendices.py` regenerates its appendices from radlab's built definitions.
+- `study2a/`: the preregistration draft; `make_appendices.py` regenerates its appendices from radlab's built definitions, and writes them to `study2a/appendices/` as separate files (to attach on OSF) with the statements as `statements.csv`.
 - `docs/literature/`: the literature reviews behind design decisions (6-point scale without midpoint; reverse-keyed items and acquiescence).
 - `item-development/`: earlier item pools.
 

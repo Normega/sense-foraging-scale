@@ -245,6 +245,8 @@ The factor analyses are exploratory: decisions follow the rules above, and fit i
 - Mundfrom, D. J., Shaw, D. G., & Ke, T. L. (2005). Minimum sample size recommendations for conducting factor analyses. *International Journal of Testing, 5*(2), 159–168.
 - Steiger, J. H. (1980). Tests for comparing elements of a correlation matrix. *Psychological Bulletin, 87*(2), 245–251.
 
+**Appendices.** Appendices A and B follow. They are also in `study2a/appendices/` as separate files, with the statements as a CSV.
+
 <!-- APPENDICES -->
 
 ## Appendix A. The two modes
