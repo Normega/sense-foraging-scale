@@ -2,7 +2,9 @@
 
 OSF Preregistration (standard template), filed 29 October 2026 at [osf.io/vt7gn](https://osf.io/vt7gn), before data collection. University of Toronto REB Protocol #00051180, Study 2a amendment pending.
 
-**This is the draft it was filed from; the OSF registration is the version of record.** Where the two differ, OSF governs. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
+**This is the draft it was filed from; the OSF registration is the version of record.** Where the two differ, OSF governs.
+
+**Settled after filing (29 October 2026, before any data were collected).** The filed version left two items marked "to settle". They are settled here as follows and are to be filed as an update to the OSF registration: (1) the vignette threshold is 75% (three in four), the value expectation 5 already states; (2) the analysis code will be written during the analysis, following these rules and Study 1's pipeline, and its commit will be cited when the results are reported. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
 
 ## 1. Study information
 
@@ -144,7 +146,7 @@ None.
 
 ### Statistical models
 
-R, using psych, lavaan, GPArotation and EFAtools; versions are reported. Statement answers are treated as ordinal (polychoric correlations, WLSMV estimation). The analysis code follows Study 1's pipeline. **[to settle: cite its commit here; the code is to be written and run on simulated and permuted data before filing.]**
+R, using psych, lavaan, GPArotation and EFAtools; versions are reported. Statement answers are treated as ordinal (polychoric correlations, WLSMV estimation). The analysis code follows Study 1's pipeline. It will be written during the analysis, following the rules registered here, and its commit will be cited when the results are reported.
 
 1. **Pre-checks.**
    - Distributions, floor and ceiling, "Prefer not to answer" rates, and agreement rates for every statement.
@@ -166,7 +168,7 @@ R, using psych, lavaan, GPArotation and EFAtools; versions are reported. Stateme
 
 - **V. Did the two modes come across?**
   - A participant tells the modes apart when their separation is 1 point or more. Because separation compares a participant's ratings with each other, it does not depend on where they centre the scale.
-  - The distinction came across if at least 75% of participants with a separation score tell the modes apart **[to settle: the threshold]**.
+  - The distinction came across if at least 75% of participants with a separation score tell the modes apart (three in four).
   - A vignette whose mean falls on the wrong side of the sample midpoint is flagged and rewritten before any further use.
   - Nobody is excluded on their vignette ratings.
   - If the distinction did not come across, a statement that names a mode is retained in step 8 only where no statement without one qualifies for the same factor.
