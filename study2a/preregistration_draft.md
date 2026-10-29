@@ -4,7 +4,7 @@ OSF Preregistration (standard template), filed 29 October 2026 at [osf.io/vt7gn]
 
 **This is the draft it was filed from; the OSF registration is the version of record.** Where the two differ, OSF governs.
 
-**Settled after filing (29 October 2026, before any data were collected).** The filed version left two items marked "to settle". They are settled here as follows and are to be filed as an update to the OSF registration: (1) the vignette threshold is 75% (three in four), the value expectation 5 already states; (2) the analysis code will be written during the analysis, following these rules and Study 1's pipeline, and its commit will be cited when the results are reported. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
+**Settled after filing (29 October 2026, before any data were collected).** The filed version left two items marked "to settle". They are settled here as follows, and were filed as an update to the OSF registration the same day (submitted 20:54 UTC): (1) the vignette threshold is 75% (three in four), the value expectation 5 already states; (2) the analysis code will be written during the analysis, following these rules and Study 1's pipeline, and its commit will be cited when the results are reported. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
 
 ## 1. Study information
 
