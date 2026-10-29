@@ -1,8 +1,8 @@
 # Sense Foraging Scale, Study 2a: factor structure of a revised 58-statement set
 
-OSF Preregistration (standard template), to be filed in the Study 1 project (osf.io/48r2y) before data collection. University of Toronto REB Protocol #00051180, Study 2a amendment pending.
+OSF Preregistration (standard template), filed 29 October 2026 at [osf.io/vt7gn](https://osf.io/vt7gn), before data collection. University of Toronto REB Protocol #00051180, Study 2a amendment pending.
 
-**Draft, 29 October 2026.** Items marked **[to settle]** need a decision before filing. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
+**This is the draft it was filed from; the OSF registration is the version of record.** Where the two differ, OSF governs. The materials it describes are built on the RADlab platform, inactive (study `33d012fb-e5c3-5e46-a147-e565c04666e6`; definitions in radlab `scripts/sense_foraging/study2a/`).
 
 ## 1. Study information
 

@@ -10,7 +10,7 @@ University of Toronto REB Protocol #00051180. PI: Norman Farb (RADlab, Universit
 | Study | What | Status |
 |---|---|---|
 | [Study 1](study1/) | Exploratory factor analysis of a 48-item pool (item pool 6), Prolific, N = 500 | Data collected 2026-10-11; preregistered at [osf.io/48r2y](https://osf.io/48r2y); analysed |
-| [Study 2a](study2a/) | Factor structure of a revised 58-statement set, with vignettes checking the two modes, Prolific, N = 500 | Built on the platform (inactive); amendment pending; preregistration drafted |
+| [Study 2a](study2a/) | Factor structure of a revised 58-statement set, with vignettes checking the two modes, Prolific, N = 500 | Built on the platform (inactive); amendment pending; preregistered [osf.io/vt7gn](https://osf.io/vt7gn) |
 | [Study 2](study2/) (now 2b) | Confirmatory factor analysis of the statements 2a selects, validity measures, two-week retest | Built on the platform (inactive); to be revised after 2a |
 
 **Findings for collaborators:** https://senseforaging.com/research/study1 (unlisted).
