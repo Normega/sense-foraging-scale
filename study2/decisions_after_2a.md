@@ -14,11 +14,19 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 6. **The vignettes stay in 2b**, before the scale as in 2a, with V2 ("Doing: keeping watch") rewritten: it fell on the sensing side of the midpoint.
 7. **The understanding test:** measurement invariance of the CFA across people who do and do not tell the modes apart (separation ≥ 1, the 2a rule): configural, then loadings, then thresholds. In 2a (in-sample) loadings were not equal across the groups (`21`).
 8. **IUS-12 is dropped from 2b.** It was there for Letting be, which is not in the scale; its correlation with the 8 in 2a (−.17) is reported.
-9. **The validity battery is the focus of the freed time:** convergent and divergent measures for a single sensing score. Which new measures: to decide.
+9. **The validity battery is the focus of the freed time:** convergent and divergent measures for a single sensing score (`prereg_2b_plan.md`).
+
+## Decided (Norm, 31 October 2026, second round)
+
+10. **A behavioural criterion: a free-choice pause in the session.** Participants are offered an optional pause to look and listen around them, with Continue available at once; whether they take it and for how long is the criterion. It needs a platform step and goes in the ethics amendment.
+11. **New discriminant measures: the Brief Sensation Seeking Scale (BSSS-8) and a short Highly Sensitive Person scale.** Licences to check.
+12. **No longitudinal component in 2b.** The follow-up session goes, and with it H7 (test–retest stability), the over-time invariance model and the prospective past-week analysis.
+13. **The trial's 10 statements in Study 1 wording are carried** (7 statements beyond the 8), as a check that the 8 can stand in for the PSY240 trial's measure in independent data.
 
 ## To decide before registering
 
-- **H1's fit rule.** The previous draft required CFI ≥ .95, RMSEA ≤ .06 (upper CI ≤ .08), SRMR ≤ .08. In 2a, in-sample, the 8 gives CFI .972, SRMR .038, RMSEA .084 (upper CI .103), so it would fail RMSEA; the 10 gives .977, .036, .066 (.080); the 8 with U4 in place of sfc_x2 gives .988, .030, .053. RMSEA runs high in models with few degrees of freedom (Kenny, Kaniskan & McCoach, 2015, *Sociological Methods & Research*).
-- New convergent and divergent measures (candidates on the results page).
-- Whether the trial's 10 statements in Study 1 wording are carried, to link the PSY240 trial to the new scale.
+- **H1's fit rule.** The previous draft required CFI ≥ .95, RMSEA ≤ .06 (upper CI ≤ .08), SRMR ≤ .08. In 2a, in-sample, the 8 gives CFI .972, SRMR .038, RMSEA .084 (upper CI .103), so it would fail RMSEA; the 10 gives .977, .036, .066 (.080); the 8 with U4 in place of sfc_x2 gives .988, .030, .053.
+  - **Simulation (31 October, from the fitted 2a models, N = 1,000, 200 runs):** the RMSEA of .084 is not a small-df artefact. A correctly specified 8 gives RMSEA ≈ .005 (95th percentile .026). The conventional cutoffs never detected a planted flaw (residual correlations of .30 on two item pairs; CFI ≈ .986, SRMR ≈ .030). Model-specific cutoffs that catch it 95% of the time are about CFI ≥ .992, RMSEA ≤ .042, SRMR ≤ .024. Both 8s miss those in 2a.
+  - **The misfit sits on sfc_x2:** the four largest residual correlations all involve it (with sf6_44 −.110, sf6_27 −.089, sfc_35 .075, sf6_36 .069). With U4 in its place the largest is .069.
+- Whether NCS-6, SBPS-8 or NR-6 are added as well; whether MAIA-2 is given in full.
 - Carried over: face-scale "Prefer not to answer"; SBI permission; PSS-4 licence; pages marked `translate="no"`; 2a participants excluded on Prolific.

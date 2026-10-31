@@ -62,7 +62,7 @@ Each answers a "isn't this just X?" question a reviewer will ask. All short, lic
 | Short Boredom Proneness (SBPS-8) | 8 | small − | Doing-mode restlessness; an interpretable negative neighbour |
 | Nature Relatedness (NR-6) | 6 | + moderate | Convergent rather than discriminant: the scale's outward-senses content overlaps it |
 
-BSSS and HSP are the most informative: they are the two constructs closest in name to "seeking sensation".
+BSSS-8 and the HSP short form are decided (decision 11); the other three are open. BSSS and HSP are the most informative: they are the two constructs closest in name to "seeking sensation".
 
 ### Criterion
 
@@ -72,13 +72,13 @@ BSSS and HSP are the most informative: they are the two constructs closest in na
 | Past-week days deliberately pausing to take in surroundings (`crit_pause_days`) | Concurrent behaviour report | Carries over (H4), the most face-valid criterion |
 | Past-week time outdoors (`crit_outdoors`) | Concurrent behaviour report | Promote from descriptive to tested? **[Norm]** |
 | Past-week noticing before reacting (`crit_notice_first`) | Concurrent behaviour report | Was for Letting be; keep as descriptive |
-| Following week's pauses, in the follow-up sample, controlling for baseline | Prospective | Exploratory in the draft. The best criterion test available without a new task; promote to confirmatory? **[Norm]** |
+| Following week's pauses, in the follow-up sample | Prospective | Dropped: no follow-up in 2b (decision 12) |
 | Incremental: life satisfaction, PHQ-4, PSS-4 beyond FFMQ-15 and MAIA-2 (ΔR² ≥ .02) | Incremental | Carries over (H5a) for one score |
 | Incremental: practice frequency beyond FFMQ, MAIA, spirituality (H5b) | Incremental | Carries over |
 | Vignette self-rating | Same-session self-placement | Descriptive only: same method, same session |
 
 **A gap: no criterion outside self-report.** Every criterion above is something the participant reports. Options:
-1. **A free-choice pause in the session.** For example: "If you like, take up to a minute to look and listen around you before the next page" (with Continue available at once). The criterion is whether they take it and for how long. No method overlap with the scale, and cheap. It needs a platform step and goes in the ethics amendment. **[Norm]**
+1. **A free-choice pause in the session (decided, decision 10).** For example: "If you like, take up to a minute to look and listen around you before the next page" (with Continue available at once). The criterion is whether they take it and for how long. No method overlap with the scale, and cheap. It needs a platform step and goes in the ethics amendment. **[Norm]**
 2. **The PSY240 trial**, as sensitivity to change across the course. It is a separate dataset and only possible if the trial's 10 are linked to the 8 (see "To decide" in `decisions_after_2a.md`). A cross-study claim, not part of 2b.
 3. Course game data (Delve, Tune) as behavioural foraging. Not in 2b's sample; for later.
 
@@ -91,7 +91,7 @@ Approximate item counts in the main session:
 | Background | 13 |
 | Vignettes + self-rating | 10 |
 | The 10 + 3 exploratory | 13 |
-| (optional) the trial's 10 in Study 1 wording | +7 |
+| The trial's 10 in Study 1 wording (decision 13) | +7 |
 | Current validity battery without IUS-12 | 112 (MAIA-2 alone is 37) |
 | New measures above, all five | ~40 |
 
@@ -107,7 +107,7 @@ Against the draft, dropping the 24 candidates, 10 of the 20 short-form items and
 - **H4 criterion:** `crit_pause_days` positive; plus whichever of outdoors / following week / free-choice pause is promoted.
 - **H5 incremental:** as the draft, one score.
 - **H6 known groups:** d ≥ .50.
-- **H7 stability:** ICC ≥ .70 for the 8 and the 10.
+- ~~H7 stability~~: dropped with the follow-up (decision 12).
 - **H8 understanding (new):** invariance across tells-apart groups. Direction: 2a predicts loadings will differ, so H8 is a test of whether they do, with the consequence stated (the score means something different for people who don't tell the modes apart).
 
 Everything is tested on the 8; the 10 is reported beside it with the same rules.
