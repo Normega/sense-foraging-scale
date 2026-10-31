@@ -22,7 +22,7 @@ Exclusions, attention checks, positions, timing and background answers are alway
 
 ## Steps (`run_all.R`, from the repo root)
 
-`SF2A_K` sets the number of content factors in the primary model (default 5). `SF2A_FROM=<step>` starts part-way.
+`SF2A_K` sets the number of content factors in the primary model: default 4, decision K, made 30 October 2026 and recorded with its reasons in `config.R`. Simulation checks ran with 5 (`SF2A_K=5`). `SF2A_FROM=<step>` starts part-way.
 
 1. **`01_prepare`:** one row per participant, by the registered rules. The first complete submission of each questionnaire is used; anyone failing two or more of the three checks is excluded. Flags: one check failed, < 2 s per statement (61 positions), longstring ≥ 15 (61 positions), > 11 of 58 declined; also the step-crash group (not registered). Separation and "tells the modes apart" are computed here.
 2. **`02_items`:** distributions, floor and ceiling, missingness, agreement rates (4–6, unrecoded), and the 18 look-alike pairs' polychoric correlations.

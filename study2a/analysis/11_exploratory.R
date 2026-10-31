@@ -37,8 +37,10 @@ reword <- rbindlist(lapply(def$end, function(s1) {
 
 av_items <- cbind(K[, def$av10[c("sf6_9", "sf6_36", "sf6_35", "sf6_44")]], END)
 av10 <- rowMeans(av_items, na.rm = TRUE)
-fa <- names(P$labels)[P$labels %in% c("Access", "Valuing")]
-av <- rbindlist(lapply(fa, function(f) corr_row(av10, FS[, f], paste("trial Access + Valuing ~", lab(f)))))
+# Every factor, not only those matched to Access and Valuing: at k = 4 the two
+# hypothesized factors' forward statements define one factor (matched to Forage
+# by plurality) and their reverse-keyed statements another.
+av <- rbindlist(lapply(P$fnames, function(f) corr_row(av10, FS[, f], paste("trial Access + Valuing ~", lab(f)))))
 av_desc <- data.table(what = "trial Access + Valuing score", n = sum(!is.na(av10)), mean = round(mean(av10, na.rm = TRUE), 3),
                       sd = round(sd(av10, na.rm = TRUE), 3), alpha = round(psych::alpha(av_items, warnings = FALSE)$total$raw_alpha, 3))
 

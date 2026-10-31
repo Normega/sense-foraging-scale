@@ -53,7 +53,15 @@ SF2A <- list(
   per_factor = c(5, 6), min_reversed = 2,
   # Number of content factors in the primary model: the decision K, made from
   # 04's output by the registered criteria and recorded here with its reason.
-  k_primary = as.integer(Sys.getenv("SF2A_K", "5")),
+  # DECIDED 2026-10-30 (Norm): K = 4. Criterion 1 (every factor >= 3 statements
+  # with primary loadings >= .40) is met only at k = 4, in the geomin EFAs
+  # (k = 4-7; parallel analysis said 7) and in the ESEM with the random
+  # intercept (at k = 5 the hypothesized Valuing factor has 2). Criterion 3, fit,
+  # is about equal (k = 4 CFI .953, RMSEA .033; k = 5 .958, .032). On criterion
+  # 2: a broad factor of 26 forward statements from all five hypothesized
+  # factors, and three smaller factors defined mostly by reverse-keyed
+  # statements. The k = 5 ESEM is kept as an exploratory comparison.
+  k_primary = as.integer(Sys.getenv("SF2A_K", "4")),
   rstarts = 30,
   pa_datasets = 500
 )

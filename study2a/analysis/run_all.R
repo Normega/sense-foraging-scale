@@ -2,8 +2,8 @@
 #   SF2A_MODE=permuted  Rscript study2a/analysis/run_all.R   (default)
 #   SF2A_MODE=simulated ...   then 99_check_recovery.R runs too
 #   SF2A_MODE=real      ...
-# SF2A_K sets the number of content factors in the primary model (default 5),
-# chosen from 04's output by decision K.
+# SF2A_K sets the number of content factors in the primary model (default 4,
+# decision K, recorded in config.R), chosen from 04's output.
 
 source("study2a/analysis/config.R")
 steps <- c("01_prepare", "02_items", "03_vignettes", "04_factor_number", "05_primary_model", "06_wording",
