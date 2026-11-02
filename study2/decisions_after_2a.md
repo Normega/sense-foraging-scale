@@ -11,7 +11,11 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 3. **The 10** adds A9 and sfc_24 (`18`). The 8 sits inside it, so 2b scores both. The 10 is for studies of change, where its smaller detectable change helps.
 4. **Exploratory in 2b:** three plain-worded reverse-keyed statements, U4, N6 and sfc_31, unscored, to see whether a mode-free reverse-keyed statement can replace a mode-naming one.
 5. **The confirmatory model is a one-factor CFA with an agreement factor:** a random intercept with loadings fixed at 1 on every unrecoded statement, a free variance, and no correlation with the content factor. WLSMV, theta parameterization, pairwise. Without it every version misfits (RMSEA .10–.13 in 2a), for a known reason.
-6. **The vignettes stay in 2b**, before the scale as in 2a, with V2 ("Doing: keeping watch") rewritten: it fell on the sensing side of the midpoint.
+6. **The vignettes stay in 2b**, before the scale as in 2a, with V2 ("Doing: keeping watch") rewritten: it fell on the sensing side of the midpoint. Norm's wording (2 November 2026), in `materials/sf2b-vignettes.json`:
+   - **Introduction:** the doing mode is now "look or listen to accomplish something, like finding our keys, or checking out a body ache or a strange sound outside", and the sensing mode starts its own paragraph (three paragraphs, not two).
+   - **V2:** "Walking home late, Riley listens for footsteps to make sure no one is following her." (2a: "…keeps listening for footsteps and watching the shadows on the empty street.") The goal is now stated.
+   - **V7:** "Jamie feels a racing heart and keeps checking it to make sure his heart rate goes back to normal." (2a: "…keeps checking it, to make sure nothing is wrong.")
+   - The other seven vignettes, the self-rating and the ordering rules are unchanged from 2a. Because V2, V7 and the introduction changed, separation scores are not directly comparable with 2a's.
 7. **The understanding test:** measurement invariance of the CFA across people who do and do not tell the modes apart (separation ≥ 1, the 2a rule): configural, then loadings, then thresholds. In 2a (in-sample) loadings were not equal across the groups (`21`).
 8. **IUS-12 is dropped from 2b.** It was there for Letting be, which is not in the scale; its correlation with the 8 in 2a (−.17) is reported.
 9. **The validity battery is the focus of the freed time:** convergent and divergent measures for a single sensing score (`prereg_2b_plan.md`).
