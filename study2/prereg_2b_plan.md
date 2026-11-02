@@ -45,6 +45,7 @@ The strongest discriminant tests are **contrasts within one measure**, because t
 | FFMQ Observing > FFMQ Describing | yes | Mindfulness in general, verbal labelling |
 | SBI Savoring the Moment > BFI-2 Open-Mindedness total | yes (the draft's H3b) | General appetite for experience |
 | MAIA-2 Noticing > MAIA-2 Not-Worrying | yes | Low distress about body sensations |
+| FFMQ Observing > SAMD Meaning-Detecting | yes (decision 16) | A spiritual or meaning-seeking openness: reading meaning into events rather than taking in what is there |
 
 And bounds:
 - BIDR-16 SDE and IM: 95% CI within ±.30 (the draft's H3c).
@@ -61,8 +62,9 @@ Each answers a "isn't this just X?" question a reviewer will ask. All short, lic
 | Highly Sensitive Person scale, short form | ~12 | + for aesthetic sensitivity, near zero or + for ease of excitation | Is it sensory sensitivity or overwhelm? |
 | Short Boredom Proneness (SBPS-8) | 8 | small − | Doing-mode restlessness; an interpretable negative neighbour |
 | Nature Relatedness (NR-6) | 6 | + moderate | Convergent rather than discriminant: the scale's outward-senses content overlaps it |
+| SAMD Meaning-Detecting (Russo-Netzer & Icekson, 2023) | 13 | + small to moderate, below FFMQ Observing (bound to set in the prereg) | Is it a spiritual or meaning-seeking openness, finding signs and meaning in events? Decided (decision 16) |
 
-BSSS-8 and the HSP short form are decided (decision 11); the other three are open. BSSS and HSP are the most informative: they are the two constructs closest in name to "seeking sensation".
+BSSS-8 and the HSP short form are decided (decision 11), and SAMD Meaning-Detecting (decision 16); NCS-6, SBPS-8 and NR-6 are open. BSSS and HSP are the most informative: they are the two constructs closest in name to "seeking sensation".
 
 ### Criterion
 
@@ -103,7 +105,7 @@ Against the draft, dropping the 24 candidates, 10 of the 20 short-form items and
 
 - **H1 structure:** one-factor CFA + agreement factor on the 8 fits. Fit rule open (see `decisions_after_2a.md`).
 - **H2 convergent:** FFMQ Observing, SBI Savoring, BFI-2 Aesthetic Sensitivity, MAIA-2 Noticing; CI lower bound > .30.
-- **H3 discriminant:** (a) convergent upper bounds < .80; (b) the four within-measure contrasts; (c) BIDR within ±.30; (d) multiple R with the neighbour set < .80; (e) new measures' bounds, once chosen.
+- **H3 discriminant:** (a) convergent upper bounds < .80; (b) the four within-measure contrasts, and FFMQ Observing > SAMD Meaning-Detecting; (c) BIDR within ±.30; (d) multiple R with the neighbour set < .80; (e) new measures' bounds, once chosen.
 - **H4 criterion:** `crit_pause_days` positive; plus whichever of outdoors / following week / free-choice pause is promoted.
 - **H5 incremental:** as the draft, one score.
 - **H6 known groups:** d ≥ .50.

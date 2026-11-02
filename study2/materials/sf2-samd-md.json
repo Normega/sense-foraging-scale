@@ -1,0 +1,504 @@
+{
+  "slug": "sf2-samd-md",
+  "name": "Meaning in events",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "samd_p1",
+      "components": [
+        {
+          "id": "samd_md_01",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_02",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_05",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_07",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "samd_p2",
+      "components": [
+        {
+          "id": "samd_md_08",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_11",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "samd_md_13",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "mean",
+    "note": "Synchronicity Awareness and Meaning-Detecting Scale (SAMD), Meaning-Detecting subscale only (13 items, 1-7, no reverse-keyed items): Russo-Netzer & Icekson (2023), Frontiers in Psychology 13:1053296, Table 1, item wording and instructions as published (English back-translation of the Hebrew original). Article CC BY; authors to be told of the use. Study 2b: discriminant (decision 16).",
+    "reverse_items": []
+  }
+}
