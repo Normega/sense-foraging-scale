@@ -73,7 +73,7 @@ out <- list(
   forms = lapply(seq_len(nrow(forms)), function(i) c(as.list(forms[i, .(form, n, n_reversed, omega_content = r(omega_content), share_agreement = r(share_agreement),
                                                                     alpha = r(alpha), alpha_told_apart = r(alpha_told_apart), alpha_not = r(alpha_not),
                                                                     mean = r(mean, 2), sd = r(sd, 2), mdc95 = r(mdc95, 2), d_practice = r(d_practice, 2),
-                                                                    r_trial10 = r(r_trial10, 2), r_ius = r(r_ius, 2), r_self = r(r_self, 2))]),
+                                                                    r_trial10 = r(r_trial10, 2), r_ius = r(r_ius, 2), r_self = r(r_self, 2), r_separation = r(r_separation, 2))]),
                                                      list(cfa = as.list(cfa[i, .(cfi = cfi.scaled, srmr, rmsea = rmsea.scaled, rmsea_hi = rmsea.ci.upper.scaled,
                                                                                  agreement_pct = agreement_pct_item_variance)])))),
   statements = lapply(seq_len(nrow(stm)), function(i) list(code = stm$source[i], text = stm$text[i], role = stm$role[i], written_for = stm$hypothesized[i],

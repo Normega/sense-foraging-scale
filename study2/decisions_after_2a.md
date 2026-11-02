@@ -7,9 +7,9 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 ## Decided (Norm, 31 October 2026)
 
 1. **One score, not subscales.** 2a found one broad sensing factor plus small reverse-keyed clusters; Access, Valuing and Forage do not separate, and no hypothesized factor gives a 3-statement subscale beyond the general factor (`13`, `14`).
-2. **The scale is 8 statements** (12's best 8): N4, sf6_36 (R), V10, sf6_27, sfc_36, sfc_x2 (R), sfc_35, sf6_44 (R). The three reverse-keyed statements all name a mode. Norm kept sfc_x2 rather than swapping in U4: the mode-naming statements are the strongest reverse-keyed indicators (`17`, `19`, `20`).
+2. **The scale is 8 statements:** N4, sf6_36 (R), V10, sf6_27, sfc_36, sfc_x2 (R), sfc_35, U4 (R). *Revised 2 November (decision 14):* this was 12's best 8 with sf6_44 (R) in U4's place, all three reverse-keyed statements naming a mode. On 31 October Norm kept sfc_x2 rather than swapping in U4 for it: the mode-naming statements are the strongest reverse-keyed indicators (`17`, `19`, `20`).
 3. **The 10** adds A9 and sfc_24 (`18`). The 8 sits inside it, so 2b scores both. The 10 is for studies of change, where its smaller detectable change helps.
-4. **Exploratory in 2b:** three plain-worded reverse-keyed statements, U4, N6 and sfc_31, unscored, to see whether a mode-free reverse-keyed statement can replace a mode-naming one.
+4. **Exploratory in 2b, unscored:** N6 and sfc_31, reverse-keyed statements that do not name a mode, and sf6_44 (asked anyway as one of the trial's statements). *Revised 2 November:* U4 was the third exploratory statement until it moved into the 8 (decision 14).
 5. **The confirmatory model is a one-factor CFA with an agreement factor:** a random intercept with loadings fixed at 1 on every unrecoded statement, a free variance, and no correlation with the content factor. WLSMV, theta parameterization, pairwise. Without it every version misfits (RMSEA .10–.13 in 2a), for a known reason.
 6. **The vignettes stay in 2b**, before the scale as in 2a, with V2 ("Doing: keeping watch") rewritten: it fell on the sensing side of the midpoint. Norm's wording (2 November 2026), in `materials/sf2b-vignettes.json`:
    - **Introduction:** the doing mode is now "look or listen to accomplish something, like finding our keys, or checking out a body ache or a strange sound outside", and the sensing mode starts its own paragraph (three paragraphs, not two).
@@ -25,12 +25,26 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 10. **A behavioural criterion: a free-choice pause in the session.** Participants are offered an optional pause to look and listen around them, with Continue available at once; whether they take it and for how long is the criterion. It needs a platform step and goes in the ethics amendment.
 11. **New discriminant measures: the Brief Sensation Seeking Scale (BSSS-8) and a short Highly Sensitive Person scale.** Licences to check.
 12. **No longitudinal component in 2b.** The follow-up session goes, and with it H7 (test–retest stability), the over-time invariance model and the prospective past-week analysis.
-13. **The trial's 10 statements in Study 1 wording are carried** (7 statements beyond the 8), as a check that the 8 can stand in for the PSY240 trial's measure in independent data.
+13. **The trial's 10 statements in Study 1 wording are carried** (7 statements not otherwise asked), as a check that the 8 can stand in for the PSY240 trial's measure in independent data. With decision 14 the 8 shares two statements with the trial's 10 (sf6_36, sf6_27), not three.
+
+## Decided (Norm, 2 November 2026)
+
+14. **U4 replaces sf6_44 in the 8** (and so in the 10). sf6_44 loaded weakest (.37 in the one-factor CFA with the agreement factor), and its residual correlation with sfc_x2 (−.110) was the 8's largest misfit. In 2a, in-sample (`21`, rerun 2 November):
+
+    | | CFI | RMSEA (upper CI) | SRMR | Largest residual | ω (content) | α | Practitioner d | r with trial's 10 |
+    |---|---|---|---|---|---|---|---|---|
+    | The 8 with sf6_44 | .972 | .084 (.103) | .038 | .110 | .845 | .80 | .70 | .84 |
+    | The 8 with U4 | .985 | .061 (.081) | .031 | .079 | .838 | .80 | .67 | .80 |
+    | The 10 with U4 | .987 | .048 (.063) | .030 | .077 | .850 | .83 | .69 | .81 |
+
+    Also compared: U4 in place of sfc_x2 (CFI .988, RMSEA .053, largest residual .069, but two weak statements: U4 .32 and sf6_44 .39); and the 8 plus U4 as a ninth (no better than the 8: RMSEA .081, the sf6_44–sfc_x2 residual grows to −.129). The 8 still has three reverse-keyed statements, two naming a mode. U4 was written for Understanding ("Even when I pause to take in what is around me, I react to stress the same way") and loads .37. Chosen on 2a's data, so 2b is the test. The lower correlation with the trial's 10 is mostly the loss of a shared statement.
+15. **The vignette introduction, V2 and V7 are reworded** (see decision 6, `materials/sf2b-vignettes.json`).
 
 ## To decide before registering
 
 - **H1's fit rule.** The previous draft required CFI ≥ .95, RMSEA ≤ .06 (upper CI ≤ .08), SRMR ≤ .08. In 2a, in-sample, the 8 gives CFI .972, SRMR .038, RMSEA .084 (upper CI .103), so it would fail RMSEA; the 10 gives .977, .036, .066 (.080); the 8 with U4 in place of sfc_x2 gives .988, .030, .053.
   - **Simulation (31 October, from the fitted 2a models, N = 1,000, 200 runs):** the RMSEA of .084 is not a small-df artefact. A correctly specified 8 gives RMSEA ≈ .005 (95th percentile .026). The conventional cutoffs never detected a planted flaw (residual correlations of .30 on two item pairs; CFI ≈ .986, SRMR ≈ .030). Model-specific cutoffs that catch it 95% of the time are about CFI ≥ .992, RMSEA ≤ .042, SRMR ≤ .024. Both 8s miss those in 2a.
-  - **The misfit sits on sfc_x2:** the four largest residual correlations all involve it (with sf6_44 −.110, sf6_27 −.089, sfc_35 .075, sf6_36 .069). With U4 in its place the largest is .069.
+  - **The misfit sat on the sfc_x2–sf6_44 pair** (−.110), with sfc_x2's other residuals next (sf6_27 −.089, sfc_35 .075, sf6_36 .069). Removing either statement removes most of it, which is why decision 14 swaps out sf6_44. (Corrected 2 November: this said the misfit sits on sfc_x2.)
+  - **Proposed rule (not yet confirmed):** no residual correlation above .10, and freeing the largest changes ω and the loadings by less than .02 (local fit, decisive); SRMR's close-fit test (unbiased SRMR ≤ .05) as the global check; CFI, RMSEA and the model-specific cutoffs reported.
 - Whether NCS-6, SBPS-8 or NR-6 are added as well; whether MAIA-2 is given in full.
 - Carried over: face-scale "Prefer not to answer"; SBI permission; PSS-4 licence; pages marked `translate="no"`; 2a participants excluded on Prolific.

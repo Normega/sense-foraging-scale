@@ -8,7 +8,7 @@ Working notes for rewriting `preregistration_draft.md` (the 20-item, four-factor
 |---|---|
 | 20 items, four factors, ESEM + agreement factor | The 8 (inside the 10), one-factor CFA + agreement factor |
 | Access, Valuing, Understanding, Letting be each tested | One score; Understanding tested as invariance across tells-apart groups |
-| 24 candidate items, selection/holdout halves (steps 7–10) | 3 exploratory reversed statements (U4, N6, sfc_31), unscored |
+| 24 candidate items, selection/holdout halves (steps 7–10) | 3 exploratory reversed statements (N6, sfc_31, sf6_44), unscored |
 | No vignettes | 9 vignettes + self-rating before the scale, V2 rewritten |
 | IUS-12 | Dropped |
 | H2–H4 per factor | Per score (the 8 primary, the 10 secondary) |
@@ -17,9 +17,9 @@ Sections that carry over almost unchanged: recruitment and postings, exclusions 
 
 ## The validity battery for one score
 
-What the 8 measures, from its content: noticing the senses with interest (N4), being able to move into the sensing mode (sf6_36, sfc_x2), treating it as worth the time (sf6_44, sf6_27). In 2a it correlated .84 with the trial's 10 (≈ 1.0 disattenuated), so it is the Access + Valuing blend, not a new construct.
+What the 8 measures, from its content: noticing the senses with interest (N4), being able to move into the sensing mode (sf6_36, sfc_x2), treating it as worth the time (sf6_27), and whether pausing to take things in changes how stress lands (U4, reverse-keyed; it replaced sf6_44 on 2 November, decision 14). In 2a it correlated .80 with the trial's 10, so it is close to the Access + Valuing blend, not a new construct.
 
-**What 2a already gives for the 8** (in-sample, same session): practice d = .70; vignette self-rating r = .35; IUS-12 r = −.17. Study 1 had no validity measures.
+**What 2a already gives for the 8** (in-sample, same session, the 8 with U4): practice d = .67; vignette self-rating r = .33; IUS-12 r = −.18. Study 1 had no validity measures.
 
 ### Convergent (in the current battery)
 

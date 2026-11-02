@@ -1,9 +1,11 @@
 # 21: exploratory, not preregistered (Norm's decisions, 2026-10-31): the forms carried into
 # Study 2b, described in the 2a data. Real mode only, after 12 and 18.
-#   - the 8: 12's best 8 (three reverse-keyed statements, all naming a mode; Norm kept the
-#     third rather than swapping in U4, 17-20)
+#   - the 8: 12's best 8 with U4 in place of sf6_44 (Norm, 2026-11-02). sf6_44 loaded
+#     weakest (.37) and its residual with sfc_x2 (-.11) was the 8's largest misfit; with U4
+#     the 8 keeps three reverse-keyed statements, two naming a mode. (On 31 October Norm had
+#     kept sfc_x2 rather than swapping in U4 for it, 17-20.)
 #   - the 10: the 8 plus A9 and sfc_24 (18's best mode-free pair)
-#   - the three plain-worded reverse-keyed statements carried as exploratory: U4, N6, sfc_31
+#   - exploratory in 2b, unscored: N6 and sfc_31 (plain-worded reverse-keyed) and sf6_44
 # For each form: content omega and agreement (12's G model), alpha overall and by vignette
 # group, SEM and smallest detectable change, practitioner d, correlations; a one-factor CFA
 # with the random intercept (the 2b model); and a preview of 2b's invariance test across
@@ -33,8 +35,9 @@ trial10 <- rowMeans(cbind(K, A$end)[, unname(def$av10)], na.rm = TRUE)
 ta <- M$tells_apart %in% TRUE
 
 f8 <- fread(sf2a_out("12_strongest_scale.csv"))[n == 8 & min_reversed == 0, strsplit(ids, " ")[[1]]]
+f8 <- replace(f8, f8 == id("sf6_44"), id("U4"))
 f10 <- c(f8, id(c("A9", "sfc_24")))
-expl <- id(c("U4", "N6", "sfc_31"))
+expl <- id(c("N6", "sfc_31", "sf6_44"))
 forms <- list(`8` = f8, `10` = f10)
 sc8 <- rowMeans(K[, f8], na.rm = TRUE)
 
