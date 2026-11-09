@@ -23,10 +23,10 @@ source("study2a/analysis/sf2a_models.R")
 stopifnot(SF2A$mode == "real")
 library(parallel)
 
-N <- 500
+N <- as.integer(Sys.getenv("SF2B_N", "500"))
 REPS <- as.integer(Sys.getenv("SF2B_REPS", "500"))
 SEED <- 20261109
-OUT <- "study2/power/power_2b_results.csv"
+OUT <- if (N == 500) "study2/power/power_2b_results.csv" else sprintf("study2/power/power_2b_results_n%d.csv", N)
 
 A <- readRDS(sf2a_derived("sf2a")); def <- A$definition; X <- A$items_raw; items <- def$items; rv <- def$reversed
 id <- function(src) items[match(src, def$source[items])]
@@ -149,10 +149,10 @@ for (pop in c("fit", "observed", "flawed", "second factor", "second factor .60")
   }
   print(rbindlist(tail(rows, length(VARIANTS)))[, .(test, condition, power_or_pass)])
 }
-saveRDS(H1RAW, "study2/power/power_2b_h1_raw.rds")
+saveRDS(H1RAW, sub("results", "h1_raw", sub(".csv", ".rds", OUT, fixed = TRUE), fixed = TRUE))
 GRID <- CJ(res_max = c(.10, .12, .15), d_om = c(.02, .03), d_lam = c(.02, .05, .10, Inf))
 grid <- GRID[, as.list(sapply(H1RAW, function(r) pct(rule_pass(r, res_max, d_om, d_lam)))), by = .(res_max, d_om, d_lam)]
-fwrite(grid, "study2/power/power_2b_h1_grid.csv"); print(grid)
+fwrite(grid, sub("results", "h1_grid", OUT, fixed = TRUE)); print(grid)
 if (PART == "h1") { fwrite(rbindlist(rows), sub(".csv", "_h1.csv", OUT, fixed = TRUE)); quit(save = "no") }
 
 for (rsa in c(.40, .45, .50)) {

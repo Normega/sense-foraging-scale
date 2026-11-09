@@ -1,6 +1,27 @@
 # Study 2b power simulation (N = 500)
 
-`power_2b.R`, run 9 November 2026 (seed 20261109; 500 simulated studies per SEM condition, 4,000 for the others). Populations come from Study 2a's fitted one-factor model of the 8 with the agreement factor, so loadings, agreement variance and thresholds are 2a's. Results: `power_2b_results.csv` (every test), `power_2b_h1_grid.csv` (fit-rule variants). `power_2b_h1_raw.rds` holds the H1 replications.
+`power_2b.R`, run 9 November 2026 (seed 20261109; 500 simulated studies per SEM condition, 4,000 for the others). Populations come from Study 2a's fitted one-factor model of the 8 with the agreement factor, so loadings, agreement variance and thresholds are 2a's. Results: `power_2b_results.csv` (every test), `power_2b_h1_grid.csv` (fit-rule variants). `power_2b_h1_raw.rds` (local, not committed) holds the H1 replications.
+
+**Decided 9 November (decisions 33-34):** the loosened rule (second row below) and N = 700 with the smallest H3b difference kept at .15.
+
+## At N = 700 (the registered sample)
+
+`SF2B_N=700`; `power_2b_results_n700.csv`, `power_2b_h1_grid_n700.csv`. Power or pass rate, %.
+
+| Test | Condition | N = 700 | (N = 500) |
+|---|---|---|---|
+| H1, adopted rule (ω < .03, loadings < .05) | model true / 2a-like / small flaw | 100 / 97 / 99 | 100 / 96 / 98 |
+| | second factor .40 / .60 (should fail) | 75 / 0.2 | 72 / 1 |
+| H2, lower bound > .30 | true r .40 / .45 / .50 | 63 / 95 / 99 | 54 / 84 / 98 |
+| H3b, difference .15 | 3 items per measure, measures correlate 0 / .30 / .50 | 64 / 76 / 86 | 54 / 63 / 69 |
+| | 4 items (loading .75) / 8 items, correlate .30 | 84 / 86 | 72 / 76 |
+| | r .35 vs .20, 3 items, correlate .30 | 70 | 60 |
+| H3b, difference .20 | 3 items, correlate .30 | 95 | 87 |
+| H4, the pause | take-up 15 / 30 / 50%, latent r .20 | 88 / 95 / 97 | 75 / 87 / 89 |
+| H5, ΔR² ≥ .02 and p < .05 | true ΔR² .03 | 85 | 80 |
+| H6, d ≥ .50 and p < .05 (382 vs 190) | true d .55 / .67 | 70 / 97 | 68 / 94 |
+
+At 700 the .15 contrasts reach 76–86% when the two measures compared correlate .30 or more, or have four or more items. The weakest case is two 3-item subscales that barely correlate, which is Brief MAIA-2 Noticing vs Not-Worrying: about 64%.
 
 ## H1: the fit rule (decision 17)
 

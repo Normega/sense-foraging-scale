@@ -60,14 +60,17 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 31. **Pay: the UK minimum wage, £12.71 an hour** (Norm, 9 November), for the pilot's median time (decision 25).
 32. **The smallest H3b contrast of interest is a difference of .15** (Norm, 9 November), to be backed by simulation before registering. The simulation (`power/README.md`) found .15 underpowered at N = 500 (54–76%); see "Still open".
 
+33. **H1's rule is loosened after the simulation** (Norm, 9 November): the model passes when CFI ≥ .95; no residual correlation exceeds .10, or freeing the largest changes ω by less than .03 and every loading by less than .05; and the unbiased SRMR close-fit test (SRMR ≤ .05) is not rejected. RMSEA and the model-specific cutoffs are reported. Replaces decision 17's .02 / .02. Simulated at N = 500: passes 2a-like data 96%, fails a three-statement second factor loading .60 99% (`power/README.md`).
+34. **N = 700, and the smallest H3b difference stays .15** (Norm, 9 November). Replaces decision 24's 500; one posting, as 2a. The simulation puts .15 at about 80% near N = 700.
+35. **The debrief's account of the pause is covered by the approved amendment** (Norm, 9 November): it says the break was part of the study and was recorded, which was not said beforehand.
+
 Correction to decision 13 (9 November): the trial's 10 needs **eight** extra statements in 2b, not seven. 2b asks only sf6_36 and sf6_44 in the trial's wording; the 8's sf6_27 is the reworded version. And 2a's `sf2a-end` had two of its six statements (sf6_7, sf6_27) in wordings that are not the trial's (`psy240-sf-short-20`), so 2a's "trial's 10" is not exactly the trial's measure (r with the 8 = .80, decision 14). 2b's `sf2b-end` uses the trial's wording.
 
 The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- **H1's rule after the simulation:** as registered (decision 17) it passes 2a-like data only 55% of the time at N = 500; with "freeing the largest moves ω by under .03 and loadings by under .05" it passes 96%, and still fails a three-statement second factor loading .60 99% of the time (`power/README.md`).
-- **H3b at .15:** N ≈ 700 for 80%, or keep N = 500 and set the smallest difference at .20 (85–90%), or keep both and report the power.
+- Rerun the power simulation at N = 700 for the preregistration's sample-size section.
 
 ## Fit-rule background
 
