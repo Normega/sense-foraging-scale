@@ -56,12 +56,18 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 27. **Licences:** the measures are used for non-commercial academic research and are treated as permitted; PSS-4 and SBI stay.
 28. **A new platform study, "Sense Foraging Study 2b".** The old Study 2 and its retest study are retired.
 29. **The name stays Study 2b.**
+30. **H8 is exploratory** (Norm, 9 November): reported, no pass/fail. At N = 500 about 150 fall in the group that doesn't tell the modes apart (154 in 2a), enough for loadings but thin for six-point thresholds.
+31. **Pay: the UK minimum wage, £12.71 an hour** (Norm, 9 November), for the pilot's median time (decision 25).
+32. **The smallest H3b contrast of interest is a difference of .15** (Norm, 9 November), to be backed by simulation before registering. The simulation (`power/README.md`) found .15 underpowered at N = 500 (54–76%); see "Still open".
+
+Correction to decision 13 (9 November): the trial's 10 needs **eight** extra statements in 2b, not seven. 2b asks only sf6_36 and sf6_44 in the trial's wording; the 8's sf6_27 is the reworded version. And 2a's `sf2a-end` had two of its six statements (sf6_7, sf6_27) in wordings that are not the trial's (`psy240-sf-short-20`), so 2a's "trial's 10" is not exactly the trial's measure (r with the 8 = .80, decision 14). 2b's `sf2b-end` uses the trial's wording.
 
 The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- Whether H8 (invariance across tells-apart groups) is confirmatory or exploratory at N = 500 (about 150 in the smaller group).
+- **H1's rule after the simulation:** as registered (decision 17) it passes 2a-like data only 55% of the time at N = 500; with "freeing the largest moves ω by under .03 and loadings by under .05" it passes 96%, and still fails a three-statement second factor loading .60 99% of the time (`power/README.md`).
+- **H3b at .15:** N ≈ 700 for 80%, or keep N = 500 and set the smallest difference at .20 (85–90%), or keep both and report the power.
 
 ## Fit-rule background
 

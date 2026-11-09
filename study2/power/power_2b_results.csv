@@ -1,0 +1,43 @@
+test,condition,converged,power_or_pass,detail
+"H1 fit rule: registered (res .10, dOmega/dLambda .02)",fit,100,100,"CFI>=.95 100.0%; max residual <=.10 100.0%; close fit not rejected 100.0%; medians: CFI 1.000, RMSEA 0.000, max residual 0.054, USRMR 0.000, dOmega 0.010, dLambda 0.016"
+H1 fit rule: dLambda .05,fit,100,100,"CFI>=.95 100.0%; max residual <=.10 100.0%; close fit not rejected 100.0%; medians: CFI 1.000, RMSEA 0.000, max residual 0.054, USRMR 0.000, dOmega 0.010, dLambda 0.016"
+H1 fit rule: res .15,fit,100,100,"CFI>=.95 100.0%; max residual <=.10 100.0%; close fit not rejected 100.0%; medians: CFI 1.000, RMSEA 0.000, max residual 0.054, USRMR 0.000, dOmega 0.010, dLambda 0.016"
+H1 fit rule: dOmega .02 only,fit,100,100,"CFI>=.95 100.0%; max residual <=.10 100.0%; close fit not rejected 100.0%; medians: CFI 1.000, RMSEA 0.000, max residual 0.054, USRMR 0.000, dOmega 0.010, dLambda 0.016"
+"H1 fit rule: registered (res .10, dOmega/dLambda .02)",observed,100,55,"CFI>=.95 100.0%; max residual <=.10 55.0%; close fit not rejected 100.0%; medians: CFI 0.983, RMSEA 0.062, max residual 0.098, USRMR 0.031, dOmega 0.018, dLambda 0.029"
+H1 fit rule: dLambda .05,observed,100,71.6,"CFI>=.95 100.0%; max residual <=.10 55.0%; close fit not rejected 100.0%; medians: CFI 0.983, RMSEA 0.062, max residual 0.098, USRMR 0.031, dOmega 0.018, dLambda 0.029"
+H1 fit rule: res .15,observed,100,99.4,"CFI>=.95 100.0%; max residual <=.10 55.0%; close fit not rejected 100.0%; medians: CFI 0.983, RMSEA 0.062, max residual 0.098, USRMR 0.031, dOmega 0.018, dLambda 0.029"
+H1 fit rule: dOmega .02 only,observed,100,72,"CFI>=.95 100.0%; max residual <=.10 55.0%; close fit not rejected 100.0%; medians: CFI 0.983, RMSEA 0.062, max residual 0.098, USRMR 0.031, dOmega 0.018, dLambda 0.029"
+"H1 fit rule: registered (res .10, dOmega/dLambda .02)",flawed,100,88.4,"CFI>=.95 100.0%; max residual <=.10 88.2%; close fit not rejected 100.0%; medians: CFI 0.988, RMSEA 0.054, max residual 0.080, USRMR 0.025, dOmega 0.018, dLambda 0.029"
+H1 fit rule: dLambda .05,flawed,100,89.8,"CFI>=.95 100.0%; max residual <=.10 88.2%; close fit not rejected 100.0%; medians: CFI 0.988, RMSEA 0.054, max residual 0.080, USRMR 0.025, dOmega 0.018, dLambda 0.029"
+H1 fit rule: res .15,flawed,100,100,"CFI>=.95 100.0%; max residual <=.10 88.2%; close fit not rejected 100.0%; medians: CFI 0.988, RMSEA 0.054, max residual 0.080, USRMR 0.025, dOmega 0.018, dLambda 0.029"
+H1 fit rule: dOmega .02 only,flawed,100,89.8,"CFI>=.95 100.0%; max residual <=.10 88.2%; close fit not rejected 100.0%; medians: CFI 0.988, RMSEA 0.054, max residual 0.080, USRMR 0.025, dOmega 0.018, dLambda 0.029"
+"H1 fit rule: registered (res .10, dOmega/dLambda .02)",second factor,100,32.8,"CFI>=.95 99.4%; max residual <=.10 32.8%; close fit not rejected 100.0%; medians: CFI 0.980, RMSEA 0.064, max residual 0.109, USRMR 0.032, dOmega 0.024, dLambda 0.040"
+H1 fit rule: dLambda .05,second factor,100,35.2,"CFI>=.95 99.4%; max residual <=.10 32.8%; close fit not rejected 100.0%; medians: CFI 0.980, RMSEA 0.064, max residual 0.109, USRMR 0.032, dOmega 0.024, dLambda 0.040"
+H1 fit rule: res .15,second factor,100,96.8,"CFI>=.95 99.4%; max residual <=.10 32.8%; close fit not rejected 100.0%; medians: CFI 0.980, RMSEA 0.064, max residual 0.109, USRMR 0.032, dOmega 0.024, dLambda 0.040"
+H1 fit rule: dOmega .02 only,second factor,100,35.2,"CFI>=.95 99.4%; max residual <=.10 32.8%; close fit not rejected 100.0%; medians: CFI 0.980, RMSEA 0.064, max residual 0.109, USRMR 0.032, dOmega 0.024, dLambda 0.040"
+H2 lower bound > .30,"true r = 0.40, 3-item neighbour",100,54.4,median CI width 0.197
+H2 lower bound > .30,"true r = 0.45, 3-item neighbour",100,84.4,median CI width 0.192
+H2 lower bound > .30,"true r = 0.50, 3-item neighbour",100,98.4,median CI width 0.183
+H3b contrast,"r 0.45 vs 0.30 (difference 0.15), measures correlate 0.00, 3 items per measure loading 0.70",100,53.6,median estimate 0.150
+H3b contrast,"r 0.45 vs 0.30 (difference 0.15), measures correlate 0.30, 3 items per measure loading 0.70",100,63.2,median estimate 0.153
+H3b contrast,"r 0.45 vs 0.30 (difference 0.15), measures correlate 0.50, 3 items per measure loading 0.70",100,69.2,median estimate 0.150
+H3b contrast,"r 0.35 vs 0.20 (difference 0.15), measures correlate 0.30, 3 items per measure loading 0.70",100,60,median estimate 0.152
+H3b contrast,"r 0.45 vs 0.30 (difference 0.15), measures correlate 0.30, 4 items per measure loading 0.75",100,71.8,median estimate 0.152
+H3b contrast,"r 0.45 vs 0.30 (difference 0.15), measures correlate 0.30, 8 items per measure loading 0.70",100,75.6,median estimate 0.158
+H3b contrast,"r 0.40 vs 0.30 (difference 0.10), measures correlate 0.50, 3 items per measure loading 0.70",100,34.2,median estimate 0.097
+H3b contrast,"r 0.50 vs 0.30 (difference 0.20), measures correlate 0.30, 3 items per measure loading 0.70",100,87,median estimate 0.203
+H4 pause (0/1),"take-up 15%, latent r 0.15",100,50.5,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 15%, latent r 0.20",100,75.3,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 15%, latent r 0.25",100,91.1,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 30%, latent r 0.15",100,63.3,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 30%, latent r 0.20",100,86.5,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 30%, latent r 0.25",100,97.1,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 50%, latent r 0.15",100,67.7,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 50%, latent r 0.20",100,88.9,"Spearman, two-sided .05, score reliability .84"
+H4 pause (0/1),"take-up 50%, latent r 0.25",100,97.9,"Spearman, two-sided .05, score reliability .84"
+H6 known groups,true d = 0.55 (273 current vs 136 never),100,67.6,d >= .50 and p < .05
+H6 known groups,true d = 0.67 (273 current vs 136 never),100,93.9,d >= .50 and p < .05
+H6 known groups,true d = 0.80 (273 current vs 136 never),100,99.8,d >= .50 and p < .05
+H5 incremental,true delta R2 = 0.02,100,49.9,delta R2 >= .02 and p < .05; controls explain 30%
+H5 incremental,true delta R2 = 0.03,100,80.2,delta R2 >= .02 and p < .05; controls explain 30%
+H5 incremental,true delta R2 = 0.04,100,94.8,delta R2 >= .02 and p < .05; controls explain 30%
