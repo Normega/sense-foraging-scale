@@ -63,6 +63,7 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 33. **H1's rule is loosened after the simulation** (Norm, 9 November): the model passes when CFI ≥ .95; no residual correlation exceeds .10, or freeing the largest changes ω by less than .03 and every loading by less than .05; and the unbiased SRMR close-fit test (SRMR ≤ .05) is not rejected. RMSEA and the model-specific cutoffs are reported. Replaces decision 17's .02 / .02. Simulated at N = 500: passes 2a-like data 96%, fails a three-statement second factor loading .60 99% (`power/README.md`).
 34. **N = 700, and the smallest H3b difference stays .15** (Norm, 9 November). Replaces decision 24's 500; one posting, as 2a. The simulation puts .15 at about 80% near N = 700.
 35. **The debrief's account of the pause is covered by the approved amendment** (Norm, 9 November): it says the break was part of the study and was recorded, which was not said beforehand.
+36. **H3b contrast 4 (Brief MAIA-2 Noticing > Not-Worrying) is kept, with its power reported** (Norm, 9 November): about 64% at N = 700, because it compares two 3-item subscales that barely correlate. The other four contrasts are 76–86%.
 
 Correction to decision 13 (9 November): the trial's 10 needs **eight** extra statements in 2b, not seven. 2b asks only sf6_36 and sf6_44 in the trial's wording; the 8's sf6_27 is the reworded version. And 2a's `sf2a-end` had two of its six statements (sf6_7, sf6_27) in wordings that are not the trial's (`psy240-sf-short-20`), so 2a's "trial's 10" is not exactly the trial's measure (r with the 8 = .80, decision 14). 2b's `sf2b-end` uses the trial's wording.
 
@@ -70,7 +71,7 @@ The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- Rerun the power simulation at N = 700 for the preregistration's sample-size section.
+- The drafting choices listed in Section 6 of `preregistration_draft.md` (rewritten 9 November from decisions 1–36).
 
 ## Fit-rule background
 

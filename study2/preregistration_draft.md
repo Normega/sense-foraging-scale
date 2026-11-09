@@ -1,32 +1,17 @@
-# Sense Foraging Scale, Study 2: confirmatory structure, validity and stability of the 20-item short form
+# Sense Foraging Scale, Study 2b: confirmatory structure and construct validity of the 8-statement scale
 
-**DRAFT, revised 2026-10-12 after an independent review; not filed.**
-
-> **Status, 2026-10-23: this draft becomes Study 2b's.** Study 2 is now two studies ([senseforaging.com/research/study2a](https://senseforaging.com/research/study2a)). Study 2a (about 500 adults: the current 20 statements, 35 test statements, six plain-wording twins and IUS-12) settles each factor's statements, whether Forage is a fifth factor, whether Letting be survives a wording factor, and whether the scale keeps the course's wording. This draft is then revised for 2b: the final 20 to 30 statements, 1,000 new adults, with no statement selection in split halves (step 7 and its N rationale go). The validity tests, H5a/H5b, H6 and the retest with the past-week items carry over. The analysis code (b1006fb) will need the same revision.
+**DRAFT, 9 November 2026; not filed.** Rewritten from `prereg_2b_plan.md` and decisions 1–36 in `decisions_after_2a.md`. The pre-2a draft (20 items, four factors, retest) is in the repository history.
 
 - OSF Preregistration (standard template).
-- University of Toronto REB Protocol #00051180; the Study 2 amendment is not yet submitted.
-- Decisions still marked **[Norm]** must be settled before filing.
-- **Analysis code:** `study2/analysis/` at commit b1006fb (Normega/sense-foraging-scale). It has run end to end on simulated data generated from a known model, and recovered that model (loadings' Tucker congruence .99–1.00; over eight further simulated samples, 108 of 112 intervals for the known-group differences, retest ICCs and following-week coefficients covered the true values). Before the real analysis it is run on the real data with every item's answers shuffled, as Study 1's was. The code is the specification wherever this text is less precise. Where the text allowed more than one reading, the code's reading is marked `PREREG:` and listed in `study2/analysis/README.md`.
-
-**What changed in the 12 October revision** (Norm's decisions, 12 October, after the review):
-- **The confirmatory model is now an ESEM.** It is target-rotated, uses Study 1's item key as the targets, and includes the agreement factor. The simple-structure CFA (Model A) is still fitted and reported. Fitted to Study 1's own data, the CFA already fails the fit criteria (Section 3, *Existing data*), so a CFA-only test was set up to fail on cross-loadings rather than on the structure.
-- **Scoring.** The primary score is **Access + Valuing and savouring**: the mean of their 10 items, with the two subscales reported. Understanding the modes and Letting be are secondary. No 20-item total is scored: Study 1's general factor was overstated. ω_h is .54 for the pool and .50 for the 20 items, not the .70 and .66 first reported.
-- **Letting be.** IUS-12 is no longer a convergent test for Letting be, because two of its items paraphrase IUS-12 items. A wording-factor model now tests whether Letting be is separable from reversed wording.
-- **No practice screening on either posting,** as the approved protocol says.
-- **N = 1,000,** up from 500. Each selection half is then the size of Study 1, and H3b's power rises from 68% to 93%.
-- **No country filter** (Norm, later on 12 October): adults fluent in English anywhere, as Study 1 recruited in practice. Country is compared as the six countries named in the REB application against everywhere else.
-- **Forage's curiosity neighbour** is the BFI-2 Intellectual Curiosity facet, already in the battery (Norm, 12 October). No separate curiosity measure is added.
-- **The retest is larger and asks more** (Norm, 12 October): about 400 invited for about 300 completions (was 200 and 150), and it repeats the three past-week items after the 20 statements, so baseline scores can be checked against the following week.
-- **H5 is split** (Norm, 12 October). H5a (wellbeing) now also requires ΔR² ≥ .02, because at N = 1,000 a ΔR² of about .004 is already significant. H5b (new) asks whether Access + Valuing predicts practice frequency beyond the FFMQ-15, the MAIA-2, spirituality and religiosity.
-- **H7 is per subscale.**
-- **Specification errors fixed:** missing data, the agreement factor's item count, the attention-check rule for partial sessions, score definitions, the life-satisfaction format and the fit-index version.
+- University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
+- **Before filing:** the 2b analysis code (adapted from `study2a/analysis/`) is written and run end to end on data simulated from Study 2a's fitted model, and on the real data with every item's answers shuffled, as for Studies 1 and 2a. The code is then the specification wherever this text is less precise.
+- **Drafting choices for Norm to confirm** are listed in Section 6.
 
 ## 1. Study information
 
 ### Title
 
-Development of the Sense Foraging Scale, Study 2: confirmatory factor structure, construct validity, measurement invariance and two-week stability of the 20-item short form
+Development of the Sense Foraging Scale, Study 2b: confirmatory factor structure, convergent, discriminant and criterion validity of the 8-statement scale
 
 ### Authors
 
@@ -34,480 +19,311 @@ Norman Farb (principal investigator), University of Toronto. Co-investigators as
 
 ### Description
 
-The Sense Foraging Scale measures how people move between two ways of paying attention:
-- **the sensing mode:** taking in what is present through the senses, without needing to do anything with it;
-- **the doing mode:** using what one knows to plan, solve, judge, fix or get something done.
+The Sense Foraging Scale measures how readily people move into, and value, the sensing mode: taking in what is around them and in their body with curiosity, without needing to do anything with it. Its counterpart is the doing mode: using what one knows to plan, solve, judge or get something done.
 
-**Study 1** (osf.io/48r2y; N = 500) used a 48-item pool. It found four correlated content factors and a random-intercept agreement (acquiescence) factor, which accounted for about 10% of item variance:
-- **Access:** being able to move into the sensing mode;
-- **Understanding the modes:** knowing the two modes and what pulls between them;
-- **Valuing and savouring:** treating time in the sensing mode as worthwhile;
-- **Letting be:** leaving what is noticed unelaborated and unresolved. Its positive pole is not needing to add meaning or to know what comes next. Six of its seven defining items in Study 1 were reverse-keyed, so it may be partly a wording factor; Study 2 tests this.
+- **Study 1** (osf.io/48r2y; N = 500) found four correlated content factors and an agreement (acquiescence) factor in a 48-item pool.
+- **Study 2a** (osf.io/vt7gn; N = 500) tested a revised set of 58 statements. It found one broad sensing factor, small reverse-keyed clusters and the agreement factor. The hypothesized parts (Access, Valuing, Forage, Understanding, Letting be) did not separate as subscales. From 2a we chose, in-sample:
+  - **the 8**, the scale scored as one number: N4, sf6_36 (R), V10, sf6_27, sfc_36, sfc_x2 (R), sfc_35, U4 (R);
+  - **the 10**, the 8 plus A9 and sfc_24, for studies of change.
 
-From these results we fixed a 20-item short form: five items per factor, each factor mixing forward- and reverse-keyed items. It is scored as two subscales and their combination:
-- **Primary score:** Access + Valuing and savouring, the mean of 10 items.
-  - In Study 1 (in-sample) its α was .81. Access alone was .81 and Valuing and savouring .69.
-  - A one-factor model of the 10 items fitted far worse than two factors (latent r = .60). So the two are reported separately as well as combined.
-- **Secondary scores:** Understanding the modes and Letting be. In Study 1, α was .54 and .59 and model-based ω was .50 and .52, too low to score individuals.
-
-Study 2 tests that short form in a new sample:
-1. **Structure:** whether the four-factor structure with an agreement factor holds.
-2. **Validity:** whether each factor relates to established measures as predicted, including measures it should *not* resemble, and whether Access and Valuing are more than their nearest neighbours combined.
-3. **Incremental validity:** whether Access and Valuing explain wellbeing and stress beyond trait mindfulness and interoceptive awareness, and whether they track contemplative practice beyond those and spirituality.
-4. **Invariance:** whether the structure is equivalent across recruitment postings, countries and gender.
-5. **Stability:** how stable scores are over two weeks, in an invited subsample.
+Study 2b is the first test of the 8 in data it was not chosen on. It asks:
+1. **Structure:** does one content factor plus the agreement factor fit the 8?
+2. **Convergent validity:** does it relate as predicted to its closest established neighbours?
+3. **Discriminant validity:** is it distinct from those neighbours, from neighbouring constructs that a reader might mistake it for (sensation seeking, need for cognition, sensory overwhelm, anxious monitoring of the body, finding meaning in events), and from socially desirable responding?
+4. **Criterion validity:** does it predict a behaviour in the session, taking an optional pause to look and listen, and a reported behaviour, deliberately pausing in the past week?
+5. **Incremental and known-groups validity:** does it add to mindfulness and interoceptive awareness in explaining wellbeing and practice, and do practitioners score higher?
 
 ### Hypotheses
 
-Confirmatory hypotheses are numbered H1–H7. Their tests and decision rules are in Section 5.
+Confirmatory hypotheses are H1–H6 on the 8. The 10 is reported beside it under the same rules, without its own hypotheses. H8 is exploratory (decision 30). Decision rules are in Section 5.
 
-- **H1 (structure).** A model with four correlated content factors and a random intercept fits the 20 items acceptably.
-  - The model is an ESEM with target rotation: each item is targeted to its Section 4 factor, and its other loadings are targeted to zero.
-  - The random intercept is the agreement factor, with variance > 0.
-  - Each factor is confirmed or not, by the rule in Section 5.
-- **H2 (convergent validity).** Each factor correlates positively, at least moderately (r ≥ .30), with the established measure closest to it:
-  - Access with FFMQ-15 Observing;
-  - Access with MAIA-2 Attention Regulation;
-  - Letting be with EQ Decentering;
-  - Valuing and savouring with SBI Savoring the Moment.
-- **H3 (discriminant validity).**
-  - (a) Each convergent correlation in H2 is below .80. Latent correlations count: the factor is not that measure.
-  - (b) Valuing and savouring correlates more strongly with SBI Savoring the Moment than with BFI-2 Open-Mindedness. This tests whether the factor reflects valuing sensory engagement in particular, not a general appetite for experience.
-  - (c) No factor correlates with either BIDR-16 subscale beyond |r| = .30.
-  - (d) **Neither Access nor Valuing and savouring is redundant with its neighbours taken together.** The multiple correlation of each latent factor with its neighbour set is below .80.
-    - **Access's neighbours:** FFMQ-15 Observing, MAIA-2 Noticing, MAIA-2 Attention Regulation and EQ Decentering.
-    - **Valuing and savouring's neighbours:** SBI Savoring the Moment, BFI-2 Aesthetic Sensitivity, MAIA-2 Body Listening and FFMQ-15 Observing.
-- **H4 (criterion validity).**
-  - Access and Valuing and savouring correlate positively with the number of past-week days on which the participant deliberately paused to take in their surroundings (`crit_pause_days`).
-  - Letting be and Access correlate positively with noticing unexpected events before reacting (`crit_notice_first`).
-- **H5a (incremental validity: wellbeing).** Access and Valuing and savouring together explain variance beyond age, gender, the five FFMQ-15 facets and the eight MAIA-2 subscales: ΔR² ≥ .02 and p < .05 (Holm). The test holds if this is true for at least one of three outcomes: life satisfaction, PHQ-4 or PSS-4.
-- **H5b (incremental validity: practice).** The Access + Valuing score predicts practice frequency (Section 4) beyond age, gender, posting, spirituality, religiosity, the five FFMQ-15 facets and the eight MAIA-2 subscales, with a positive coefficient and p < .05.
-- **H6 (known groups).** Dedicated practitioners score higher than people who have never practised regularly on Access and on Valuing and savouring (d ≥ 0.50). Dedicated means practising 3 or more times a week, for at least a year, with formal teacher-led training.
-  - In Study 1, practitioners at least weekly scored higher than never-practitioners on Access (d = 0.72) and Valuing and savouring (d = 1.22), on factor scores with agreement removed. Understanding the modes and Letting be did not differ.
-  - The differences shrank by about a third to a half once spirituality and religiosity were controlled. Study 2 reports that adjustment as a pre-specified sensitivity analysis.
-  - Understanding the modes and Letting be are compared too, with no directional prediction.
-- **H7 (stability).** Over 14–21 days, the Access, Valuing and savouring, and Access + Valuing scores each have a test–retest ICC(2,1) (absolute agreement) of at least .70.
-  - Understanding the modes and Letting be are reported descriptively, without a threshold. Their internal consistency in Study 1 (about .50–.60) caps their retest correlation below .70, whatever their stability.
+- **H1 (structure).** A one-factor model of the 8 with a random-intercept agreement factor fits.
+- **H2 (convergent).** The 8 correlates positively and at least moderately with each of FFMQ-15 Observing, SBI Savoring the Moment, BFI-2 Aesthetic Sensitivity and Brief MAIA-2 Noticing.
+- **H3 (discriminant).**
+  - (a) Each H2 correlation is below .80: the scale is not any one of those measures.
+  - (b) Five within-battery contrasts, each a larger correlation with the first measure than the second:
+    1. BFI-2 Aesthetic Sensitivity > BFI-2 Intellectual Curiosity (not general curiosity about ideas);
+    2. FFMQ Observing > FFMQ Describing (not mindfulness in general, or labelling);
+    3. SBI Savoring the Moment > BFI-2 Open-Mindedness, total (not a general appetite for experience);
+    4. Brief MAIA-2 Noticing > Brief MAIA-2 Not-Worrying (not low distress about the body);
+    5. FFMQ Observing > SAMD Meaning-Detecting (not a spiritual or meaning-seeking openness).
+  - (c) Its correlations with BIDR-16 Self-Deceptive Enhancement and Impression Management lie within ±.30.
+  - (d) Its multiple correlation with the four H2 neighbours together is below .80: it is not those neighbours combined.
+  - (e) Its correlations with the four new discriminant measures are bounded: BSSS-8 below .40; NCS-6, SPSQ-SF Sensory Discomfort and ASI-3 Physical Concerns within ±.30.
+- **H4 (criterion).**
+  - (a) Higher scores go with more past-week days of deliberately pausing to take in one's surroundings (`crit_pause_days`).
+  - (b) Higher scores go with taking the optional pause in the session and staying with it (an engaged pause, Section 4).
+- **H5 (incremental).**
+  - (a) The 8 explains wellbeing beyond age, gender, the five FFMQ-15 facets and the eight Brief MAIA-2 subscales, for at least one of life satisfaction, PHQ-4 and PSS-4.
+  - (b) The 8 predicts contemplative practice frequency beyond age, gender, spirituality, religiosity, the FFMQ-15 facets and the Brief MAIA-2 subscales.
+- **H6 (known groups).** Current practitioners score higher than people who have never practised regularly, by at least d = 0.50. In 2a, in-sample, the 8's d was 0.67.
 
 ## 2. Design plan
 
 ### Study type
 
-Observational study: a single-session online survey, plus an optional follow-up session for a random subsample.
+Observational study: a single-session online survey.
 
 ### Blinding
 
-No blinding is involved. The debrief explains the aims.
+None. The optional pause is presented as a break; the debrief explains that whether it was taken, and for how long, was recorded, and why that was not said beforehand (approved by the REB).
 
 ### Study design
 
-The main session takes about 20 minutes and runs in this order:
+One session of about 22 minutes, plus any pause taken, in this order:
+
 1. **Background questions:** the 13 questions from Study 1, unchanged.
-2. **The short form:** the 20 items in one fixed order on 3 pages (7/7/6). The response scale is 1 Strongly disagree to 6 Strongly agree, with no midpoint, plus "Prefer not to answer".
-3. **Twenty-four candidate items:**
-   - unscored, on the same scale;
-   - on 3 pages of 8, in a constrained random order per participant: items written for the same factor are never adjacent, reversed items are 3–4 a page and never first, and opposite or look-alike pairs are on different pages;
-   - nineteen are new, and five are Study 1 items with their wording unchanged.
-4. **The validity block,** in a random order for each participant:
-   - FFMQ-15;
-   - MAIA-2, including its instructed-response check;
-   - BIDR-16;
-   - PHQ-4;
-   - IUS-12;
-   - SBI Savoring the Moment (8 items);
-   - BFI-2 Open-Mindedness (12 items, plus one instructed-response check);
-   - Experiences Questionnaire Decentering (11 items);
-   - PSS-4;
-   - three past-week items;
-   - a single life-satisfaction item: the approved wording on a six-point face scale, unhappy to delighted (this format is part of the amendment).
-5. **Debrief.**
+2. **The two modes** (`sf2b-vignettes`): a three-paragraph introduction to the doing and sensing modes; nine brief vignettes, three a page in a per-participant order with each page holding at least one of each kind, rated 1 Doing mode to 6 Sensing mode, without feedback; then a self-rating on the same anchors. The introduction, V2 and V7 are reworded from 2a (decision 6), so separation scores are not directly comparable with 2a's.
+3. **The scale** (`sf2b-scale`): the 10 (with the 8 inside it), three unscored reverse-keyed statements (N6, sfc_31, sf6_44) and one attention check, in one fixed order on two pages (Appendix A). Response scale 1 Strongly disagree to 6 Strongly agree, no midpoint, plus "Prefer not to answer".
+4. **The PSY240 trial's other statements** (`sf2b-end`): eight statements in the trial's own wording and one attention check, fixed order. With sf6_36 and sf6_44 in step 3, they complete the trial's 10-statement Access + Valuing score (decision 13).
+5. **Validity block, first half,** in a per-participant random order: FFMQ-15; BIDR-16; SBI Savoring the Moment; BSSS-8; NCS-6; PHQ-4; SPSQ-SF Sensory Discomfort; PSS-4; life satisfaction (one item, six-point face scale).
+6. **The pause offer** (`sf2b-pause`): "If you'd like, you can take a short break here to look, listen and feel what's around you. There's nothing to do and nothing to report. It doesn't affect your payment." with two buttons, Take a pause and Continue the survey, their sides fixed per participant at random.
+   - **Take a pause:** a quiet screen with "Take as long as you like. Tap 'I'm back' when you're ready." After 3 minutes on the page the line becomes "Whenever you're ready." After 10 minutes in all the pause ends itself. Then "Anything you noticed? (optional)".
+   - **Continue the survey:** "Any reason? (optional)": No time right now / Not a good place / Not interested / Something else / Skip.
+   - **Then, either way:** "Where are you right now?" (At home / At work or school / Outdoors / Travelling / Somewhere else) and "How tired are you right now?" (1 Not at all to 6 Very), each with "Prefer not to answer", asked after the decision so they cannot steer it.
+7. **Validity block, second half,** in its own per-participant random order: Brief MAIA-2; BFI-2 Open-Mindedness (with its attention check); EQ Decentering; SAMD Meaning-Detecting; ASI-3 Physical Concerns; three past-week items.
+8. **Debrief.**
 
-Every item except the two checks and the life-satisfaction item offers "Prefer not to answer". **[Norm: the platform's face-scale step has no "Prefer not to answer" yet; add one before launch, or say in the amendment that this one item has none.]** The exact materials are in the supplementary file *Study2_Measures.docx*.
+Every question about the participant offers "Prefer not to answer"; the three attention checks do not. The halves of the validity block are fixed; past-week behaviour comes after the pause so its question about deliberately pausing cannot prompt the offer. The pause sits at least 5 minutes after the scale.
 
-**Follow-up.** About 14 days after their main session, about 400 randomly selected completers are invited through a Prolific custom allowlist. The window is 7 days and the target is about 300 completions. The follow-up repeats the 20-item short form in the same fixed order, then the three past-week items, and takes about 4 minutes.
-
-**Recruitment.** Two Prolific postings, as in Study 1 and as the approved protocol describes. They differ only in framing:
-- **General posting:** a neutral, general-interest description.
-- **Contemplative posting:** a description oriented toward contemplative or mind-body practice.
-- **No one is screened on practice history** in either posting. Practice is measured in the background questions after consent.
-
-Both postings lead to the identical study, and the posting is recorded.
+**Recruitment.** One Prolific posting with a neutral, general description (decision 24, amended by 34). No screening on practice: practice is measured in the background questions after consent.
 
 ### Randomization
 
-- The order of the validity measures is a seeded random permutation per participant (`shuffle_group`), stable on reload. Each participant's order is recorded.
-- The short form is in one fixed order for everyone, the same order as in the course trial, so scores are comparable across uses.
-- The selection and holdout halves (Section 5, step 7) are drawn by script, stratified by posting, with a recorded seed.
-- Follow-up invitations go to a simple random sample of eligible completers, drawn by script with a recorded seed.
+- The order of each half of the validity block is a seeded random permutation per participant, stable on reload and recorded (`step_index` on every response).
+- The vignettes' order is per participant within the page constraints, and recorded.
+- The pause buttons' sides are set per participant from a hash of their link and recorded.
+- The scale, the trial statements and everything else are in fixed order.
 
 ## 3. Sampling plan
 
 ### Existing data
 
-**Registration prior to creation of data.** No Study 2 data exist. The short form was selected from Study 1, which is a separate sample.
+**Registration prior to creation of data.** No Study 2b data exist. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (decision 14; WLSMV, theta, pairwise, the agreement factor as in Section 5):
 
-**What Study 1 already shows about these models.** The models below were fitted to Study 1's data, the same sample the 20 items were chosen from, so each fit is optimistic:
+| Form | CFI | RMSEA (90% upper) | SRMR | Largest residual | ω (content) | α | Practitioner d |
+|---|---|---|---|---|---|---|---|
+| The 8 | .985 | .061 (.081) | .031 | .079 | .838 | .80 | 0.67 |
+| The 10 | .987 | .048 (.063) | .030 | .077 | .850 | .83 | 0.69 |
 
-| Model | CFI | RMSEA (90% CI upper) | SRMR |
-|---|---|---|---|
-| 20 items, simple-structure CFA + random intercept (Model A) | .851 | .087 (.093) | .073 |
-| 20 items, target-rotated ESEM + random intercept (the H1 model) | .969 | .047 (.055) | .028 |
-| 10 Access + Valuing items, two-factor CFA + random intercept | .974 | .069 (.083) | .038 |
-| 14-item Access + Valuing form, two-factor CFA + random intercept | .958 | .077 (.086) | .046 |
-
-All are WLSMV with scaled indices, the theta parameterization and pairwise-available data, as Study 2 uses; the delta parameterization gives values within .005. Model A's misfit comes from cross-loadings of about .20–.30 that it forces to zero. The ESEM's largest are:
-- item 7 on Valuing (.23);
-- item 22 on Valuing (.27);
-- item 27 on Understanding (.28);
-- item 44 on Understanding (.26);
-- item 40 on Valuing (.29);
-- item 46 on Access (.21).
-
-The short form is also the baseline and final measure of a separate course trial; those data are not used here.
+The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2a had no other validity measures. The 8's statements are the PSY240 trial's measure only in part (sf6_36), and the trial's data are not used here.
 
 ### Data collection procedures
 
-- **Participants:**
-  - Prolific participants, 18 or older, fluent in English (Prolific's "fluent languages" filter).
-  - **No country filter.** The REB application named six countries (the United States, United Kingdom, Canada, Australia, Ireland and New Zealand), and the amendment removes that restriction.
-  - Study 1 set no country filter either, and 69% of its sample lived outside the six. Their answers held together about as well: α was .81 against .82 for Access and .67 against .75 for Valuing and savouring.
-  - The debrief lists crisis lines for the six countries and points everyone else to Find a Helpline (findahelpline.com).
-- **Excluded from both postings:** Study 1 participants (Prolific exclusion list). The contemplative posting also excludes general-posting participants.
-- **Platform:**
-  - The RADlab research platform. Prolific IDs are held in a separate table and replaced by a random code in all study data.
-  - The IDs are kept until the follow-up closes. They are deleted after the main and follow-up codes are linked.
-- **Compensation:** USD 12 per hour, prorated: about USD 4.00 for the main session and about USD 0.80 for the follow-up. Payment does not depend on answers.
+- **Participants:** Prolific participants aged 18+, fluent in English (Prolific's fluent-languages filter), in any country. Participants in Study 1 or Study 2a are excluded through Prolific's exclusion list.
+- **Platform:** the RADlab research platform (radlab.zone). Prolific IDs are held in a separate table, replaced by a random code in all study data, and deleted after payment.
+- **Compensation:** £12.71 an hour (the UK minimum wage), prorated, set from the pilot's median completion time (about £4.66 for 22 minutes), paid regardless of answers, of the attention checks and of the pause. Prolific's maximum time is set well beyond the median plus the 10-minute pause cap, so a long pause does not time out.
+- **Pilot:** the first 60 places, identical materials. Inspected for quality only: completion counts, attention-check pass rates, completion time, "Prefer not to answer" counts, per-person spread of answers, pause take-up and the export. No correlations, factor models or vignette summaries are computed on it. If nothing changes after the pilot, pilot participants are included; if the materials change, they are excluded and 60 places are added.
 
 ### Sample size
 
-- **Main session:** 1,000 completers, 600 on the general posting and 400 on the contemplative posting.
-- **Follow-up:** about 300 completers out of about 400 invited.
+Target: 700 completed sessions (60 pilot + 640), in one posting (decision 34).
 
 ### Sample size rationale
 
-- **Selection and holdout halves (step 7).**
-  - Each half is about 500, the size of Study 1.
-  - The ESEM's median loading SE in Study 1 was .043 at N = 488, so it is about .042 per half.
-  - At that precision, a candidate whose true loading is .45 clears the ≥ .50 rule about 12% of the time, and one at .55 fails it about 12% of the time. With halves of 250, both would be about 20%.
-- **Structure.** Simulation work on ordinal factor models with 4–6 categories and five indicators per factor finds stable estimates and accurate fit statistics from N ≈ 300 (e.g. Forero, Maydeu-Olivares & Gallardo-Pujol, 2009). 1,000 also supports multi-group models with groups of 300 or more.
-- **Correlations.**
-  - With N = 1,000, a correlation of .30 has a 95% CI of about ±.06.
-  - H3b compares two dependent correlations. By simulation, it has about 93% power to detect .40 against .30 when the two measures correlate .50 with each other (68% at N = 500).
-- **Known groups (H6).**
-  - In Study 1, which was unscreened like Study 2, 34 of 500 participants met the dedicated definition and 143 had never practised regularly. At those rates, 1,000 gives about 68 against 286.
-  - The contemplative posting did not recruit more dedicated practitioners: 13 of its 249 participants, against 21 of 251 on the general posting.
-  - H6 needs an estimated d of at least 0.50 as well as significance, so its power depends on the true d. At N = 1,000, H6 passes about 93% of the time if the true d is 0.70, and 98% if it is 0.80; at N = 500, 85% and 94%. Study 1's in-sample d were 1.00 for Access and 1.64 for Valuing and savouring.
-- **Stability.** With 300 retest pairs and a true ICC of .75, the 95% CI is about ±.05 (±.07 with 150). The over-time invariance model for Access + Valuing (10 items, six categories, two occasions) also needs more than 150 people to keep response categories from becoming sparse.
+By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, generated from 2a's fitted model of the 8 with its agreement factor and thresholds; validity measures as latent factors of 3–8 ordinal items):
+
+| Test | Assumed truth | Power at 700 |
+|---|---|---|
+| H1, the decision rule | the model true / data like 2a's | 100% / 97% pass |
+| | three statements sharing a second factor loading .60 (should fail) | 0.2% pass |
+| H2 | true latent r .45 / .50 | 95% / 99% |
+| H3b, a difference of .15 | 3-item measures correlating .30 / .50 | 76% / 86% |
+| | 4- or 8-item measures correlating .30 | 84–86% |
+| | 3-item measures barely correlated (contrast 4, Brief MAIA-2) | 64% |
+| H4b | latent r .20, take-up 15–50% | 88–97% |
+| H5a | true ΔR² .03 | 85% |
+| H6 | true d .67 (382 vs 190) | 97% |
+
+The smallest contrast of interest in H3b is a difference of .15 (decision 32). Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported (decision 36). H2 needs a true correlation of about .45 for 95% power (63% at .40).
 
 ### Stopping rule
 
-Places are fixed on Prolific in advance:
-- **Main:** 600 general and 400 contemplative.
-- **Follow-up:** places equal to completions reached, invitations capped at 400, closing after 7 days.
-
-There is no interim analysis, and excluded participants are not replaced.
+The number of places is fixed on Prolific in advance: 60, then 640. Data collection stops when these are filled. There is no interim analysis, and excluded participants are not replaced.
 
 ## 4. Variables
 
 ### Manipulated variables
 
-None. Posting is a recruitment condition, recorded and used as a grouping variable.
+None.
 
 ### Measured variables
 
-- **Short form** (`sf6_*` ids from Study 1; R = reverse-keyed, stored unrecoded):
-
-  | Factor | Items |
-  |---|---|
-  | Access | 35R, 36R, 9, 8, 7 |
-  | Understanding the modes | 22, 3, 15, 31, 37R |
-  | Valuing and savouring | 12, 18, 11, 27, 44R |
-  | Letting be | 40R, 46R, 43R, 47R, 21 |
-
-  - **Letting be is scored so that higher = more letting be.** Items 40, 46, 43 and 47 are worded against letting be and are recoded; item 21 is kept as is.
-- **Candidates:** 24 items, each assigned a factor and keying a priori, stored in the questionnaire definition. Each item's presented position is recorded.
-  - **Understanding the modes:** `sfc_2`, `sfc_3`, `sfc_7`, `sfc_8`, `sfc_9` (2, 3 and 9 reversed), about recognising one's own mode in the moment.
-  - **Letting be:** `sfc_5`, `sfc_6`, `sfc_10`–`sfc_14` (12, 13 and 14 reversed).
-    - Quiet labelling and noticing pleasant or unpleasant count as part of the sensing mode, as the course teaches. Only elaborating, explaining or acting on what is noticed counts against letting be.
-    - Four positively worded items (`sfc_5`, `sfc_6`, `sfc_10`, `sfc_11`) give the factor a positive pole that Study 1 lacked.
-  - **Valuing and savouring:** `sfc_4`, `sfc_15` (both reversed).
-  - **Forage:** `sfc_16`–`sfc_20` (19 and 20 reversed). These cover the seeking itself: searching the senses for something without knowing where it will turn up. Study 1's discovery items measured valuing discovery and loaded with Valuing once agreement was modelled.
-  - **Study 1 items, wording unchanged:**
-    - `sfc_21`–`sfc_23` are Study 1 items 6, 2 and 14 (Access);
-    - `sfc_24` and `sfc_25` are items 25 and 28 (Valuing and savouring).
-
-    They let the 14-item Access + Valuing form found in Study 1 be fitted in Study 2: Access 9, 7, 6, 2, 8, 14, 36R, 35R and Valuing 18, 12, 25, 27, 28, 44R.
-- **FFMQ-15:** Observing, Describing, Acting with awareness, Nonjudging, Nonreactivity (3 items each).
-- **MAIA-2:** eight subscales, scored as subscales (the authors do not recommend a total).
-- **BIDR-16:**
-  - Self-Deceptive Enhancement and Impression Management, 8 items each;
-  - scored continuously (mean of 1–7) and, for sensitivity, dichotomously (Paulhus).
-- **IUS-12:** total score, plus Prospective (7 items) and Inhibitory (5 items) anxiety.
-- **SBI Savoring the Moment:** 8 items (SBI items 2, 5, 8, 11, 14, 17, 20, 23), mean score; items 2, 8, 14 and 20 are reverse-scored.
-- **BFI-2 Open-Mindedness:** 12 items, with facets Intellectual Curiosity, Aesthetic Sensitivity and Creative Imagination.
-- **EQ Decentering:** 11 items, 1–5.
-- **PSS-4:** 0–16; items 2 and 3 reverse-scored.
-- **PHQ-4:** 0–12, plus anxiety and depression subscales (0–6 each).
-- **Life satisfaction:** one item, six-point face scale, scored 1–6.
-- **Past week** (main session, and again at the follow-up):
-  - `crit_pause_days` (0–7);
-  - `crit_notice_first` (1–5, with "nothing unexpected happened" set to missing);
-  - `crit_outdoors` (0–4, ordinal).
+- **The scale:** `sf2b_01` to `sf2b_13` (1–6 or "Prefer not to answer"), stored unrecoded. Appendix A gives each one's source id, role (8, 10 or exploratory) and keying.
+- **Attention checks:** `sf2b_attn_agree` (correct = 5), `sf2b_attn_disagree` (correct = 2), `bfi2_attn_check` (BFI-2's).
+- **The trial's statements:** `sf6_9`, `sf6_35`, `sf6_7`, `sf6_8`, `sf6_12`, `sf6_18`, `sf6_27`, `sf6_11` (1–6), with `sf2b_02` (sf6_36) and `sf2b_11` (sf6_44) in the scale.
+- **Vignettes:** `vig_1` to `vig_9` and `vig_self` (1–6).
+- **FFMQ-15:** Observing, Describing, Acting with awareness, Nonjudging, Nonreactivity (3 items each, 1–5).
+- **Brief MAIA-2** (Rogowska, Tataruch & Klimowska, 2023): eight subscales of 3 items each (0–5), MAIA-2 items 2–4, 6, 9, 10, 11, 12, 15, 17, 19, 20, 25–27, 29–37; items 6, 9, 10, 11, 12, 15 reverse-scored.
+- **SBI Savoring the Moment:** 8 items (1–7), items 2, 8, 14, 20 reverse-scored.
+- **BFI-2 Open-Mindedness:** 12 items (1–5), facets Intellectual Curiosity, Aesthetic Sensitivity, Creative Imagination (4 each).
+- **EQ Decentering:** 11 items (1–5).
+- **BIDR-16:** Self-Deceptive Enhancement and Impression Management, 8 items each (1–7), scored continuously.
+- **BSSS-8** (Hoyle et al., 2002): 8 items (1–5), mean.
+- **NCS-6** (Lins de Holanda Coelho, Hanel & Wolf, 2020): 6 items (1–5), items 3 and 4 reverse-scored, mean.
+- **SPSQ-SF Sensory Discomfort** (De Gucht & Woestenburg, 2025): 4 items (1–7), mean.
+- **ASI-3 Physical Concerns** (Taylor et al., 2007): items 3, 4, 7, 8, 12, 15 (0–4), sum.
+- **SAMD Meaning-Detecting** (Russo-Netzer & Icekson, 2023): 13 items (1–7), mean.
+- **PHQ-4:** 0–12. **PSS-4:** 0–16, items 2 and 3 reverse-scored. **Life satisfaction:** one item, 1–6.
+- **Past week:** `crit_pause_days` (0–7); `crit_notice_first` (1–5, "nothing unexpected happened" missing); `crit_outdoors` (0–4).
+- **The pause** (`pause_1`): the choice; decision time; the decline reason; for a pause, seconds on the page (tab visible and focused), unfocused and hidden, how it ended (button or the 10-minute cap) and whether the 3-minute nudge appeared; the optional note; setting; tiredness; device class.
 - **Background questions:** as in Study 1.
-- **Paradata:**
-  - the presented order of the validity block and of the candidates;
-  - seconds per questionnaire;
-  - posting.
+- **Paradata:** each response's step position; seconds per questionnaire.
 
 ### Indices
 
-- **Practice groups:**
-  - **Dedicated:**
-    - regular practice "Yes";
-    - past-3-month frequency "3–5 times a week" or "Daily or near-daily";
-    - total years ≥ 1;
-    - teacher-led training "Yes".
-  - **Never:** regular practice "No".
-  - **Other** (everyone else): reported descriptively, and used in the frequency analysis.
-- **Practice frequency (H5b):** five ordered levels from the background questions: no regular practice, or none in the past three months; less than weekly; 1–2 times a week; 3–5 times a week; daily or near-daily.
-- **Country group:** two groups from the background question on country of residence:
-  - the six listed countries (United States, United Kingdom, Canada, Australia, Ireland, New Zealand);
-  - everywhere else.
-
-  In Study 1 these were 31% and 69%. If either group has fewer than 200 participants, country is not analysed.
-- **Short-form scores (observed):** the mean of available items after reverse-scoring, when at least 80% of the scale's items are answered.
-  - Access (5 items), Valuing and savouring (5), Access + Valuing (the mean of their 10 items: the primary score), Understanding the modes (5) and Letting be (5).
-  - There is no 20-item total.
-- **Short-form scores (latent):** the content factors of the H1 model, with agreement modelled.
-- **Agreement index (descriptive):** each person's mean raw (unrecoded) answer over the reversed–partner item pairs available among the short form and candidates. The pairs are listed in the analysis code, with equal numbers of forward and reversed items. It is used only where a model-based agreement factor is not available.
+- **The 8 and the 10 (observed):** the mean of answered statements after reverse-scoring (7 − x), when at least 7 of the 8 (9 of the 10) are answered.
+- **The 8 and the 10 (latent):** the content factor of the H1 model.
+- **Engaged pause (H4b):** 1 when the participant chose the pause, stayed at least 20 seconds on the page, and was away (unfocused + hidden) for less than half the pause's total time; otherwise 0 (decision 22). A participant who did not reach the offer is missing.
+- **Separation (vignettes):** mean rating of the sensing vignettes minus mean of the doing vignettes, for participants with at least three of each; **tells the modes apart** = separation of 1 or more (2a's rule).
+- **Practice groups (H6):** current practitioner = regular practice "Yes" and current frequency 1–2 times a week or more; never = regular practice "No" (2a's definitions). Dedicated (3+ a week, a year or more, teacher-led training) is a sensitivity group.
+- **Practice frequency (H5b):** five ordered levels: none in the past three months or no regular practice; less than weekly; 1–2 a week; 3–5 a week; daily or near-daily.
+- **The trial's Access + Valuing score:** the mean of its 10 statements in its own wording (sf6_9, sf6_36 R, sf6_35 R, sf6_7, sf6_8, sf6_12, sf6_18, sf6_27, sf6_11, sf6_44 R).
+- **Longstring:** the longest run of identical answers on the scale's 14 positions, in presented order.
 
 ## 5. Analysis plan
 
 ### Statistical models
 
-All analyses use R with lavaan, psych, irr, MASS (H5b) and logistf (H5b's sensitivity analysis); versions will be reported.
+R with lavaan, psych and MASS; versions reported. Scale and validity items are ordinal: WLSMV, theta parameterization, pairwise-available data (`missing = "pairwise"`, set explicitly). Fit indices are the scaled ones. The agreement factor is a random intercept with loadings fixed at 1 on every unrecoded statement of the scale in the model, a free variance, and no correlation with any content or validity factor (decision 5).
 
-**General settings:**
-- Short-form and candidate items are treated as ordinal, with WLSMV and the theta parameterization.
-- Missing responses use pairwise-available data (`missing = "pairwise"`, set explicitly in the code).
-- **Estimation safeguards** (found necessary on simulated data):
-  - Every ESEM is also estimated from its CFA's estimates as starting values, and the solution with the lower fit-function minimum is kept. From lavaan's default starts, a 39-item ESEM reached a local optimum.
-  - Models with covariates set `conditional.x = FALSE`.
-  - Each invariance step starts from the previous step's estimates, with up to 3,000 iterations. A step that still does not converge counts as non-invariant and goes to the item-by-item search.
-- Fit is judged on the **scaled** indices (`cfi.scaled`, `rmsea.scaled` and its CI, `srmr`); the robust versions are reported alongside.
-- The random intercept has loadings fixed at 1 on every unrecoded item in the model, a free variance, and no correlation with the content factors.
+1. **H1, structure.** One content factor on the 8 plus the agreement factor. **H1 is supported** when all three hold (decisions 17, 33):
+   - CFI ≥ .95;
+   - local fit: no residual correlation (observed minus model-implied polychoric) exceeds .10 in absolute value; or, if one does, freeing the largest as a residual covariance changes the content ω by less than .03 and every standardized content loading by less than .05;
+   - the unbiased SRMR close-fit test (Maydeu-Olivares, Shi & Rosseel, 2018; lavaan `lavResiduals`, H₀: SRMR ≤ .05) is not rejected at α = .05.
 
-1. **H1, structure.**
-   - **Primary model:** an ESEM with four correlated content factors and the random intercept.
-     - **Rotation:** oblique partially specified target rotation (lavaan `rotation = "pst"`, 30 random starts).
-     - **Targets:** each item's Section 4 factor; all its other loadings are targeted to 0.
-   - **H1 is supported** when the primary model has scaled CFI ≥ .95, RMSEA ≤ .06 (upper 90% CI ≤ .08) and SRMR ≤ .08, and the random-intercept variance is > 0 (p < .05). **Partial support** is any result short of full support with CFI ≥ .90 and RMSEA ≤ .08.
-   - **Each factor is confirmed** when, in the primary model:
-     - at least four of its five items load ≥ .40 on it, in their keyed direction;
-     - none of its items loads more strongly on another factor.
-   - **A factor is scored for individuals** only when it is confirmed and its model-based ordinal ω is ≥ .70. That ω uses the content loadings only, not the agreement factor.
-   - **A factor not confirmed** is reported as such and is not scored in later work without revision.
-   - **Also reported:**
-     - Model A, the simple-structure CFA with the random intercept (Study 1 in-sample values are in Section 3);
-     - the ESEM without the random intercept;
-     - a one-factor model with the random intercept.
-
-     Modification indices for Model A are reported, and nothing is re-specified on their basis.
-   - **Letting be and wording (pre-specified, secondary).**
-     - The primary ESEM is refitted with an added negative-wording factor. It loads on all 8 reversed short-form items, is orthogonal to everything else, and has free loadings.
-     - If Letting be's loadings on 4 or more of its 5 items fall below .30 in this model, Letting be is reported as not separable from reversed wording.
-     - With the candidates, the same test is run in step 7's model. There, Letting be's four new positive items are added to the factor.
-2. **H2–H4, validity.**
-   - **Primary analysis:**
-     - start from the H1 model;
-     - add each validity score in turn as an observed variable correlated with the four content factors and uncorrelated with the random intercept;
-     - estimate the latent–observed correlations with 95% CIs.
-   - **Secondary analysis:** correlations of observed short-form scores (Section 4) with validity scores, Pearson with 95% CIs. They are reported in full as the validity matrix below.
-   - **H2:** each listed correlation is in the predicted direction with a 95% CI lower bound above .30 in absolute value.
-   - **H3a:** the upper bound of each convergent correlation's 95% CI is below .80.
-   - **H3b:** Valuing and savouring's correlation with SBI exceeds its correlation with BFI-2 Open-Mindedness. This is tested as a bootstrap difference in the latent model, with 2,000 resamples and a 95% CI excluding 0.
-   - **H3c:** every 95% CI for the correlations with BIDR SDE and IM lies within ±.30.
-   - **H3d:**
-     - In the H1 model, with the neighbour scores (Section 1) added as observed variables, take the latent Access factor's correlations with its neighbours and theirs with each other.
-     - Its multiple correlation with the set is R = √(r′Σ⁻¹r). The same is done for Valuing and savouring.
-     - H3d is supported for a factor when the upper bound of a 2,000-resample bootstrap 95% CI for that multiple correlation is below .80.
-   - **H4:** the listed correlations are positive, one-tailed α = .05, Holm-corrected across the four tests.
-3. **H5a and H5b, incremental validity.** For H5a, each outcome (life satisfaction, PHQ-4 total, PSS-4) has a hierarchical regression on observed scores:
-   - **Step 1:** age, gender, the five FFMQ-15 facets and the eight MAIA-2 subscales;
-   - **Step 2:** Access and Valuing and savouring;
-   - **Step 3 (secondary):** Understanding the modes and Letting be.
-   - **H5a is supported** for an outcome when the Step 2 ΔR² is at least .02 and its F-test is significant after Holm correction across the three outcomes. ΔR² and the standardized coefficients are reported.
-   - **Sensitivity:** spirituality and religiosity added to Step 1.
-   - A latent version is reported alongside. In it, the outcome is regressed on the latent factors, with agreement modelled, and on the covariates.
-   - **H5b, practice.** A proportional-odds (ordinal logistic) regression of practice frequency, in everyone who reached the end of the validity block:
-     - **Step 1:** age, gender, posting, spirituality, religiosity, the five FFMQ-15 facets and the eight MAIA-2 subscales;
-     - **Step 2:** the Access + Valuing score.
-     - **Supported** when the Access + Valuing coefficient is positive and the 1-df likelihood-ratio test gives p < .05. The odds ratio per SD and the change in McFadden's R² are reported.
-     - **Sensitivity:** Access and Valuing and savouring entered separately; and dedicated practitioners against never-practitioners, by Firth-penalized logistic regression with the same covariates (about 68 against 286, too few events for an unpenalized model with 17 predictors).
-4. **Invariance.** This analysis is exploratory but specified in advance.
-   - **Groups compared:**
-     - posting;
-     - gender (men vs women; other categories are too small);
-     - country group.
-   - **Model:** the four-factor CFA with the random intercept, for the 20 items, and the two-factor Access + Valuing model for its 10 items. ESEM invariance is reported if the CFA is not configurally acceptable.
-   - **Steps,** following Wu and Estabrook (2016):
-     - configural;
-     - thresholds;
-     - thresholds and loadings;
-     - thresholds, loadings and intercepts.
-   - The random-intercept loadings stay fixed at 1 in every group, and its variance is free across groups.
-   - Non-invariance is a ΔCFI below −.010 together with a ΔRMSEA above .015 (Chen, 2007); both must hold. Partial invariance is then examined item by item.
-   - **Sparse categories:** a response category with fewer than 5 answers in any group is merged with its neighbour toward the scale's centre, for that item, in all groups.
-   - **Over time:** longitudinal invariance between baseline and follow-up (the same steps, with the item residuals of the two occasions correlated) is fitted for Access + Valuing in the follow-up sample. The course trial depends on this for its change scores.
-5. **H6, known groups.**
-   - Compare dedicated practitioners with never-practitioners on each observed score (Section 4), using a linear model with posting as a covariate.
-   - Report Cohen's d (the group coefficient over the pooled SD) with a 95% CI, Holm-corrected across Access and Valuing and savouring.
-   - **H6 is supported** for a factor when the difference favours dedicated practitioners, p_Holm < .05, and d ≥ 0.50.
-   - **Pre-specified sensitivity analyses,** reported beside the primary test:
-     - (a) adding spirituality and religiosity as covariates;
-     - (b) restricting dedicated practitioners to those who name meditation or yoga among their practices;
-     - (c) the same comparison on latent scores with agreement modelled.
-   - **Secondary:** a linear trend across frequency categories in all practising participants. The comparison is also repeated on latent means in the invariance model, if scalar invariance holds across practice groups.
-6. **H7, stability.**
-   - For each observed score: ICC(2,1), absolute agreement, with a 95% CI.
-   - SEM = SD_baseline × √(1 − ICC).
-   - MDC95 = 1.96 × √2 × SEM, reported in raw-score units.
-   - **H7 is supported** for Access, Valuing and savouring, and Access + Valuing, each separately, when its ICC point estimate is ≥ .70. Understanding the modes and Letting be are reported with their ICCs and their baseline ω, without a threshold.
-   - Also reported:
-     - follow-up responders compared with non-responders on baseline scores;
-     - the agreement index's stability, as an ICC.
-7. **Candidate items (exploratory, selection rules fixed here).**
-   - The sample is split at random into two halves, stratified by posting, with a recorded seed: a **selection half** and a **holdout half**. All other analyses use the full sample.
-   - On the selection half, fit a target-rotated ESEM of 39 items with the random intercept on all 39 unrecoded items:
-     - the 20 short-form items;
-     - the 14 new non-Forage candidates;
-     - the 5 Study 1 items.
-
-     It has four content factors, and each candidate is targeted to its a-priori factor. The Forage items are analysed separately in step 9.
-   - A candidate qualifies as a replacement when, on its intended factor:
-     1. its primary loading is ≥ .50 and no other loading is ≥ .30;
-     2. swapping it for the factor's weakest current item raises the factor's model-based ω;
-     3. the factor keeps at least one item of each keying direction;
-     4. its "Prefer not to answer" rate is ≤ 5%.
-   - At most two items per factor are replaced, so the revised form keeps 5 items per factor (20 in all). Every replacement and the reason for it are reported.
-   - **Sparse categories:** merged as in step 4, within the half.
-   - **Bootstrap stability:** 200 resamples of the selection half are also run. Each replacement's selection rate is reported. A replacement selected in fewer than 60% of resamples is marked unstable.
-8. **Revised form, if any (exploratory).**
-   - Any form produced by step 7 is fitted on the **holdout half** only, by the H1 criteria and the per-factor rule. Its ω and its validity correlations are reported beside the fixed form's.
-   - This is an internal check. The revised form's confirmation in an independent sample (the course's intake data or a third study) is planned separately.
-   - The fixed 20-item form remains the instrument of record for the PSY240 trial.
-9. **Forage (exploratory).** On the full sample:
-   - (a) the five Forage items' α, mean inter-item correlation and correlation with the agreement index;
-   - (b) whether they form a factor of their own in an ESEM with five content factors (Forage targeted) plus the random intercept, or load with Valuing and savouring or Access as Study 1's discovery items did;
-   - (c) their correlations with the past-week item on deliberately pausing to take in one's surroundings, with practice frequency, with BFI-2 Intellectual Curiosity (general curiosity) and the rest of BFI-2 Open-Mindedness, and with SBI Savoring the Moment.
-10. **The 14-item Access + Valuing form (exploratory).**
-    - Fit the two-factor model (Access 8 items, Valuing and savouring 6) with the random intercept, by the H1 fit criteria.
-    - Report its ordinal ω per factor, and its known-groups and validity correlations beside the fixed form's Access and Valuing subscales.
-    - Its items were chosen on Study 1's data, so this is its first test in independent data. It is still provisional: five of its items sit in the candidate block, after the 20, not among them.
-    - The five re-run items' loadings and means are compared with Study 1's.
+   Reported, not tested: RMSEA with its 90% CI, model-specific (dynamic) cutoffs, every loading, the agreement factor's variance and share of item variance, ordinal ω for the content factor, α, and the 10 under the same rule. The model without the agreement factor is reported for comparison.
+2. **H2–H3, convergent and discriminant.** One model per validity measure: the H1 model plus that measure as a latent factor of its items (ordinal), correlated with the content factor and uncorrelated with the agreement factor. Subscales of one measure (FFMQ, Brief MAIA-2, BFI-2, BIDR) enter as correlated factors of that measure. Correlations have 95% Wald CIs.
+   - **H2:** each of the four lower bounds exceeds .30.
+   - **H3a:** each of the four upper bounds is below .80.
+   - **H3b:** in the model holding both measures of a contrast, the difference of the two latent correlations, defined as a parameter, has a 95% delta-method CI excluding 0 in the predicted direction. Each contrast is reported separately; H3b is supported when at least four of the five are. (Contrast 4 has about 64% power, Section 3.)
+   - **H3c:** both BIDR CIs lie within ±.30.
+   - **H3d:** in a model with the four H2 neighbours, the multiple correlation R = √(r′Σ⁻¹r) of the content factor with them, with a 2,000-resample bootstrap 95% CI; supported when its upper bound is below .80.
+   - **H3e:** BSSS-8's upper bound below .40; NCS-6's, SPSQ-SF Sensory Discomfort's and ASI-3 Physical Concerns' CIs within ±.30.
+   - **Secondary:** observed-score Pearson correlations with every measure, the full validity matrix below.
+3. **H4, criterion.** On the observed 8:
+   - (a) Spearman ρ with `crit_pause_days`;
+   - (b) Spearman ρ with the engaged pause (0/1), and a logistic regression of the engaged pause on the 8 with device class as a covariate, reported beside it.
+   - Each is supported when ρ is positive with p < .05 (two-sided), Holm-corrected across (a) and (b).
+4. **H5, incremental.** Observed scores; complete cases.
+   - **H5a:** for each of life satisfaction, PHQ-4 and PSS-4, a hierarchical regression: step 1 age, gender, the five FFMQ-15 facets and the eight Brief MAIA-2 subscales; step 2 the 8. Supported for an outcome when ΔR² ≥ .02 and the step-2 F-test is significant after Holm correction across the three; H5a holds when at least one outcome is supported.
+   - **H5b:** a proportional-odds regression of practice frequency: step 1 age, gender, spirituality, religiosity, the FFMQ-15 facets and the Brief MAIA-2 subscales; step 2 the 8. Supported when the coefficient is positive with likelihood-ratio p < .05.
+5. **H6, known groups.** Current practitioners against never-practitioners on the observed 8: Cohen's d (pooled SD) with 95% CI and a two-sided t-test. Supported when the difference favours practitioners, p < .05 and d ≥ 0.50. **Sensitivity:** adjusting for spirituality and religiosity; dedicated practitioners against never; the latent difference with agreement modelled.
 
 ### Predicted validity matrix
 
-Correlations are between latent factors and observed scores. "Near zero" means |r| < .20. The **H** column marks cells that are confirmatory tests; all other cells are reported against these predictions, descriptively.
+Latent correlations with the 8. "Near zero" is |r| < .20. **H** marks confirmatory cells.
 
-| Measure | Access | Understanding the modes | Valuing and savouring | Letting be | H |
-|---|---|---|---|---|---|
-| FFMQ Observing | + moderate (.30–.50) | + small | + moderate | + small | H2 (Access), H3d |
-| FFMQ Describing | + small | + small | near zero | near zero | |
-| FFMQ Acting with awareness | + small | near zero | near zero | + small | |
-| FFMQ Nonjudging | + small | near zero | near zero | + small to moderate | |
-| FFMQ Nonreactivity | + moderate | + small | + small | + moderate | |
-| MAIA-2 Noticing | + moderate | + small | + small | near zero | H3d |
-| MAIA-2 Attention Regulation | + moderate | + small | + small | + small | H2 (Access), H3d |
-| MAIA-2 Not-Worrying, Not-Distracting | near zero | near zero | near zero | + small | |
-| MAIA-2 Body Listening, Trusting | + small to moderate | + small | + moderate | near zero | H3d (Body Listening) |
-| EQ Decentering | + moderate | + small to moderate | + small | + moderate | H2 (Letting be), H3d |
-| IUS-12 | − small | near zero | near zero | − moderate (partly shared item content; not a test) | |
-| SBI Savoring the Moment | + moderate | + small | + moderate to large | + small | H2, H3b, H3d |
-| BFI-2 Open-Mindedness | + small | + small | + small (below SBI) | + small | H3b |
-| BFI-2 Aesthetic Sensitivity | + small | + small | + moderate | + small | H3d |
-| BIDR SDE | + small | near zero | near zero | + small | H3c (all \|r\| < .30) |
-| BIDR IM | near zero | near zero | near zero | near zero | H3c |
-| PHQ-4 | − small | near zero | near zero | − small | |
-| PSS-4 | − small | near zero | near zero | − small to moderate | |
-| Life satisfaction | + small | near zero | + small | + small | |
-| Past week: pause days | + small to moderate | near zero | + small to moderate | near zero | H4 |
-| Past week: notice first | + small | + small | near zero | + small to moderate | H4 |
-| Past week: time outdoors | + small | near zero | + small | near zero | |
+| Measure | Prediction | H |
+|---|---|---|
+| FFMQ Observing | + moderate (.30–.60) | H2, H3a, H3b-2, H3b-5, H3d |
+| FFMQ Describing | + small | H3b-2 |
+| FFMQ Acting with awareness, Nonjudging | + small | |
+| FFMQ Nonreactivity | + small to moderate | |
+| SBI Savoring the Moment | + moderate | H2, H3a, H3b-3, H3d |
+| BFI-2 Aesthetic Sensitivity | + moderate | H2, H3a, H3b-1, H3d |
+| BFI-2 Intellectual Curiosity | + small | H3b-1 |
+| BFI-2 Open-Mindedness, total | + small to moderate, below SBI | H3b-3 |
+| BFI-2 Creative Imagination | + small | |
+| Brief MAIA-2 Noticing | + moderate | H2, H3a, H3b-4, H3d |
+| Brief MAIA-2 Not-Worrying | near zero | H3b-4 |
+| Brief MAIA-2 Attention Regulation, Body Listening, Emotional Awareness, Self-Regulation | + small to moderate | |
+| Brief MAIA-2 Not-Distracting, Trusting | + small | |
+| EQ Decentering | + small to moderate | |
+| SAMD Meaning-Detecting | + small to moderate, below FFMQ Observing | H3b-5 |
+| BSSS-8 | + small | H3e (< .40) |
+| NCS-6 | near zero | H3e (±.30) |
+| SPSQ-SF Sensory Discomfort | near zero | H3e (±.30) |
+| ASI-3 Physical Concerns | near zero | H3e (±.30) |
+| BIDR SDE, IM | near zero to + small | H3c (±.30) |
+| PHQ-4, PSS-4 | near zero to − small | |
+| Life satisfaction | + small | |
+| Past week: pause days | + small to moderate | H4a |
+| Engaged pause | + small | H4b |
+| Past week: notice first, time outdoors | + small | |
 
-The random-intercept factor is expected to correlate positively with BIDR SDE and IM, because both are agreement-prone. Its correlations with every validity measure are reported; this is exploratory.
+A large negative correlation with PHQ-4 or PSS-4 would mean the scale is partly a wellbeing measure; it is reported, not tested. The agreement factor's correlations with every measure are reported.
 
 ### Transformations
 
-- Reverse-keyed items are recoded (7 − x) for observed scores and the stability analysis. They are left unrecoded in models with the random intercept.
-- Validity scales are scored per their manuals. "Prefer not to answer" is missing.
+Reverse-keyed statements are recoded (7 − x) for observed scores and left unrecoded in models with the agreement factor. Validity scales are scored per their manuals. "Prefer not to answer" is missing.
 
 ### Inference criteria
 
-Decision rules for H1–H7 are stated above. Two-tailed α = .05 applies unless stated, with Holm correction within each hypothesis family. All other analyses are exploratory and labelled as such.
+Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-corrected within H4 and H5a. Everything else is exploratory and labelled so.
 
 ### Data exclusion
 
-- **Excluded:**
-  - staff test enrollments;
-  - sessions without a submitted short form;
-  - participants who answered **both** instructed-response checks (MAIA-2 and BFI-2) and failed both.
-- **Partial sessions:**
-  - A check the participant never reached is not a failure.
-  - A participant who submitted the short form but stopped before the validity block is kept for H1, invariance and steps 7–10.
-  - Validity analyses (H2–H5) use participants who reached the end of the validity block.
-  - H6 uses everyone with background answers and the short form.
-- **Repeat submissions:** the first complete submission of each questionnaire is used. Flagged re-submissions are dropped by the platform's resubmission rule.
-- **Flagged for sensitivity analyses, not excluded:**
-  - failing one check, or failing the only check reached;
-  - fewer than 2 seconds per item on the short form;
-  - a longstring of 10 or more within the short form;
-  - "Prefer not to answer" on more than 4 of the 20 items.
-- **Follow-up:** completions outside 14–21 days are kept and flagged, and the ICC is reported with and without them.
+- **Excluded:** staff test enrollments; sessions without a submitted scale; participants who fail two or more of the three attention checks.
+- **Partial sessions:** a check not reached is not a failure. A participant who submitted the scale is kept for H1; each later test uses those who reached its measures. The pause analyses use those who reached the offer.
+- **Repeat submissions:** the first complete submission of each questionnaire; flagged re-submissions are dropped by the platform's resubmission rule.
+- **Flagged for sensitivity analyses, not excluded:** failing exactly one check; fewer than 2 seconds per statement on the scale; a longstring of 10 or more of the scale's 14 positions; "Prefer not to answer" on more than 2 of the 13 statements.
 
 ### Missing data
 
-"Prefer not to answer" and unanswered items are missing:
-- **Factor models:** pairwise-available data (`missing = "pairwise"`). Study 1's code used lavaan's default, listwise deletion, and lost 12 of 500 participants, against a registered pairwise rule. Study 2 sets pairwise explicitly.
-- **Latent scores:** not used as individual scores. Validity and known-groups tests on latent variables are estimated inside the model.
-- **Observed scores:** require at least 80% of items.
-- **Regressions:** use complete cases.
-
-The amount of missing data per measure is reported.
+"Prefer not to answer" and unanswered items are missing. Factor models use pairwise-available data. Observed scores need the item counts in Section 4. Regressions use complete cases. Missingness per measure is reported.
 
 ### Exploratory analysis
 
-- **Order effects:** does a validity measure's position in the shuffled block affect its mean or its correlation with the short form? The short form always comes first, so its own context is fixed; this is a limit of the design.
-- **The bifactor alternative:** a general sense-foraging factor plus four specific factors, with the random intercept, fitted as a bifactor ESEM.
-  - ω_h is computed from that model's loadings.
-  - It is not computed with `psych::omega`. That function's default `flip = TRUE` re-reverses keyed items and inflated Study 1's reported ω_h from .54 to .70.
-- **Latent means:** country and posting differences, where invariance permits.
-- **Further outcomes:** `crit_outdoors` and life satisfaction with each factor.
-- **The following week (follow-up sample):** each past-week item at the follow-up regressed on baseline Access + Valuing, controlling for the same item at baseline. A positive coefficient means baseline scores predict the next week's behaviour beyond what people reported doing at baseline.
-- **The candidate items,** as in steps 7–10.
+- **H8, understanding (decision 30).** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then loadings, then thresholds (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
+- **The 10:** H1–H6's statistics for the 10, beside the 8's.
+- **The three exploratory statements** (N6, sfc_31, sf6_44): their loadings when added to the 10, and their correlations with the agreement factor.
+- **The trial's measure:** the correlation of the 8 with the trial's Access + Valuing score in its own wording, and of each with the validity measures, as a check that the 8 can stand in for the trial's measure (decision 13).
+- **The pause, further:** seconds on the page, log(1 + x); acceptance alone; the 8 in decliners giving "not interested" against "no time" or "not a good place"; the pause against tiredness, setting and device; the 8's association with the pause compared with tiredness's; the notes, coded blind to scores.
+- **Order effects:** a measure's position within its half against its mean and its correlation with the 8.
+- **The vignettes:** separation, the self-rating's correlation with the 8, and each vignette's mean.
+- **Posting-free invariance:** by gender (men and women) and by country group (the six countries in the REB application against everywhere else, if each has at least 200), as in H8.
+- **BIDR dichotomous scoring** (Paulhus) for H3c.
 
 ## 6. Other
 
-- **Relation to the approved protocol.**
-  - The REB application planned Study 2 with the full scale and about 450–500 participants, with no retest. The Study 2 amendment changes this:
-    - it replaces the full scale with the 20-item short form from Study 1;
-    - it raises the target to about 1,000;
-    - it changes the life-satisfaction item's format to a six-point face scale, keeping the approved wording.
-  - It also adds IUS-12, SBI, BFI-2 Open-Mindedness, EQ Decentering, PSS-4, three past-week items, 24 candidate items (19 new, 5 from Study 1) and the follow-up.
-  - Recruitment keeps two postings that differ in framing only, with no screening on practice. The amendment removes the application's country-of-residence filter.
-- **Licences.**
-  - The PSS-4 is used under a Mapi Research Trust (ePROVIDE) licence for electronic administration.
-  - The SBI is used with the author's permission. **[pending]**
-  - The BFI-2 and the EQ are used under their published research-use terms.
-- **Data sharing.** A de-identified dataset is shared as described in the consent form. The analysis code is in the project repository (Normega/sense-foraging-scale), to be made public at publication.
-- **Open points from the review, not yet decided [Norm].** Each would change materials, so the amendment:
-  - adding 4–6 parallel items without "sensing mode" wording to the candidate block, to test whether the course's vocabulary carries variance of its own;
-  - adding an instructed-response item to the candidate block, so there is a check before the validity block.
+**Relation to the approved protocol.** The amendment covering Study 2b is approved (protocol #00051180). It covers the vignettes, the 8 and the 10, the trial statements, the battery with BSSS-8, NCS-6, SPSQ-SF Sensory Discomfort, ASI-3 Physical Concerns, SAMD Meaning-Detecting and the Brief MAIA-2, the pause and its debrief, one posting and the sample of 700.
+
+**Measures used for non-commercial academic research.** SBI, PSS-4, BSSS-8, NCS-6, the SPSQ-SF and ASI-3 items, the Brief MAIA-2, BFI-2, EQ, BIDR-16, FFMQ-15 and PHQ-4 are used under their research-use terms; SAMD is CC BY, and its authors are told of the use.
+
+**Drafting choices for Norm to confirm** (not in the decisions so far):
+- H3b holds when at least four of the five contrasts hold; each is also reported on its own.
+- H3e's bounds: BSSS-8 below .40, the other three within ±.30.
+- Validity measures enter the latent models as latent factors of their items, as simulated, not as observed scores.
+- H3b uses the delta-method CI, as simulated (the pre-2a draft used a 2,000-resample bootstrap); H3d keeps the bootstrap.
+- H4 is two-sided, Holm across (a) and (b); H6 uses 2a's current-practitioner group, with dedicated as sensitivity.
+- The pilot's 60 are included if nothing changes.
+- Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
+
+**Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 
 ### References
 
 - Chen, F. F. (2007). Sensitivity of goodness of fit indexes to lack of measurement invariance. *Structural Equation Modeling, 14*(3), 464–504.
-- Forero, C. G., Maydeu-Olivares, A., & Gallardo-Pujol, D. (2009). Factor analysis with ordinal indicators: A Monte Carlo study comparing DWLS and ULS estimation. *Structural Equation Modeling, 16*(4), 625–641.
+- De Gucht, V., & Woestenburg, D. H. A. (2025). Development and validation of the SPSQ-26: A short form of the Sensory Processing Sensitivity Questionnaire. *European Journal of Psychological Assessment, 41*(5), 348–356.
+- Hoyle, R. H., Stephenson, M. T., Palmgreen, P., Lorch, E. P., & Donohew, R. L. (2002). Reliability and validity of a brief measure of sensation seeking. *Personality and Individual Differences, 32*(3), 401–414.
+- Lins de Holanda Coelho, G., Hanel, P. H. P., & Wolf, L. J. (2020). The very efficient assessment of need for cognition: Developing a six-item version. *Assessment, 27*(8), 1870–1885.
 - Maydeu-Olivares, A., & Coffman, D. L. (2006). Random intercept item factor analysis. *Psychological Methods, 11*(4), 344–362.
+- Maydeu-Olivares, A., Shi, D., & Rosseel, Y. (2018). Assessing fit in structural equation models: A Monte-Carlo evaluation of RMSEA versus SRMR confidence intervals and tests of close fit. *Structural Equation Modeling, 25*(3), 389–402.
+- Mehling, W. E., Acree, M., Stewart, A., Silas, J., & Jones, A. (2018). The Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2). *PLoS ONE, 13*(12), e0208034.
+- Rogowska, A. M., Tataruch, R., & Klimowska, K. (2023). Validation of the shortened 24-item multidimensional assessment of interoceptive awareness, version 2 (Brief MAIA-2). *Scientific Reports, 13*, 21270.
+- Russo-Netzer, P., & Icekson, T. (2023). An underexplored pathway to life satisfaction: The development and validation of the synchronicity awareness and meaning-detecting scale. *Frontiers in Psychology, 13*, 1053296.
+- Taylor, S., Zvolensky, M. J., Cox, B. J., Deacon, B., Heimberg, R. G., Ledley, D. R., et al. (2007). Robust dimensions of anxiety sensitivity: Development and initial validation of the Anxiety Sensitivity Index-3. *Psychological Assessment, 19*(2), 176–188.
 - Wu, H., & Estabrook, R. (2016). Identification of confirmatory factor analysis models of different levels of invariance for ordered categorical outcomes. *Psychometrika, 81*(4), 1014–1045.
-- Measure citations: see *Study2_Measures.docx*.
+- Other measure citations: as in Study 2's *Study2_Measures.docx*.
+
+## Appendix A. The scale, in presented order
+
+Response scale: 1 Strongly disagree, 2 Disagree, 3 Mildly disagree, 4 Mildly agree, 5 Agree, 6 Strongly agree; "Prefer not to answer". Instruction: "In general, how much do you agree with each statement? There are no right or wrong answers."
+
+| Page | Id | Source | Statement | Role | Reversed |
+|---|---|---|---|---|---|
+| 1 | sf2b_01 | N4 | As I go about my day, I notice the light, colours and sounds around me with interest | 8 | |
+| 1 | sf2b_02 | sf6_36 | Moving into the sensing mode is a struggle for me | 8 | yes |
+| 1 | sf2b_03 | V10 | I enjoy taking a moment just to notice how my body feels, like my breathing, the soles of my feet, or posture | 8 | |
+| 1 | sf2b_04 | sf6_27 | I enjoy exploring the sights, sounds and textures of ordinary moments | 8 | |
+| 1 | sf2b_05 | N6 | When I walk somewhere familiar, I notice very little of what I pass | exploratory | yes |
+| 1 | sf2b_06 | sfc_36 | Even in chores I have done many times, I notice sounds, smells or textures I had missed | 8 | |
+| 1 | sf2b_07 | U4 | Even when I pause to take in what is around me, I react to stress the same way | 8 | yes |
+| 2 | sf2b_08 | A9 | I can pay attention to what I'm feeling in my body in new or unfamiliar places | 10 | |
+| 2 | sf2b_09 | sfc_x2 | It never seems to be the right time to go into the sensing mode | 8 | yes |
+| 2 | sf2b_attn_agree | | To show that you are reading each statement, please select "Agree" for this one. | check (5) | |
+| 2 | sf2b_10 | sfc_35 | During my day, I take a moment to explore what I can see, hear and touch | 8 | |
+| 2 | sf2b_11 | sf6_44 | When I am busy, returning to the sensing mode feels like a low priority | exploratory | yes |
+| 2 | sf2b_12 | sfc_24 | Looking closely at ordinary things around me often gives me a sense of wonder | 10 | |
+| 2 | sf2b_13 | sfc_31 | I react to things before I have really taken them in | exploratory | yes |
