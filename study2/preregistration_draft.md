@@ -4,7 +4,7 @@
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
-- **Before filing:** the 2b analysis code (adapted from `study2a/analysis/`) is written and run end to end on data simulated from Study 2a's fitted model, and on the real data with every item's answers shuffled, as for Studies 1 and 2a. The code is then the specification wherever this text is less precise.
+- **Before filing:** the 2b analysis code (`study2b/analysis/`) is written and has run end to end on data simulated from Study 2a's fitted model, with every recovery check passing (9 November). The code is the specification wherever this text is less precise; its readings of this text are listed in `study2b/analysis/README.md`. The run on real answers shuffled within each item needs real data, so it is run on the pilot's extraction before the remaining 640 places open (Section 6).
 - **Drafting choices for Norm to confirm** are listed in Section 6.
 
 ## 1. Study information
@@ -265,7 +265,7 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 
 ### Exploratory analysis
 
-- **H8, understanding (decision 30).** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then loadings, then thresholds (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
+- **H8, understanding (decision 30).** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then thresholds, then loadings (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
 - **The 10:** H1–H6's statistics for the 10, beside the 8's.
 - **The three exploratory statements** (N6, sfc_31, sf6_44): their loadings when added to the 10, and their correlations with the agreement factor.
 - **The trial's measure:** the correlation of the 8 with the trial's Access + Valuing score in its own wording, and of each with the validity measures, as a check that the 8 can stand in for the trial's measure (decision 13).
@@ -289,6 +289,9 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - H4 is two-sided, Holm across (a) and (b); H6 uses 2a's current-practitioner group, with dedicated as sensitivity.
 - The pilot's 60 are included if nothing changes.
 - Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
+- The shuffled-answers run of the code is on the pilot's extraction, before the remaining 640 places open; no unshuffled pilot answers are analysed.
+- Validity scores with missing items: Study 2's rule (at least 80% of a scale's items answered) means a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three. H5 needs all 13 such subscales, so in the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470. The alternative is at least two of three for the 3-item subscales.
+- H3d's bound (.80) has no power estimate. In the simulated run the four neighbours correlated with the 8 at .45–.50 and with each other only through it; the population R was then .735, and the test failed (upper bound .812). The more the neighbours overlap with each other, the lower R. Keep as is, or simulate H3d's power under plausible overlap before filing.
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 

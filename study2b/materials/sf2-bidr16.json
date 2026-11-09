@@ -1,0 +1,610 @@
+{
+  "slug": "sf2-bidr16",
+  "name": "About yourself",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "bidr_p1",
+      "components": [
+        {
+          "id": "bidr_01",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_02",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_05",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_07",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_08",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "bidr_p2",
+      "components": [
+        {
+          "id": "bidr_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_11",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_13",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_14",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_15",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bidr_16",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ]
+}

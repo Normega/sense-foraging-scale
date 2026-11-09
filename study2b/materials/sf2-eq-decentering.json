@@ -1,0 +1,341 @@
+{
+  "slug": "sf2-eq-decentering",
+  "name": "Your experiences",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "eq_p1",
+      "components": [
+        {
+          "id": "eq_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_15",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_14",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_16",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "eq_p2",
+      "components": [
+        {
+          "id": "eq_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_17",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_18",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "eq_20",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "sum",
+    "note": "Fresco et al. (2007) Decentering, 11 items (EQ numbers in ids), 11-55."
+  }
+}

@@ -1,0 +1,871 @@
+{
+  "slug": "sf2b-maia2-brief",
+  "name": "Body awareness",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "bmaia_p1",
+      "components": [
+        {
+          "id": "maia_02",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_11",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "bmaia_p2",
+      "components": [
+        {
+          "id": "maia_15",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_17",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_19",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_20",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_25",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_26",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_27",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_29",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "bmaia_p3",
+      "components": [
+        {
+          "id": "maia_30",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_31",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_32",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_33",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_34",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_35",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_36",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "maia_37",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "mean per subscale",
+    "range": "0-5",
+    "reverse": "5 - x",
+    "reverse_items": [
+      "maia_06",
+      "maia_09",
+      "maia_10",
+      "maia_11",
+      "maia_12",
+      "maia_15"
+    ],
+    "subscales": {
+      "Noticing": [
+        "maia_02",
+        "maia_03",
+        "maia_04"
+      ],
+      "Not-Distracting": [
+        "maia_06",
+        "maia_09",
+        "maia_10"
+      ],
+      "Not-Worrying": [
+        "maia_11",
+        "maia_12",
+        "maia_15"
+      ],
+      "Attention Regulation": [
+        "maia_17",
+        "maia_19",
+        "maia_20"
+      ],
+      "Emotional Awareness": [
+        "maia_25",
+        "maia_26",
+        "maia_27"
+      ],
+      "Self-Regulation": [
+        "maia_29",
+        "maia_30",
+        "maia_31"
+      ],
+      "Body Listening": [
+        "maia_32",
+        "maia_33",
+        "maia_34"
+      ],
+      "Trusting": [
+        "maia_35",
+        "maia_36",
+        "maia_37"
+      ]
+    },
+    "source": "Brief MAIA-2: Rogowska, Tataruch & Klimowska (2023), Sci Rep 13:21270; items and wording from MAIA-2 (Mehling et al., 2018), keeping MAIA-2 item numbers."
+  }
+}

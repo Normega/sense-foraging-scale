@@ -1,0 +1,137 @@
+{
+  "slug": "sf2-pss4",
+  "name": "The last month",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "pss_p1",
+      "components": [
+        {
+          "id": "pss4_1",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "pss4_2",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "pss4_3",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "pss4_4",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "sum",
+    "note": "Cohen et al. (1983); items 2 and 3 reverse-coded; 0-16. Licence via Mapi ePROVIDE.",
+    "reverse_items": [
+      "pss4_2",
+      "pss4_3"
+    ]
+  }
+}

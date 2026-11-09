@@ -1,0 +1,453 @@
+{
+  "slug": "sf2-ffmq15",
+  "name": "Everyday experiences",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "ffmq_p1",
+      "components": [
+        {
+          "id": "ffmq_01",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_02",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_05",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_06",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_07",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_08",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    },
+    {
+      "id": "ffmq_p2",
+      "components": [
+        {
+          "id": "ffmq_09",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_10",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_11",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_13",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_14",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "ffmq_15",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ]
+}

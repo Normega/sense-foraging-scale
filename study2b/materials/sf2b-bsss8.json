@@ -1,0 +1,269 @@
+{
+  "slug": "sf2b-bsss8",
+  "name": "New experiences",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "bsss_p1",
+      "components": [
+        {
+          "id": "bsss_1",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_2",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_3",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_4",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_5",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_6",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_7",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "bsss_8",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 5,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "mean",
+    "range": "1-5",
+    "reverse_items": [],
+    "subscales": {
+      "Experience seeking": [
+        "bsss_1",
+        "bsss_5"
+      ],
+      "Boredom susceptibility": [
+        "bsss_2",
+        "bsss_6"
+      ],
+      "Thrill and adventure seeking": [
+        "bsss_3",
+        "bsss_7"
+      ],
+      "Disinhibition": [
+        "bsss_4",
+        "bsss_8"
+      ]
+    },
+    "source": "Brief Sensation Seeking Scale (BSSS-8): Hoyle et al. (2002). Study 2b discriminant (decision 11)."
+  }
+}

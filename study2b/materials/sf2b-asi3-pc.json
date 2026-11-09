@@ -1,0 +1,193 @@
+{
+  "slug": "sf2b-asi3-pc",
+  "name": "Body sensations",
+  "questionnaire_type": "composable",
+  "instructions": "[wording withheld: see the cited source]",
+  "pages": [
+    {
+      "id": "asi_p1",
+      "components": [
+        {
+          "id": "asi_03",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "asi_04",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "asi_07",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "asi_08",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "asi_12",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        },
+        {
+          "id": "asi_15",
+          "type": "likert",
+          "question": "[wording withheld: see the cited source]",
+          "scale": [
+            {
+              "value": 0,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 1,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 2,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 3,
+              "label": "[wording withheld: see the cited source]"
+            },
+            {
+              "value": 4,
+              "label": "[wording withheld: see the cited source]"
+            }
+          ],
+          "required": true,
+          "allow_pna": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "sum",
+    "range": "0-24",
+    "reverse_items": [],
+    "source": "ASI-3 Physical Concerns subscale (items 3, 4, 7, 8, 12, 15): Taylor et al. (2007). Study 2b discriminant (decision 26)."
+  }
+}
