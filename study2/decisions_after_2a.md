@@ -41,11 +41,32 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 15. **The vignette introduction, V2 and V7 are reworded** (see decision 6, `materials/sf2b-vignettes.json`).
 16. **The Meaning-Detecting subscale of the Synchronicity Awareness and Meaning-Detecting Scale (SAMD-MD; Russo-Netzer & Icekson, 2023) is added as a discriminant measure** (`materials/sf2-samd-md.json`, 13 items, 1–7, wording as published). It asks whether sense foraging is a spiritual or meaning-seeking openness: its core is reading meaning into events (for example, its item 5), where the scale is about taking in what is there. Predicted positive but small to moderate (a few statements share content: bodily sensations, awe and wonder), and tested as a contrast: the 8 correlates more with FFMQ Observing than with SAMD-MD. The Synchronicity Awareness subscale (frequency of coincidences) is not used. Caveats: developed in Hebrew with Israeli samples, and the English wording is a back-translation not validated in English speakers; two-factor CFA fit CFI .93, RMSEA .06, SRMR .05. The article is CC BY and prints the items; the authors are to be told.
 
-## To decide before registering
+## Decided (Norm, 9 November 2026, on the 2b decisions page)
+
+17. **H1's fit rule.** The model passes when CFI ≥ .95; no residual correlation exceeds .10, or freeing the largest changes ω and the loadings by less than .02; and the unbiased SRMR close-fit test (SRMR ≤ .05) is not rejected. RMSEA and the model-specific cutoffs are reported, not tested. (The background and the simulation are under "Fit-rule background" below.)
+18. **NCS-6 is added** as a discriminant measure (near zero). SBPS-8 and NR-6 are not.
+19. **The Brief MAIA-2 (24 items; Mehling et al., 2018; Rogowska et al., 2023) replaces the full MAIA-2.** Noticing stays a confirmatory convergent (H2) and Noticing > Not-Worrying stays a contrast (H3b); H5a controls for the Brief MAIA-2.
+20. **Past-week time outdoors stays descriptive.**
+21. **One pause offer, not two.** Offer 1 is dropped: it came too early in the session to make sense. The single offer sits partway through, in the validity block at least 5 minutes after the scale, with the where-are-you and how-tired questions after it. The primary criterion becomes one engaged pause (0/1).
+22. **A pause counts** when taken, at least 20 s on the page, with time away under half the total (`criterion_pause_design.md`).
+23. **A pilot of about 60** runs first on the full session; it sets the time and pay and checks the export, and is not part of the confirmatory sample.
+24. **N = 500 in one posting, as in 2a** (replacing 1,000 in two postings). 2a's single posting gave 273 current and 136 never-practised participants, and 154 who did not tell the modes apart.
+25. **Pay is minimum wage for the pilot's median time,** with a Prolific maximum time long enough that a long pause doesn't time out.
+26. **The HSP short form is dropped.** In its place: the 4 Sensory Discomfort items of the SPSQ-SF (De Gucht & Woestenburg, 2025, European Journal of Psychological Assessment, 41, 348–356; items in its supplement) for sensory overwhelm, and the 6 Physical Concerns items of the ASI-3 for anxious monitoring of the body. Both discriminant; bounds set in the preregistration. Copies in the Shared drive's `SenseForaging/Assessment/study2b`.
+27. **Licences:** the measures are used for non-commercial academic research and are treated as permitted; PSS-4 and SBI stay.
+28. **A new platform study, "Sense Foraging Study 2b".** The old Study 2 and its retest study are retired.
+29. **The name stays Study 2b.**
+
+The REB amendment is approved under the same protocol (#00051180).
+
+## Still open
+
+- Whether H8 (invariance across tells-apart groups) is confirmatory or exploratory at N = 500 (about 150 in the smaller group).
+
+## Fit-rule background
 
 - **H1's fit rule.** The previous draft required CFI ≥ .95, RMSEA ≤ .06 (upper CI ≤ .08), SRMR ≤ .08. In 2a, in-sample, the 8 gives CFI .972, SRMR .038, RMSEA .084 (upper CI .103), so it would fail RMSEA; the 10 gives .977, .036, .066 (.080); the 8 with U4 in place of sfc_x2 gives .988, .030, .053.
   - **Simulation (31 October, from the fitted 2a models, N = 1,000, 200 runs):** the RMSEA of .084 is not a small-df artefact. A correctly specified 8 gives RMSEA ≈ .005 (95th percentile .026). The conventional cutoffs never detected a planted flaw (residual correlations of .30 on two item pairs; CFI ≈ .986, SRMR ≈ .030). Model-specific cutoffs that catch it 95% of the time are about CFI ≥ .992, RMSEA ≤ .042, SRMR ≤ .024. Both 8s miss those in 2a.
   - **The misfit sat on the sfc_x2–sf6_44 pair** (−.110), with sfc_x2's other residuals next (sf6_27 −.089, sfc_35 .075, sf6_36 .069). Removing either statement removes most of it, which is why decision 14 swaps out sf6_44. (Corrected 2 November: this said the misfit sits on sfc_x2.)
-  - **Proposed rule (not yet confirmed):** no residual correlation above .10, and freeing the largest changes ω and the loadings by less than .02 (local fit, decisive); SRMR's close-fit test (unbiased SRMR ≤ .05) as the global check; CFI, RMSEA and the model-specific cutoffs reported.
-- Whether NCS-6, SBPS-8 or NR-6 are added as well; whether MAIA-2 is given in full. (SAMD-MD added, decision 16.)
-- Carried over: face-scale "Prefer not to answer"; SBI permission; PSS-4 licence; pages marked `translate="no"`; 2a participants excluded on Prolific.
+  - **Rule adopted (decision 17):** the local-fit rule and the SRMR close-fit test as proposed, plus CFI ≥ .95 (Norm, 9 November).
+- Carried over: face-scale "Prefer not to answer" (now a study setting, `ratings_allow_pna`); pages marked `translate="no"` (live); 2a participants excluded on Prolific.
