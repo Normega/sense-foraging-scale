@@ -21,6 +21,32 @@ The analysis the Study 2b preregistration specifies (`study2/preregistration_dra
 
 In `permuted` mode exclusions, attention checks, timing, background answers and the pause stay real; answer-derived values (longstring, scores) use the shuffled answers.
 
+## The pilot run (before filing)
+
+The first 60 places are run. Their extraction goes through the whole pipeline in `permuted` mode, and the preregistration is filed only after that run, at the commit it ends on. The remaining 640 places then open on the same posting.
+
+**What the shuffle keeps, and what it destroys.** Each item's answers are shuffled across the participants who answered it, item by item and independently. What stays real:
+- who enrolled, finished or stopped, and where;
+- the attention checks and exclusions;
+- all timing;
+- the background answers, including practice;
+- the pause: offer, choice, time and device;
+- each item's own distribution, including its "Prefer not to answer" rate.
+
+What goes is every link between two answers, within a person or across measures. Every correlation, loading and fit index in the run is therefore noise by construction. Nothing in it can show whether a hypothesis would hold, so nothing in it can tempt a change to one.
+
+**What the run decides,** with the rule for each set before the pilot:
+
+| Question | Read from | Rule |
+|---|---|---|
+| Does the code read the real export? | Pipeline counts against the platform's (admin completions) and Prolific's (approved submissions); every response key mapped to an item; "Prefer not to answer" read as missing; `01_pause_check.csv` | Any mismatch or unread key: the code is fixed and rerun. Fixes before filing are not deviations. |
+| Does it run end to end on real records? | `run_times.csv`; the step log | A crash is fixed. A model that fails or is refused is expected: shuffled data at n = 60 have no structure to fit. Estimation was validated on simulated data. |
+| Can the rest open unchanged? | Completion and breakoff by step; failure rate of each attention check; median time | One check failed by more than 10%, or more than 15% stopping at one screen: that screen is looked at before the rest open. If any material changes, the 60 are excluded and 60 places added (Section 3). |
+| Pay | Median completion time without the pause | £12.71 an hour × that median (Section 3). |
+| Power at the real rates | Pause take-up and engagement; practice-group sizes; projected complete-case n for H5 from each item's missing rate | Section 3 reports power at the observed rates, from `study2/power/`. No hypothesis, bound or measure changes. |
+
+Before the 640 open, Norm sees only this run's report: counts, rates, times, run status and code changes. The platform's response views are not opened for the pilot.
+
 ## Steps (`run_all.R`, from the repo root)
 
 0. **`00_simulate`** (simulated only). The scale from Study 2a's fitted one-factor model of the 13 statements with the agreement factor (`sim_population.json`, written once from 2a's real data by `make_sim_population.R`; aggregates only). Every validity score is a latent factor with a known correlation with the scale's factor and known within-battery correlations; the past-week items, the pause, practice and the vignettes are generated from latents with known values. One gender difference in a loading is planted (V10, women .20). Planted mess: staff tests, enrollments that never reach the scale, two and one failed checks, sessions stopping after the trial statements, before the pause and in the second half, speeders, longstrings, many "Prefer not to answer", flagged resubmissions and later re-entries.
@@ -47,7 +73,7 @@ On simulated data (seed 20261198, 9 November 2026, the registered 2,000 H3d resa
 
 The first run (seed 20261199, 200 resamples) also passed all 19.
 
-H3d did not hold in that simulated sample (R .760, 95% CI .717–.812), and that is the simulated truth, not the code. In it, the four H2 neighbours correlate with each other only through the scale's factor, at .45–.50 each, which makes the population R .735. H3d's power was not part of the power simulation. It depends on how much the four neighbours share beyond the 8: the more they overlap, the lower R.
+H3d did not hold in that simulated sample (R .760, 95% CI .717–.812), and that is the simulated truth, not the code. In it, the four H2 neighbours correlate with each other only through the scale's factor, at .45–.50 each, which makes the population R .735. H3d's power has since been simulated (`study2/power/power_2b_h3d.R`). It is 42% at that truth, 83% at R .73 and 92–100% at R .71 or below.
 
 One defect was found and fixed by the dry run. A validity factor with free loadings takes its sign from its first item, which for BFI-2 Aesthetic Sensitivity, SBI and several FFMQ and Brief MAIA-2 subscales is reverse-keyed, so their correlations came out negative. Every validity loading now starts at ±.6 by its keying, and `sf2b_orientation()` refuses any model whose factor is not oriented as keyed.
 

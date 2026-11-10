@@ -23,6 +23,45 @@
 
 At 700 the .15 contrasts reach 76–86% when the two measures compared correlate .30 or more, or have four or more items. The weakest case is two 3-item subscales that barely correlate, which is Brief MAIA-2 Noticing vs Not-Worrying: about 64%.
 
+## H3d and H5a at the 80% rule's n (10 November, N = 700)
+
+`power_2b_h3d.R` (seed 20261110): `power_2b_h3d_results.csv`, `power_2b_h3d_calibration.csv`, `power_2b_h5_n.csv`.
+
+**Setup.** The fitted model is the pipeline's own H3d model:
+- the 8 with the agreement factor;
+- the four H2 neighbours as latent factors of their real items, with their keying and category counts.
+
+The 8 comes from Study 2a's fitted model, and neighbour items load .70. There are 300 simulated studies per condition.
+
+**What varies:**
+- *r*: the 8's latent correlation with each neighbour;
+- *ρ*: the neighbours' correlation with each other. "Through the 8 only" means ρ = r², so the neighbours share nothing the 8 does not carry, as in the dry run of the code.
+
+**H3d power**, upper bound < .80, %:
+
+| r | ρ through the 8 only | ρ .30 | ρ .40 | ρ .50 |
+|---|---|---|---|---|
+| .40 | 99.7 (R .66) | 100 (.58) | 100 (.54) | 100 (.51) |
+| .45 | 92.0 (R .71) | 100 (.65) | 100 (.61) | 100 (.57) |
+| .50 | **41.7** (R .76) | 83.3 (.73) | 100 (.67) | 100 (.63) |
+
+Unequal pattern (r .50 / .40 / .45 / .50; ρ .30–.55, an assumption): R .64, power 100%.
+
+The interval is the delta-method one on R. In 16 studies (two conditions) that also had a 300-resample percentile bootstrap:
+- its upper bound differed from the bootstrap's by .003–.004 on average;
+- it agreed on every decision.
+
+The atanh version differed by .006–.007 and is not used.
+
+**H5a** (16 step-1 columns, controls explaining 30%; 4,000 runs), ΔR² ≥ .02 and p < .05, %. Holm's worst case, .05/3, gives the same figures, because the ΔR² ≥ .02 requirement is the harder one to meet.
+
+| n | true ΔR² .03 | .04 |
+|---|---|---|
+| 410 | 75.7 | 92.0 |
+| 470 | 78.2 | 92.6 |
+| 550 | 81.3 | 94.6 |
+| 700 | 84.0 | 96.4 |
+
 ## H1: the fit rule (decision 17)
 
 Pass rates, %. Populations: the model true (*fit*); 2b exactly like 2a (*observed*: 2a's polychoric correlations); two residual correlations of .30 (*small flaw*); three statements sharing a second factor loading .40 or .60.

@@ -4,7 +4,7 @@
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
-- **Before filing:** the 2b analysis code (`study2b/analysis/`) is written and has run end to end on data simulated from Study 2a's fitted model, with every recovery check passing (9 November). The code is the specification wherever this text is less precise; its readings of this text are listed in `study2b/analysis/README.md`. The run on real answers shuffled within each item needs real data, so it is run on the pilot's extraction before the remaining 640 places open (Section 6).
+- **Before filing:** the 2b analysis code (`study2b/analysis/`) is written and has run end to end on data simulated from Study 2a's fitted model, with every recovery check passing (9 November). The code is the specification wherever this text is less precise; its readings of this text are listed in `study2b/analysis/README.md`. The run on real answers shuffled within each item needs real data. It is run on the pilot's extraction, and this registration is filed after it, before the remaining 640 places open (Section 3, Pilot).
 - **Drafting choices for Norm to confirm** are listed in Section 6.
 
 ## 1. Study information
@@ -99,7 +99,7 @@ Every question about the participant offers "Prefer not to answer"; the three at
 
 ### Existing data
 
-**Registration prior to creation of data.** No Study 2b data exist. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (decision 14; WLSMV, theta, pairwise, the agreement factor as in Section 5):
+**Registration prior to analysis of the data.** At filing, the only Study 2b data are the pilot's 60 sessions. Their answers have been seen only shuffled within each item (Pilot, below), which leaves no relation between any two answers. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (decision 14; WLSMV, theta, pairwise, the agreement factor as in Section 5):
 
 | Form | CFI | RMSEA (90% upper) | SRMR | Largest residual | ω (content) | α | Practitioner d |
 |---|---|---|---|---|---|---|---|
@@ -113,7 +113,16 @@ The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2
 - **Participants:** Prolific participants aged 18+, fluent in English (Prolific's fluent-languages filter), in any country. Participants in Study 1 or Study 2a are excluded through Prolific's exclusion list.
 - **Platform:** the RADlab research platform (radlab.zone). Prolific IDs are held in a separate table, replaced by a random code in all study data, and deleted after payment.
 - **Compensation:** £12.71 an hour (the UK minimum wage), prorated, set from the pilot's median completion time (about £4.66 for 22 minutes), paid regardless of answers, of the attention checks and of the pause. Prolific's maximum time is set well beyond the median plus the 10-minute pause cap, so a long pause does not time out.
-- **Pilot:** the first 60 places, identical materials. Inspected for quality only: completion counts, attention-check pass rates, completion time, "Prefer not to answer" counts, per-person spread of answers, pause take-up and the export. No correlations, factor models or vignette summaries are computed on it. If nothing changes after the pilot, pilot participants are included; if the materials change, they are excluded and 60 places are added.
+- **Pilot:** the first 60 places, identical materials, run before this registration is filed. Its extraction goes through the analysis code with every item's answers shuffled across participants, which keeps each item's distribution and destroys every relation between answers. Read from that run only:
+  - completion and breakoff counts;
+  - attention-check pass rates;
+  - completion time;
+  - each item's "Prefer not to answer" rate;
+  - pause take-up;
+  - practice-group sizes;
+  - whether the code reads the export.
+
+  No unshuffled answers are analysed. The rules for each reading are set in advance in `study2b/analysis/README.md` ("The pilot run"). If nothing changes after the pilot, pilot participants are included. If the materials change, they are excluded and 60 places are added.
 
 ### Sample size
 
@@ -131,11 +140,19 @@ By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, 
 | H3b, a difference of .15 | 3-item measures correlating .30 / .50 | 76% / 86% |
 | | 4- or 8-item measures correlating .30 | 84–86% |
 | | 3-item measures barely correlated (contrast 4, Brief MAIA-2) | 64% |
+| H3d, upper bound < .80 | true R ≤ .67 / .71 / .73 / .76 | 100% / 92% / 83% / 42% |
 | H4b | latent r .20, take-up 15–50% | 88–97% |
-| H5a | true ΔR² .03 | 85% |
+| H5a | true ΔR² .03, at 700 / at the 410–470 complete cases of the 80% rule | 84–85% / 76–78% |
+| | true ΔR² .04, at the 410–470 complete cases | 92–93% |
 | H6 | true d .67 (382 vs 190) | 97% |
 
 The smallest contrast of interest in H3b is a difference of .15 (decision 32). Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported (decision 36). H2 needs a true correlation of about .45 for 95% power (63% at .40).
+
+H3d's power depends on the true multiple correlation R. That depends on two things no study has measured: the 8's correlation with each neighbour (.40–.50 simulated), and how much the neighbours share beyond the 8 (`study2/power/power_2b_h3d.R`; 300 simulated studies per condition).
+- **Neighbours sharing at least .30 with each other:** R is at most .73, and power is 83–100%.
+- **Neighbours related only through the 8, at .50 each:** R is .76, and power is 42%.
+
+The simulation used the delta-method interval, because 2,000 bootstrap resamples for every simulated study would take days. In 16 studies that also had 300 bootstrap resamples, its upper bound was within .004 of the bootstrap's on average, and every decision was the same.
 
 ### Stopping rule
 
@@ -246,7 +263,7 @@ A large negative correlation with PHQ-4 or PSS-4 would mean the scale is partly 
 
 ### Transformations
 
-Reverse-keyed statements are recoded (7 − x) for observed scores and left unrecoded in models with the agreement factor. Validity scales are scored per their manuals. "Prefer not to answer" is missing.
+Reverse-keyed statements are recoded (7 − x) for observed scores and left unrecoded in models with the agreement factor. Validity scales are scored per their manuals, with a score computed when at least 80% of its items are answered (Study 2's rule), so a 3-item subscale needs all three. "Prefer not to answer" is missing.
 
 ### Inference criteria
 
@@ -289,9 +306,9 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - H4 is two-sided, Holm across (a) and (b); H6 uses 2a's current-practitioner group, with dedicated as sensitivity.
 - The pilot's 60 are included if nothing changes.
 - Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
-- The shuffled-answers run of the code is on the pilot's extraction, before the remaining 640 places open; no unshuffled pilot answers are analysed.
-- Validity scores with missing items: Study 2's rule (at least 80% of a scale's items answered) means a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three. H5 needs all 13 such subscales, so in the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470. The alternative is at least two of three for the 3-item subscales.
-- H3d's bound (.80) has no power estimate. In the simulated run the four neighbours correlated with the 8 at .45–.50 and with each other only through it; the population R was then .735, and the test failed (upper bound .812). The more the neighbours overlap with each other, the lower R. Keep as is, or simulate H3d's power under plausible overlap before filing.
+- **Decided 10 November:** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
+- **Decided 10 November:** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
+- **Simulated 10 November:** H3d's bound stays at .80 unless Norm changes it. Its power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 
