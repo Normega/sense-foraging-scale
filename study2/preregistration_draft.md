@@ -1,11 +1,11 @@
 # Sense Foraging Scale, Study 2b: confirmatory structure and construct validity of the 8-statement scale
 
-**DRAFT, 9 November 2026; not filed.** Rewritten from `prereg_2b_plan.md` and decisions 1–36 in `decisions_after_2a.md`. The pre-2a draft (20 items, four factors, retest) is in the repository history.
+**DRAFT, 9 November 2026; not filed.** Rewritten from `prereg_2b_plan.md` and decisions 1–40 in `decisions_after_2a.md`. The pre-2a draft (20 items, four factors, retest) is in the repository history.
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
 - **Before filing:** the 2b analysis code (`study2b/analysis/`) is written and has run end to end on data simulated from Study 2a's fitted model, with every recovery check passing (9 November). The code is the specification wherever this text is less precise; its readings of this text are listed in `study2b/analysis/README.md`. The run on real answers shuffled within each item needs real data. It is run on the pilot's extraction, and this registration is filed after it, before the remaining 640 places open (Section 3, Pilot).
-- **Drafting choices for Norm to confirm** are listed in Section 6.
+- **Choices made while drafting** are listed in Section 6; all are confirmed (decisions 37–40).
 
 ## 1. Study information
 
@@ -299,7 +299,7 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 
 **Measures used for non-commercial academic research.** SBI, PSS-4, BSSS-8, NCS-6, the SPSQ-SF and ASI-3 items, the Brief MAIA-2, BFI-2, EQ, BIDR-16, FFMQ-15 and PHQ-4 are used under their research-use terms; SAMD is CC BY, and its authors are told of the use.
 
-**Drafting choices for Norm to confirm** (not in the decisions so far):
+**Choices made while drafting** (confirmed 12 November, decision 40, unless dated otherwise):
 - H3b holds when at least four of the five contrasts hold; each is also reported on its own.
 - H3e's bounds: BSSS-8 below .40, the other three within ±.30.
 - Validity measures enter the latent models as latent factors of their items, as simulated, not as observed scores.
@@ -307,9 +307,9 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - H4 is two-sided, Holm across (a) and (b); H6 uses 2a's current-practitioner group, with dedicated as sensitivity.
 - The pilot's 60 are included if nothing changes.
 - Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
-- **Decided 10 November:** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
-- **Decided 10 November:** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
-- **Decided 12 November:** H3a's and H3d's bound is .80, after Rönkkö and Cho (2022), whose upper limits are reported in their classes (Section 5). H3d's power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
+- **Decided 10 November (decision 37):** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
+- **Decided 10 November (decision 38):** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
+- **Decided 12 November (decision 39):** H3a's and H3d's bound is .80, after Rönkkö and Cho (2022), whose upper limits are reported in their classes (Section 5). H3d's power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 
