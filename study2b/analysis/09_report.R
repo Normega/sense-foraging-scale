@@ -15,13 +15,13 @@ rows <- list(
                f(h1s$cfi), f(h1s$max_residual), f(h1s$freeing_it_changes_omega_by), f(h1s$freeing_it_changes_a_loading_by_up_to),
                f(h1s$closefit_p), f(h1s$rmsea), ci(h1s$rmsea_ci[[1]], h1s$rmsea_ci[[2]]))))
 for (x in v$sf8$h2) rows[[length(rows) + 1]] <- list("H2", paste("r with", x$score, "> .30 (lower bound)"), yn(x$h2), sprintf("r %s %s", f(x$r), ci(x$lower, x$upper)))
-rows[[length(rows) + 1]] <- list("H3a", "each H2 upper bound < .80", yn(v$sf8$H3a), paste(vapply(v$sf8$h2, function(x) f(x$upper), ""), collapse = ", "))
+rows[[length(rows) + 1]] <- list("H3a", "each H2 upper bound < .80", yn(v$sf8$H3a), paste(vapply(v$sf8$h2, function(x) sprintf("%s (%s)", f(x$upper), x$rc_class), ""), collapse = ", "))
 for (x in v$sf8$h3b) rows[[length(rows) + 1]] <- list(paste0("H3b-", x$contrast), paste(x$first, ">", x$second), yn(x$holds),
                                                       sprintf("difference %s %s", f(x$difference), ci(x$lower, x$upper)))
 rows[[length(rows) + 1]] <- list("H3b", "at least 4 of the 5 contrasts", yn(v$sf8$H3b), paste(v$sf8$H3b_contrasts_holding, "of 5"))
 for (x in v$sf8$h3c) rows[[length(rows) + 1]] <- list("H3c", paste(x$score, "within +/-.30"), yn(x$holds), sprintf("r %s %s", f(x$r), ci(x$lower, x$upper)))
 rows[[length(rows) + 1]] <- list("H3d", "multiple R with the four neighbours < .80 (upper bound)", yn(v$sf8$H3d),
-                                 sprintf("R %s %s, %s resamples", f(v$sf8$h3d$R), ci(v$sf8$h3d$lower, v$sf8$h3d$upper), v$sf8$h3d$resamples))
+                                 sprintf("R %s %s, %s resamples; Ronkko & Cho class: %s", f(v$sf8$h3d$R), ci(v$sf8$h3d$lower, v$sf8$h3d$upper), v$sf8$h3d$resamples, v$sf8$h3d$rc_class))
 for (x in v$sf8$h3e) rows[[length(rows) + 1]] <- list("H3e", sprintf("%s within (%s, %s)", x$score, f(x$bound_lower, 2), f(x$bound_upper, 2)), yn(x$holds),
                                                       sprintf("r %s %s", f(x$r), ci(x$lower, x$upper)))
 rows[[length(rows) + 1]] <- list("H4a", "rho with past-week pause days > 0 (Holm)", yn(h4$sf8$a$supported), sprintf("rho %s, Holm p %s, n %s", f(h4$sf8$a$r), signif(h4$sf8$a$p_holm, 3), h4$sf8$a$n))

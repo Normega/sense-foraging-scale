@@ -212,10 +212,11 @@ R with lavaan, psych and MASS; versions reported. Scale and validity items are o
    Reported, not tested: RMSEA with its 90% CI, model-specific (dynamic) cutoffs, every loading, the agreement factor's variance and share of item variance, ordinal ω for the content factor, α, and the 10 under the same rule. The model without the agreement factor is reported for comparison.
 2. **H2–H3, convergent and discriminant.** One model per validity measure: the H1 model plus that measure as a latent factor of its items (ordinal), correlated with the content factor and uncorrelated with the agreement factor. Subscales of one measure (FFMQ, Brief MAIA-2, BFI-2, BIDR) enter as correlated factors of that measure. Correlations have 95% Wald CIs.
    - **H2:** each of the four lower bounds exceeds .30.
-   - **H3a:** each of the four upper bounds is below .80.
+   - **H3a:** each of the four upper bounds is below .80, the cutoff for "no problem" in Rönkkö and Cho's (2022) classification of the factor correlation's 95% upper limit.
    - **H3b:** in the model holding both measures of a contrast, the difference of the two latent correlations, defined as a parameter, has a 95% delta-method CI excluding 0 in the predicted direction. Each contrast is reported separately; H3b is supported when at least four of the five are. (Contrast 4 has about 64% power, Section 3.)
    - **H3c:** both BIDR CIs lie within ±.30.
-   - **H3d:** in a model with the four H2 neighbours, the multiple correlation R = √(r′Σ⁻¹r) of the content factor with them, with a 2,000-resample bootstrap 95% CI; supported when its upper bound is below .80.
+   - **H3d:** in a model with the four H2 neighbours, the multiple correlation R = √(r′Σ⁻¹r) of the content factor with them, with a 2,000-resample bootstrap 95% CI; supported when its upper bound is below .80. Rönkkö and Cho's cutoff is for one correlation; applying it to R, which is at least as large as the largest of the four, is our extension and a stricter test.
+   - **Reported, not tested:** each H3a upper bound and H3d's, classed by Rönkkö and Cho's (2022) Table 12: no problem (< .80), marginal (.80 to < .90), moderate (.90 to < 1), severe (≥ 1).
    - **H3e:** BSSS-8's upper bound below .40; NCS-6's, SPSQ-SF Sensory Discomfort's and ASI-3 Physical Concerns' CIs within ±.30.
    - **Secondary:** observed-score Pearson correlations with every measure, the full validity matrix below.
 3. **H4, criterion.** On the observed 8:
@@ -308,7 +309,7 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
 - **Decided 10 November:** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
 - **Decided 10 November:** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
-- **Simulated 10 November:** H3d's bound stays at .80 unless Norm changes it. Its power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
+- **Decided 12 November:** H3a's and H3d's bound is .80, after Rönkkö and Cho (2022), whose upper limits are reported in their classes (Section 5). H3d's power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 
@@ -322,6 +323,7 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - Maydeu-Olivares, A., Shi, D., & Rosseel, Y. (2018). Assessing fit in structural equation models: A Monte-Carlo evaluation of RMSEA versus SRMR confidence intervals and tests of close fit. *Structural Equation Modeling, 25*(3), 389–402.
 - Mehling, W. E., Acree, M., Stewart, A., Silas, J., & Jones, A. (2018). The Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2). *PLoS ONE, 13*(12), e0208034.
 - Rogowska, A. M., Tataruch, R., & Klimowska, K. (2023). Validation of the shortened 24-item multidimensional assessment of interoceptive awareness, version 2 (Brief MAIA-2). *Scientific Reports, 13*, 21270.
+- Rönkkö, M., & Cho, E. (2022). An updated guideline for assessing discriminant validity. *Organizational Research Methods, 25*(1). https://doi.org/10.1177/1094428120968614
 - Russo-Netzer, P., & Icekson, T. (2023). An underexplored pathway to life satisfaction: The development and validation of the synchronicity awareness and meaning-detecting scale. *Frontiers in Psychology, 13*, 1053296.
 - Taylor, S., Zvolensky, M. J., Cox, B. J., Deacon, B., Heimberg, R. G., Ledley, D. R., et al. (2007). Robust dimensions of anxiety sensitivity: Development and initial validation of the Anxiety Sensitivity Index-3. *Psychological Assessment, 19*(2), 176–188.
 - Wu, H., & Estabrook, R. (2016). Identification of confirmatory factor analysis models of different levels of invariance for ordered categorical outcomes. *Psychometrika, 81*(4), 1014–1045.

@@ -6,7 +6,7 @@
 # content factor S and uncorrelated with the agreement factor; 95% Wald CIs.
 #   H2   the four lower bounds (FFMQ Observing, SBI, BFI-2 Aesthetic Sensitivity,
 #        Brief MAIA-2 Noticing) exceed .30
-#   H3a  their upper bounds are below .80
+#   H3a  their upper bounds are below .80 (Ronkko & Cho, 2022: "no problem")
 #   H3b  five contrasts, each in a model holding both measures: the difference of the two
 #        latent correlations (a defined parameter) has a 95% delta-method CI above 0;
 #        H3b holds when at least four of the five do
@@ -133,11 +133,16 @@ fwrite(data.table(resample = seq_along(boot), R = boot), sf2b_out("04_h3d_bootst
 h3d_ci <- unname(quantile(boot, c(.025, .975), na.rm = TRUE))
 
 # ---- decisions -------------------------------------------------------------------------------------
+# Reported, not tested: Ronkko & Cho's (2022, Table 12) class of the 95% upper limit (the
+# absolute lower limit when the estimate is negative).
+rc_class <- function(est, lower, upper) { ul <- if (isTRUE(est < 0)) abs(lower) else upper
+  if (is.null(ul) || is.na(ul)) NA_character_ else if (ul < .80) "no problem" else if (ul < .90) "marginal" else if (ul < 1) "moderate" else "severe" }
 cell <- function(sc, fm = "sf8", sm = "all") lat[score == sc & form == fm & sample == sm]
 dif_of <- function(k, fm = "sf8", sm = "all") R[label == paste0("dif_", k) & form == fm & sample == sm & ri_free == FALSE]
 decide <- function(fm, sm) {
   h2 <- rbindlist(lapply(SF2B_H2, function(s) { x <- cell(s, fm, sm); data.table(score = s, r = x$est, lower = x$ci.lower, upper = x$ci.upper,
-                                                                                   h2 = isTRUE(x$ci.lower > SF2B$h2_lower), h3a = isTRUE(x$ci.upper < SF2B$h3a_upper)) }))
+                                                                                   h2 = isTRUE(x$ci.lower > SF2B$h2_lower), h3a = isTRUE(x$ci.upper < SF2B$h3a_upper),
+                                                                                   rc_class = rc_class(x$est, x$ci.lower, x$ci.upper)) }))
   h3b <- rbindlist(lapply(seq_len(nrow(SF2B_H3B)), function(k) { x <- dif_of(k, fm, sm); h <- SF2B_H3B[k]
     data.table(contrast = k, first = h$first, second = h$second, model = h$model,
                r_first = cell(h$first, fm, sm)$est, r_second = cell(h$second, fm, sm)$est,
@@ -153,7 +158,7 @@ decide <- function(fm, sm) {
 }
 dec <- list(sf8 = decide("sf8", "all"), sf8_unflagged = decide("sf8", "unflagged"), sf10 = decide("sf10", "all"))
 dec$sf8$h3d <- list(R = r3(R_h3d), lower = r3(h3d_ci[1]), upper = r3(h3d_ci[2]), resamples = B, resamples_ok = sum(!is.na(boot)),
-                    holds = isTRUE(h3d_ci[2] < SF2B$h3d_upper))
+                    holds = isTRUE(h3d_ci[2] < SF2B$h3d_upper), rc_class = rc_class(R_h3d, h3d_ci[1], h3d_ci[2]))
 dec$sf8$H3d <- dec$sf8$h3d$holds
 dec$sf8_unflagged$h3d <- list(R = r3(R_h3d_unfl), note = "point estimate only; the bootstrap is run on the full sample")
 write_json(dec, sf2b_out("04_validity_decisions.json"), auto_unbox = TRUE, pretty = TRUE, digits = NA)
