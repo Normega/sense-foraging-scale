@@ -74,3 +74,9 @@ exercise the code without real structure; see each `analysis/README.md`. For exa
 SF1_MODE=real SF1_K=4 Rscript study1/analysis/run_all.R
 SF2B_MODE=simulated Rscript study2b/analysis/run_all.R
 ```
+
+## Licence
+
+Code is under the MIT licence (`LICENSE`). Text, preregistrations and the project's own materials are under CC BY 4.0
+(`LICENSE-CC-BY-4.0.md`). The third-party questionnaires are covered by neither, and their wording is not in the
+repository.

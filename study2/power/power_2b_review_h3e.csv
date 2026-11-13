@@ -1,0 +1,10 @@
+condition,r_bsss,r_ncs,r_spsq,r_asi,loading,converged,power_bsss,power_ncs,power_spsq,power_asi,power_all4
+all four r 0.00,0,0,0,0,0.7,100,100,100,100,100,100
+all four r 0.10,0.1,0.1,0.1,0.1,0.7,100,100,99.3,97.7,99.7,97
+all four r 0.15,0.15,0.15,0.15,0.15,0.7,100,100,92,91,93.3,79.7
+all four r 0.20,0.2,0.2,0.2,0.2,0.7,100,99.3,62,55.3,62,22.3
+all four r 0.25,0.25,0.25,0.25,0.25,0.7,100,96.3,21.7,21,19.7,1.7
+"BSSS .30, others .25",0.3,0.25,0.25,0.25,0.7,100,64.3,21.3,16.7,19,0
+"predicted (BSSS + small, others near zero): BSSS .20, others .10",0.2,0.1,0.1,0.1,0.7,100,100,99.3,98.7,99.3,97.3
+"predicted, at their edge: BSSS .30, others .15",0.3,0.15,0.15,0.15,0.7,100,69,92.7,92,93.7,56
+"sensitivity: BSSS .20, others .10, item loadings .55",0.2,0.1,0.1,0.1,0.55,100,99.3,99.3,96,98,93.3

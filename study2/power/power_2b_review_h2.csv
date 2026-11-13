@@ -1,0 +1,5 @@
+condition,r_obs,r_sbi,r_aes,r_not,rho,converged,power_obs,power_sbi,power_aes,power_not,power_all4,power_atleast3,h3a_all4
+"all four r 0.40, neighbours correlate .30",0.4,0.4,0.4,0.4,0.3,100,66.3,74.7,64.3,61.3,23.3,61.7,100
+"all four r 0.45, neighbours correlate .30",0.45,0.45,0.45,0.45,0.3,100,91.7,98,95.7,95.7,82.7,98.3,100
+"all four r 0.50, neighbours correlate .30",0.5,0.5,0.5,0.5,0.3,100,100,100,100,100,100,100,100
+"mixed: r .45 / .45 / .45 / .38 (Obs / SBI / Aes / Not), neighbours correlate .30",0.45,0.45,0.45,0.38,0.3,100,95.7,99,95,50.3,47,94.3,100

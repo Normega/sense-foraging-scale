@@ -37,7 +37,7 @@ Study 2b is the first test of the 8 in data it was not chosen on. It asks:
 Confirmatory hypotheses are H1–H6 on the 8. The 10 is reported beside it under the same rules, without its own hypotheses. H8 is exploratory. Decision rules are in Section 5.
 
 - **H1 (structure).** A one-factor model of the 8 with a random-intercept agreement factor fits.
-- **H2 (convergent).** The 8 correlates positively and at least moderately with each of FFMQ-15 Observing, SBI Savoring the Moment, BFI-2 Aesthetic Sensitivity and Brief MAIA-2 Noticing.
+- **H2 (convergent).** The 8 correlates positively and at least moderately with FFMQ-15 Observing, SBI Savoring the Moment, BFI-2 Aesthetic Sensitivity and Brief MAIA-2 Noticing: with at least three of the four, each correlation reported on its own.
 - **H3 (discriminant).**
   - (a) Each H2 correlation is below .80: the scale is not any one of those measures.
   - (b) Five within-battery contrasts, each a larger correlation with the first measure than the second:
@@ -131,21 +131,28 @@ Target: 700 completed sessions (60 pilot + 640), in one posting.
 
 ### Sample size rationale
 
-By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, generated from 2a's fitted model of the 8 with its agreement factor and thresholds; validity measures as latent factors of 3–8 ordinal items):
+By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, 300 for H2's three-of-four rule, H3c, H3d and H3e, generated from 2a's fitted model of the 8 with its agreement factor and thresholds; validity measures as latent factors of 3–8 ordinal items):
 
 | Test | Assumed truth | Power at 700 |
 |---|---|---|
 | H1, the decision rule | the model true / data like 2a's | 100% / 97% pass |
 | | three statements sharing a second factor loading .60 (should fail) | 0.2% pass |
-| H2 | true latent r .45 / .50 | 95% / 99% |
+| H2, each correlation | true latent r .45 / .50 | 95% / 99% |
+| H2, at least three of four (the rule) | all four r .40 / .45; three at .45 and one at .38 | 62% / 98%; 94% |
 | H3b, a difference of .15 | 3-item measures correlating .30 / .50 | 76% / 86% |
 | | 4- or 8-item measures correlating .30 | 84–86% |
 | | 3-item measures barely correlated (contrast 4, Brief MAIA-2) | 64% |
 | H3d, upper bound < .80 | true R ≤ .67 / .71 / .73 / .76 | 100% / 92% / 83% / 42% |
+| H3c | both BIDR correlations .10 / .15 / .20 | 98% / 85% / 49% |
+| H3e, all four bounds | BSSS-8 .20, the other three .10 (predicted) / all four .15 | 97% / 80% |
+| H4a | latent r .15 / .20, Holm with H4b | 92% / 99% |
 | H4b | latent r .20, take-up 15–50% | 88–97% |
 | H5a | true ΔR² .03, at 700 / at the 410–470 complete cases of the 80% rule | 84–85% / 76–78% |
 | | true ΔR² .04, at the 410–470 complete cases | 92–93% |
-| H6 | true d .67 (382 vs 190) | 97% |
+| H5b | odds ratio 1.3 / 1.4 per SD, at 470 complete cases | 66% / 85% |
+| H6 | true d .55 / .67 (382 vs 190) | 70% / 97% |
+
+H2 requires three of the four correlations, not all four: requiring all four multiplies four chances, 83% power at a true r of .45 each and 47% if one is .38 (`study2/power/power_2b_review.R`). H3c and H3e test bounds of ±.30 with CIs about ±.08 wide, so they hold when the true correlations are near zero, as predicted, and fail about half the time at .20.
 
 The smallest contrast of interest in H3b is a difference of .15. Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported. H2 needs a true correlation of about .45 for 95% power (63% at .40).
 
@@ -216,7 +223,7 @@ R with lavaan, psych and MASS; versions reported. Scale and validity items are o
 
    Reported, not tested: RMSEA with its 90% CI, model-specific (dynamic) cutoffs, every loading, the agreement factor's variance and share of item variance, ordinal ω for the content factor, α, and the 10 under the same rule. The model without the agreement factor is reported for comparison.
 2. **H2–H3, convergent and discriminant.** One model per validity measure: the H1 model plus that measure as a latent factor of its items (ordinal), correlated with the content factor and uncorrelated with the agreement factor. Subscales of one measure (FFMQ, Brief MAIA-2, BFI-2, BIDR) enter as correlated factors of that measure. Correlations have 95% Wald CIs.
-   - **H2:** each of the four lower bounds exceeds .30.
+   - **H2:** each of the four correlations is reported separately; H2 is supported when at least three of the four lower bounds exceed .30.
    - **H3a:** each of the four upper bounds is below .80, the cutoff for "no problem" in Rönkkö and Cho's (2022) classification of the factor correlation's 95% upper limit.
    - **H3b:** in the model holding both measures of a contrast, the difference of the two latent correlations, defined as a parameter, has a 95% delta-method CI excluding 0 in the predicted direction. Each contrast is reported separately; H3b is supported when at least four of the five are. (Contrast 4 has about 64% power, Section 3.)
    - **H3c:** both BIDR CIs lie within ±.30.

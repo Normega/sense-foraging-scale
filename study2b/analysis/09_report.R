@@ -15,6 +15,8 @@ rows <- list(
                f(h1s$cfi), f(h1s$max_residual), f(h1s$freeing_it_changes_omega_by), f(h1s$freeing_it_changes_a_loading_by_up_to),
                f(h1s$closefit_p), f(h1s$rmsea), ci(h1s$rmsea_ci[[1]], h1s$rmsea_ci[[2]]))))
 for (x in v$sf8$h2) rows[[length(rows) + 1]] <- list("H2", paste("r with", x$score, "> .30 (lower bound)"), yn(x$h2), sprintf("r %s %s", f(x$r), ci(x$lower, x$upper)))
+rows[[length(rows) + 1]] <- list("H2", sprintf("at least %d of the 4 lower bounds > .30", SF2B$h2_needed), yn(v$sf8$H2),
+                                 paste(v$sf8$H2_correlations_holding, "of 4"))
 rows[[length(rows) + 1]] <- list("H3a", "each H2 upper bound < .80", yn(v$sf8$H3a), paste(vapply(v$sf8$h2, function(x) sprintf("%s (%s)", f(x$upper), x$rc_class), ""), collapse = ", "))
 for (x in v$sf8$h3b) rows[[length(rows) + 1]] <- list(paste0("H3b-", x$contrast), paste(x$first, ">", x$second), yn(x$holds),
                                                       sprintf("difference %s %s", f(x$difference), ci(x$lower, x$upper)))

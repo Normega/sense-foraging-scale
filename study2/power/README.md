@@ -62,6 +62,47 @@ The atanh version differed by .006–.007 and is not used.
 | 550 | 81.3 | 94.6 |
 | 700 | 84.0 | 96.4 |
 
+## H2 jointly, H3c, H3e, H4a and H5b (13 November, N = 700)
+
+`power_2b_review.R` (seed 20261113): `power_2b_review_h2.csv`, `_h3c.csv`, `_h3e.csv`, `_h4a.csv`, `_h5b.csv`. Populations as for H3d: the 8 from Study 2a's fitted model, each validity measure a latent factor of its real items (keying and category counts as built), items loading .70. Every SEM test is fitted the registered way, one model per measure, 300 simulated studies per condition. Power, %.
+
+**H2, the four neighbours generated together** (neighbours correlating .30 with each other):
+
+| True r (Obs / SBI / Aes / Not) | each lower bound > .30 | all four | at least three (the rule) |
+|---|---|---|---|
+| .40 each | 61–75 | 23 | 62 |
+| .45 each | 92–98 | 83 | 98 |
+| .50 each | 100 | 100 | 100 |
+| .45 / .45 / .45 / .38 | 95–99; Noticing 50 | 47 | 94 |
+
+Requiring all four multiplies four chances, so one weaker neighbour sinks it: 83% at .45 each, 47% when Noticing is .38. The at-least-three rule holds 94–98% there. H3a (every upper bound < .80) held in every simulated study.
+
+**H3c**, both BIDR CIs within ±.30 (SDE and IM correlating .40): true r 0 / .10 / .15 / .20 / .25 each: 100 / 98 / 85 / 49 / 7. At the prediction's edge (SDE .20, IM .10): 67. With item loadings .55 instead of .70, at .10: 98. Median CI half-width .08.
+
+**H3e**, all four bounds holding at once (each measure in its own model; their correlations with each other assumed: BSSS–NCS .20, SPSQ–ASI .40, the rest −.15 to 0):
+
+| True r (BSSS / NCS, SPSQ, ASI) | BSSS < .40 | each ±.30 | all four |
+|---|---|---|---|
+| .20 / .10 (predicted) | 100 | 99 | 97 |
+| .15 each | 100 | 91–93 | 80 |
+| .30 / .15 | 69 | 92–94 | 56 |
+| .20 each | 99 | 55–62 | 22 |
+| .25 each | 96 | 20–22 | 2 |
+
+A ±.30 bound at N = 700 has a CI half-width of about .08, so a true correlation of .20 or more fails it about half the time, and a joint test of three such bounds fails it most of the time.
+
+**H4a**, Spearman ρ with past-week pause days (0–7 days, probabilities .30 / .15 / .13 / .11 / .08 / .07 / .04 / .12), observed 8 with reliability .84, Holm across H4a and H4b (H4b at take-up 30%, latent r .20): latent r .15 / .20 / .25: 92 / 99 / 100. H4b beside it: 95.
+
+**H5b**, proportional odds on five levels (.36 / .09 / .25 / .16 / .14, from 2a's practice groups), 18 covariate columns explaining 40% of the 8 (25% as a check), LR p < .05:
+
+| Odds ratio per SD of the 8 | n 410 | 470 | 650 |
+|---|---|---|---|
+| 1.2 | 34 (42) | 36 (45) | 50 (60) |
+| 1.3 | 61 (70) | 66 (75) | 80 (87) |
+| 1.4 | 78 (88) | 85 (92) | 94 (98) |
+
+(In brackets: covariates explaining 25% of the 8.) The simulated pipeline's own H5b estimate was an OR of 1.35 at n 474.
+
 ## H1: the fit rule (decision 17)
 
 Pass rates, %. Populations: the model true (*fit*); 2b exactly like 2a (*observed*: 2a's polychoric correlations); two residual correlations of .30 (*small flaw*); three statements sharing a second factor loading .40 or .60.

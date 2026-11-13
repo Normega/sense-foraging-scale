@@ -57,6 +57,7 @@ SF2B <- list(
   h1_cfi = .95, h1_resid = .10, h1_d_omega = .03, h1_d_lambda = .05, h1_closefit_alpha = .05,
   # H2-H3
   h2_lower = .30, h3a_upper = .80, h3c_bound = .30, h3d_upper = .80, h3e_bsss = .40, h3e_bound = .30,
+  h2_needed  = 3,                  # of the four H2 correlations
   h3b_needed = 4,                  # of the five contrasts
   h5_delta_r2 = .02, h6_d = .50,
   inv_d_cfi = -.010, inv_d_rmsea = .015, min_category_n = 5, partial_max_free = 4,

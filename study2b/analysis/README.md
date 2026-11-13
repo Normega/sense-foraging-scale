@@ -60,12 +60,12 @@ Before the 640 open, Norm sees only this run's report: counts, rates, times, run
 1. **`01_prepare`:** one row per participant by the registered rules: first complete submission of each questionnaire (flagged resubmissions dropped first); exclusions (staff tests; no scale; two or more of the three checks failed, a check not reached is not a failure); flags (one check; < 2 s per position over the 14; longstring ≥ 10 of 14; "Prefer not to answer" on > 2 of 13); the 8 (7 of 8 answered) and the 10 (9 of 10); validity scores; the engaged pause; practice groups; separation; the trial's Access + Valuing score; positions within each half. The pause notes stay in `derived/`.
 2. **`02_descriptives`:** item distributions, agreement rates, missing data per measure, alpha per score, the sample.
 3. **`03_structure`:** H1 on the 8 and the 10, and the 8 without flagged participants; the models without the agreement factor; the 13 statements (the exploratory three's loadings); residual matrices; model-specific cutoffs.
-4. **`04_validity`:** H2, H3a–e; the latent matrix for the 8 and the 10; the agreement factor's correlation with every measure; the H3d bootstrap; the observed matrix; the confirmatory cells without flagged participants.
+4. **`04_validity`:** H2 (each of the four correlations reported on its own; H2 holds when at least three of the four lower bounds exceed .30, `h2_needed` in `config.R`), H3a–e; the latent matrix for the 8 and the 10; the agreement factor's correlation with every measure; the H3d bootstrap; the observed matrix; the confirmatory cells without flagged participants.
 5. **`05_criterion`:** H4a and H4b (Spearman, Holm), the logistic regression with device class.
 6. **`06_incremental`:** H5a (three hierarchical regressions, Holm) and H5b (proportional odds).
 7. **`07_known_groups`:** H6 and its sensitivity analyses; the latent difference (MIMIC).
 8. **`08_exploratory`:** H8 and the gender and country invariance; the trial's measure; the pause, further; order effects; the vignettes; BIDR dichotomous.
-9. **`09_report`:** `09_decisions.csv`, one line per confirmatory test, and `09_report_study2b.json`, every number above (aggregates only).
+9. **`09_report`:** `09_decisions.csv`, one line per confirmatory test (H2: one per neighbour, then the at-least-three-of-four line with its count), and `09_report_study2b.json`, every number above (aggregates only).
 99. **`99_check_recovery`** (simulated only): `99_recovery.csv`, pass or fail per check, and `99_validity_recovery.csv`.
 
 Model settings in every fit (`sf2b_models.R`): ordinal, WLSMV, theta parameterization, `missing = "pairwise"`, `conditional.x = FALSE`; the agreement factor's loadings fixed at 1 on the unrecoded statements, variance free, uncorrelated with every other factor.
@@ -78,7 +78,7 @@ On simulated data (seed 20261198, 9 November 2026, the registered 2,000 H3d resa
 - 25 of 27 latent validity CIs covered the population value, and 27 of 27 covered the sample's own latent correlation; all 4 contrasts with an exact population value were covered.
 - The planted gender loading difference (V10) was the one statement released at the loadings step.
 
-The first run (seed 20261199, 200 resamples) also passed all 19.
+The first run (seed 20261199, 200 resamples) also passed all 19. Rerun on 13 November with H2's at-least-three-of-four rule (seed 20261198, 2,000 resamples, 8 workers, 15 minutes): all 19 pass, every number as before; H2 holds 4 of 4.
 
 H3d did not hold in that simulated sample (R .760, 95% CI .717–.812), and that is the simulated truth, not the code. In it, the four H2 neighbours correlate with each other only through the scale's factor, at .45–.50 each, which makes the population R .735. H3d's power has since been simulated (`study2/power/power_2b_h3d.R`). It is 42% at that truth, 83% at R .73 and 92–100% at R .71 or below.
 

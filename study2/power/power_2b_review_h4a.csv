@@ -1,0 +1,4 @@
+latent_r,n,power_p05,power_holm,power_holm_worst,h4b_power_holm,median_rho,days_distribution,h4b
+0.15,700,91.9,91.6,87,94.6,0.126,0.3/0.15/0.13/0.11/0.08/0.07/0.04/0.12,"engaged pause, take-up 30%, latent r .20"
+0.2,700,99.4,99.4,98.9,94.9,0.168,0.3/0.15/0.13/0.11/0.08/0.07/0.04/0.12,"engaged pause, take-up 30%, latent r .20"
+0.25,700,100,100,100,95,0.211,0.3/0.15/0.13/0.11/0.08/0.07/0.04/0.12,"engaged pause, take-up 30%, latent r .20"

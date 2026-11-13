@@ -4,8 +4,9 @@
 # One model per validity measure: the H1 model plus that measure as latent factors of
 # its items (subscales of one measure as correlated factors), correlated with the
 # content factor S and uncorrelated with the agreement factor; 95% Wald CIs.
-#   H2   the four lower bounds (FFMQ Observing, SBI, BFI-2 Aesthetic Sensitivity,
-#        Brief MAIA-2 Noticing) exceed .30
+#   H2   each of the four correlations (FFMQ Observing, SBI, BFI-2 Aesthetic Sensitivity,
+#        Brief MAIA-2 Noticing) is reported on its own; H2 holds when at least three of
+#        the four lower bounds exceed .30
 #   H3a  their upper bounds are below .80 (Ronkko & Cho, 2022: "no problem")
 #   H3b  five contrasts, each in a model holding both measures: the difference of the two
 #        latent correlations (a defined parameter) has a 95% delta-method CI above 0;
@@ -153,7 +154,7 @@ decide <- function(fm, sm) {
     data.table(score = b$score, r = x$est, lower = x$ci.lower, upper = x$ci.upper, bound_lower = b$lower, bound_upper = b$upper,
                holds = isTRUE(x$ci.lower > b$lower && x$ci.upper < b$upper)) }))
   list(h2 = h2, h3b = h3b, h3c = h3c, h3e = h3e,
-       H2 = all(h2$h2), H3a = all(h2$h3a), H3b = sum(h3b$holds) >= SF2B$h3b_needed, H3b_contrasts_holding = sum(h3b$holds),
+       H2 = sum(h2$h2) >= SF2B$h2_needed, H2_correlations_holding = sum(h2$h2), H3a = all(h2$h3a), H3b = sum(h3b$holds) >= SF2B$h3b_needed, H3b_contrasts_holding = sum(h3b$holds),
        H3c = all(h3c$holds), H3e = all(h3e$holds))
 }
 dec <- list(sf8 = decide("sf8", "all"), sf8_unflagged = decide("sf8", "unflagged"), sf10 = decide("sf10", "all"))
@@ -170,5 +171,5 @@ obs <- rbindlist(lapply(c("sf8", "sf10", "trial_av10"), function(x) rbindlist(la
   r <- sf2b_r_ci(S[[x]], S[[s]]); data.table(score_of = x, with = s, n = r$n, r = r3(r$r), lower = r3(r$lower), upper = r3(r$upper), p = signif(r$p, 3)) }))))
 fwrite(obs, sf2b_out("04_observed_validity.csv"))
 saveRDS(list(results = RES, latent = lat, decisions = dec, boot = boot), sf2b_derived("validity"))
-print(dec$sf8[c("H2", "H3a", "H3b", "H3b_contrasts_holding", "H3c", "H3d", "H3e")])
+print(dec$sf8[c("H2", "H2_correlations_holding", "H3a", "H3b", "H3b_contrasts_holding", "H3c", "H3d", "H3e")])
 print(dec$sf8$h3b)
