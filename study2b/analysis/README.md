@@ -83,7 +83,7 @@ One defect was found and fixed by the dry run. A validity factor with free loadi
 
 ## Readings of the preregistration (search the scripts for `PREREG:`)
 
-Each should be either confirmed in the text or changed here before filing.
+Confirmed by Norm on 13 November (decision 41) and stated in the preregistration, Section 5, "Specifications fixed in the code". A change to any of them after filing is a deviation.
 
 - **Validity scores (01).** "Scored per their manuals": mean or sum per manual, with Study 2's 80% rule for missing items. For a 3-item subscale that means all three answered. In the dry run, with 1% of items unanswered at random, the H5a complete-case sample fell from about 650 to 410–470, because H5 needs all 13 three-item FFMQ and Brief MAIA-2 subscales.
 - **Practice groups (01).** Regular practice "yes" with frequency "none" or "less than weekly" is in neither H6 group. A missing regular-practice answer leaves every group missing.

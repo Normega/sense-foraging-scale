@@ -1,11 +1,10 @@
 # Sense Foraging Scale, Study 2b: confirmatory structure and construct validity of the 8-statement scale
 
-**DRAFT, 9 November 2026; not filed.** Rewritten from `prereg_2b_plan.md` and decisions 1–40 in `decisions_after_2a.md`. The pre-2a draft (20 items, four factors, retest) is in the repository history.
+**Filing text, 13 November 2026; not yet filed.** Built from `prereg_2b_plan.md` and decisions 1–41 in `decisions_after_2a.md`; the pre-2a draft (20 items, four factors, retest) is in the repository history. It is filed after the pilot's shuffled run (Section 3, Pilot), at the commit that run ends on, and the entries marked **[AT FILING]** are completed then. Once filed, the OSF registration is the version of record.
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
-- **Before filing:** the 2b analysis code (`study2b/analysis/`) is written and has run end to end on data simulated from Study 2a's fitted model, with every recovery check passing (9 November). The code is the specification wherever this text is less precise; its readings of this text are listed in `study2b/analysis/README.md`. The run on real answers shuffled within each item needs real data. It is run on the pilot's extraction, and this registration is filed after it, before the remaining 640 places open (Section 3, Pilot).
-- **Choices made while drafting** are listed in Section 6; all are confirmed (decisions 37–40).
+- **Analysis code:** written before any data and run end to end on data simulated from Study 2a's fitted model, with all 19 recovery checks passing (9 November). It is attached to this registration (Section 6, Code) and is the specification wherever this text is less precise; the places where it fixes a reading of the text are listed in Section 5 (Specifications fixed in the code).
 
 ## 1. Study information
 
@@ -124,6 +123,8 @@ The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2
 
   No unshuffled answers are analysed. The rules for each reading are set in advance in `study2b/analysis/README.md` ("The pilot run"). If nothing changes after the pilot, pilot participants are included. If the materials change, they are excluded and 60 places are added.
 
+  **[AT FILING]** The pilot run's report: sessions started and completed; breakoff by screen; each attention check's failure rate; median completion time and the resulting pay; pause take-up; practice-group sizes; and every code change the run required, by commit.
+
 ### Sample size
 
 Target: 700 completed sessions (60 pilot + 640), in one posting (decision 34).
@@ -151,6 +152,8 @@ The smallest contrast of interest in H3b is a difference of .15 (decision 32). C
 H3d's power depends on the true multiple correlation R. That depends on two things no study has measured: the 8's correlation with each neighbour (.40–.50 simulated), and how much the neighbours share beyond the 8 (`study2/power/power_2b_h3d.R`; 300 simulated studies per condition).
 - **Neighbours sharing at least .30 with each other:** R is at most .73, and power is 83–100%.
 - **Neighbours related only through the 8, at .50 each:** R is .76, and power is 42%.
+
+**[AT FILING]** Power for H4b, H5a and H6 at the pilot's observed pause take-up, missing-data rates and practice-group sizes (`study2/power/`).
 
 The simulation used the delta-method interval, because 2,000 bootstrap resamples for every simulated study would take days. In 16 studies that also had 300 bootstrap resamples, its upper bound was within .004 of the bootstrap's on average, and every decision was the same.
 
@@ -281,6 +284,24 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 
 "Prefer not to answer" and unanswered items are missing. Factor models use pairwise-available data. Observed scores need the item counts in Section 4. Regressions use complete cases. Missingness per measure is reported.
 
+### Specifications fixed in the code
+
+Where this text allows more than one reading, the attached code fixes one (each is marked `PREREG:` in the scripts; decision 41):
+- **Validity scores:** the mean or sum each measure's manual specifies, with the 80% rule (Transformations).
+- **Practice groups:** regular practice "Yes" with current frequency "none" or "less than weekly" is in neither H6 group. A missing regular-practice answer leaves the participant out of every practice group.
+- **Gender:** H5 enters man, woman and other (non-binary or self-described) as a factor; "prefer not to say" leaves H5's complete-case sample. Gender invariance compares men and women.
+- **Engaged pause:** a pause record without timing counts as not engaged; such records are counted and reported.
+- **H1:** the largest residual is the largest in absolute value; freeing it adds that residual covariance; the change in loadings is compared statement by statement. Content ω counts the agreement loadings and the residual (co)variances as error.
+- **Model-specific cutoffs** (reported only): the 5th percentile of CFI and the 95th of RMSEA and SRMR in 200 data sets generated from the fitted model, and in 200 generated from it with two residual correlations of .30.
+- **BFI-2 Open-Mindedness, total:** one factor of its 12 items, in its own model and in contrast 3's.
+- **Single-item measures** (life satisfaction, the past-week items, the engaged pause): single-indicator factors with no residual variance in the latent matrix, so the correlation is with the item's latent response. H4's decisions use the observed 8.
+- **H3b:** contrasts 1, 2 and 4 are estimated in the measure's own model (BFI-2 facets, FFMQ facets, Brief MAIA-2 subscales); contrasts 3 and 5 in a model of just their two measures.
+- **H3d:** the percentile interval of the 2,000 resamples; a resample whose model fails is left out and counted.
+- **H4:** the logistic regression's device class (desktop, phone, tablet) is the one the pause records.
+- **H5:** both steps use the cases complete on every step-2 variable; H5b's coefficient is per SD of the 8.
+- **H6:** Student's t; d's CI is the mean difference's CI over the pooled SD. The latent difference is a MIMIC coefficient with the content factor's residual variance fixed at 1.
+- **H8 and the other invariance analyses:** thresholds are constrained before loadings, as ordinal items require (Wu & Estabrook, 2016). Partial invariance releases, one at a time, the statement whose release gives the best CFI, at most four per step. Response categories with fewer than 5 responses in a group are merged toward the centre.
+
 ### Exploratory analysis
 
 - **H8, understanding (decision 30).** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then thresholds, then loadings (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
@@ -310,6 +331,8 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 - **Decided 10 November (decision 37):** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
 - **Decided 10 November (decision 38):** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
 - **Decided 12 November (decision 39):** H3a's and H3d's bound is .80, after Rönkkö and Cho (2022), whose upper limits are reported in their classes (Section 5). H3d's power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
+
+**Code.** The analysis code (`study2b/analysis/`), the platform definitions of every measure (`study2b/materials/`, `study2/materials/`), the power simulations (`study2/power/`) and the decision log are attached as `sf2b_code_[AT FILING].zip`, an archive of the study repository at commit [AT FILING], SHA-256 [AT FILING].
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 

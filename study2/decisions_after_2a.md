@@ -68,6 +68,7 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 38. **Validity scores keep Study 2's 80% rule** (Norm, 10 November): a score needs at least 80% of its items, so a 3-item subscale needs all three. H5's power at the resulting n (410–470 in the simulated run) is in Section 3.
 39. **H3a's and H3d's bound is .80, after Rönkkö & Cho (2022)** (Norm, 12 November): the upper limit of the 95% CI below .80 is their "no problem" class. Applying it to H3d's multiple R is our extension and a stricter test. Each upper limit is also reported in their four classes, not tested.
 40. **The seven drafting choices are confirmed** (Norm, 12 November): H3b holds when at least four of five contrasts do; H3e's bounds (BSSS-8 below .40, the other three within ±.30); validity measures as latent factors of their items; delta-method CIs for H3b, the bootstrap for H3d; H4 two-sided with Holm, H6 on 2a's current-practitioner group with dedicated as sensitivity; the pilot's 60 included if nothing changes; the flags (longstring 10+ of 14, more than 2 of 13 unanswered).
+41. **The code's 13 readings of the text are confirmed** (Norm, 13 November): each is stated in the preregistration's Section 5, "Specifications fixed in the code". The text is then complete except the entries marked [AT FILING], which the pilot run supplies.
 
 Correction to decision 13 (9 November): the trial's 10 needs **eight** extra statements in 2b, not seven. 2b asks only sf6_36 and sf6_44 in the trial's wording; the 8's sf6_27 is the reworded version. And 2a's `sf2a-end` had two of its six statements (sf6_7, sf6_27) in wordings that are not the trial's (`psy240-sf-short-20`), so 2a's "trial's 10" is not exactly the trial's measure (r with the 8 = .80, decision 14). 2b's `sf2b-end` uses the trial's wording.
 
@@ -75,7 +76,7 @@ The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- The pipeline's readings of the text (the `PREREG:` list at the end of `study2b/analysis/README.md`): each to be confirmed in the text or changed before filing.
+- Nothing in the text. At filing: the [AT FILING] entries, from the pilot run.
 
 ## Fit-rule background
 
