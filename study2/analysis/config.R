@@ -1,6 +1,6 @@
 # Sense Foraging Study 2: settings shared by every script.
 #
-# The preregistration (study2/preregistration_draft.md as of commit 129db1d; the
+# The preregistration (study2/preregistration_draft.md as of commit d028938; the
 # file is now study2/preregistration_2b.md, rewritten for 2b) says this code is the
 # specification wherever its text is less precise. Every place where the text
 # allowed more than one reading carries a comment starting "PREREG:" that names
