@@ -47,6 +47,12 @@ What goes is every link between two answers, within a person or across measures.
 
 Before the 640 open, Norm sees only this run's report: counts, rates, times, run status and code changes. The platform's response views are not opened for the pilot.
 
+**Filing, after the run.**
+1. Fill the preregistration's remaining `[AT FILING]` entries from the run's report: the header (filing date), the pilot report (Section 3, Pilot) and power at the observed rates (Section 3, Sample size rationale). Commit.
+2. `Rscript study2/filing/build_filing.R` from the repo root. It writes `F:/radlab_data/sf_study2b/filing/<commit>/`: the code archive, the preregistration as PDF and HTML, `osf_fields.txt` (one block per OSF template field) and a SHA-256 manifest. It fills the Code paragraph's commit and hash itself. Any open marker or uncommitted change makes it a DRAFT build; file only a build without that mark.
+3. On OSF: the Preregistration template, the fields pasted from `osf_fields.txt`, "Registration prior to analysis of the data", the archive and the PDF attached.
+4. Then open the 640 places.
+
 ## Steps (`run_all.R`, from the repo root)
 
 0. **`00_simulate`** (simulated only). The scale from Study 2a's fitted one-factor model of the 13 statements with the agreement factor (`sim_population.json`, written once from 2a's real data by `make_sim_population.R`; aggregates only). Every validity score is a latent factor with a known correlation with the scale's factor and known within-battery correlations; the past-week items, the pause, practice and the vignettes are generated from latents with known values. One gender difference in a loading is planted (V10, women .20). Planted mess: staff tests, enrollments that never reach the scale, two and one failed checks, sessions stopping after the trial statements, before the pause and in the second half, speeders, longstrings, many "Prefer not to answer", flagged resubmissions and later re-entries.

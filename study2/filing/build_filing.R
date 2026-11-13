@@ -48,7 +48,7 @@ dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 ## The code archive ---------
 zip_name <- sprintf("sf2b_code_%s.zip", short)
 zip_path <- file.path(out_dir, zip_name)
-git("archive", "--format=zip", paste0("--prefix=sense-foraging-scale-", short, "/"), "-o", zip_path, commit, "--", ARCHIVED)
+invisible(git("archive", "--format=zip", paste0("--prefix=sense-foraging-scale-", short, "/"), "-o", zip_path, commit, "--", ARCHIVED))
 zip_sha <- sha256(zip_path)
 
 ## The text, from the commit ---------
@@ -73,6 +73,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; line-heigh
 h1 { font-size: 17pt; line-height: 1.25; } h2 { font-size: 13.5pt; margin-top: 1.6em; border-bottom: 1px solid #999; }
 h3 { font-size: 11.5pt; margin-top: 1.2em; }
 table { border-collapse: collapse; margin: .6em 0; font-size: 9.5pt; } th, td { border: 1px solid #aaa; padding: 3px 6px; vertical-align: top; text-align: left; }
+ul { list-style-type: '\\2013  '; } ul ul { list-style-type: '\\00B7  '; }
 th { background: #eee; } code { font-family: Consolas, monospace; font-size: 9pt; }
 .draft { position: fixed; top: 40%; left: 0; right: 0; text-align: center; font-size: 80pt; color: rgba(200,0,0,.12); transform: rotate(-30deg); pointer-events: none; }
 .stamp { font-size: 8.5pt; color: #555; border-top: 1px solid #ccc; margin-top: 2em; padding-top: .4em; }
