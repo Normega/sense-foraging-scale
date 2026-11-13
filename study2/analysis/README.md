@@ -1,6 +1,6 @@
 # Sense Foraging Study 2: analysis pipeline (R)
 
-The analysis the Study 2 preregistration specifies (`study2/preregistration_draft.md`, as of commit 51c41d5): confirmatory
+The analysis the Study 2 preregistration specifies (`study2/preregistration_draft.md`, as of commit 51c41d5; the file is now `study2/preregistration_2b.md`, rewritten for 2b): confirmatory
 structure of the 20-item short form, validity, incremental validity (H5a wellbeing, H5b practice), invariance, known
 groups, two-week stability, and the candidate items (steps 7-10). The preregistration says this code is the specification wherever its text is less precise. Every
 place where the text allowed more than one reading carries a comment beginning `PREREG:` in the script that implements

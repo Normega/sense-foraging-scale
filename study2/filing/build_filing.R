@@ -1,21 +1,24 @@
-# Builds the Study 2b OSF filing package from one commit of this repository.
+# Builds the Study 2b OSF filing text from one commit of this repository.
 #
 #   Rscript study2/filing/build_filing.R          (from the repo root)
 #
 # Writes to SF2B_FILING_DIR (default F:/radlab_data/sf_study2b/filing/<commit>/):
-#   sf2b_code_<commit>.zip       git archive of the code, materials, power simulations,
-#                                decision log and preregistration text at that commit
 #   preregistration_2b.html/.pdf the preregistration as rendered from that commit, with the
-#                                Code paragraph filled in (commit, archive, SHA-256)
+#                                Code paragraph's commit filled in
 #   osf_fields.txt               the text for each field of OSF's Preregistration template,
 #                                as plain text to paste
+#   sf2b_code_<commit>.zip       git archive of the code, materials, power simulations,
+#                                decision log and preregistration text at that commit: a
+#                                private record only. Nothing is attached on OSF; the
+#                                registration cites the public repository at that commit.
 #   manifest.txt                 commit, build time, every output's SHA-256
 #
 # The text is read from the commit (git show), not the working tree, so the PDF, the
-# fields and the archive always match. The Code paragraph's [AT FILING] markers are filled
-# here (a commit cannot name its own hash). Any other [AT FILING] marker left in the text,
-# or uncommitted changes to the archived paths, make this a DRAFT build: every output is
-# marked DRAFT and named *_DRAFT. File only a build without that mark.
+# fields and the archive always match. The Code paragraph's "at commit [AT FILING]" is
+# filled here with the full hash (a commit cannot name its own hash). Any other
+# [AT FILING] marker left in the text, or uncommitted changes to the archived paths, make
+# this a DRAFT build: every output is marked DRAFT and named *_DRAFT. File only a build
+# without that mark, and push the commit to the public repository before filing.
 
 # Set Up ---------
 ## Load libraries ---------
@@ -27,7 +30,8 @@ for (thispack in packages) {
 }
 
 ## Settings ---------
-PREREG <- "study2/preregistration_draft.md"
+PREREG <- "study2/preregistration_2b.md"
+REPO_URL <- "https://github.com/Normega/sense-foraging-scale"
 ARCHIVED <- c("study2b/analysis", "study2b/materials", "study2/materials", "study2/power",
               "study2/decisions_after_2a.md", "study2/prereg_2b_plan.md", PREREG, "study2/filing")
 CHROME <- Sys.getenv("SF2B_CHROME", "C:/Program Files/Google/Chrome/Application/chrome.exe")
@@ -45,17 +49,14 @@ dirty <- git("status", "--porcelain", "--", ARCHIVED)
 out_dir <- file.path(Sys.getenv("SF2B_FILING_DIR", "F:/radlab_data/sf_study2b/filing"), short)
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
-## The code archive ---------
+## The code archive (a private record; not attached on OSF) ---------
 zip_name <- sprintf("sf2b_code_%s.zip", short)
 zip_path <- file.path(out_dir, zip_name)
 invisible(git("archive", "--format=zip", paste0("--prefix=sense-foraging-scale-", short, "/"), "-o", zip_path, commit, "--", ARCHIVED))
-zip_sha <- sha256(zip_path)
 
 ## The text, from the commit ---------
 md <- paste(git("show", paste0(commit, ":", PREREG)), collapse = "\n")
-md <- sub("sf2b_code_[AT FILING].zip", zip_name, md, fixed = TRUE)
 md <- sub("at commit [AT FILING]", paste("at commit", commit), md, fixed = TRUE)
-md <- sub("SHA-256 [AT FILING]", paste("SHA-256", zip_sha), md, fixed = TRUE)
 open_markers <- lengths(regmatches(md, gregexpr("[AT FILING]", md, fixed = TRUE)))
 draft <- open_markers > 0 || length(dirty) > 0
 tag <- if (draft) "_DRAFT" else ""
@@ -123,7 +124,9 @@ FIELDS <- list(
   "Other" = c("6. Other", "References", "Appendix A. The scale, in presented order"))
 txt <- c(sprintf("OSF Preregistration template, Study 2b. Commit %s.%s", commit, if (draft) " DRAFT, NOT FOR FILING." else ""),
          "Contributors: add on OSF (Norman Farb, University of Toronto; co-investigators per REB Protocol #00051180).",
-         sprintf("Attach: %s (SHA-256 %s) and %s.", zip_name, zip_sha, basename(pdf_path)), "")
+         sprintf("Attach (optional): %s. The repository commit is cited in the Other field (Code): %s at commit %s.",
+                 basename(pdf_path), REPO_URL, commit),
+         "Push this commit to the public repository before filing.", "")
 for (f in names(FIELDS)) txt <- c(txt, strrep("=", 78), paste0("FIELD: ", f), strrep("=", 78), plain(get(FIELDS[[f]])), "")
 osf_path <- file.path(out_dir, paste0("osf_fields", tag, ".txt"))
 writeLines(enc2utf8(txt), osf_path, useBytes = TRUE)

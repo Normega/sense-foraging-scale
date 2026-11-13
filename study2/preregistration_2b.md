@@ -1,10 +1,10 @@
 # Sense Foraging Scale, Study 2b: confirmatory structure and construct validity of the 8-statement scale
 
-**Filing text, 13 November 2026; not yet filed.** Built from `prereg_2b_plan.md` and decisions 1–41 in `decisions_after_2a.md`; the pre-2a draft (20 items, four factors, retest) is in the repository history. It is filed after the pilot's shuffled run (Section 3, Pilot), at the commit that run ends on, and the entries marked **[AT FILING]** are completed then. Once filed, the OSF registration is the version of record.
+**Not yet filed.** Entries marked **[AT FILING]** are completed from the pilot run (Section 3, Pilot) before filing. Once filed, the OSF registration is the version of record.
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
-- **Analysis code:** written before any data and run end to end on data simulated from Study 2a's fitted model, with all 19 recovery checks passing (9 November). It is attached to this registration (Section 6, Code) and is the specification wherever this text is less precise; the places where it fixes a reading of the text are listed in Section 5 (Specifications fixed in the code).
+- **Analysis code:** written before any data and run end to end on data simulated from Study 2a's fitted model, with all 19 recovery checks passing (9 November). It is public at https://github.com/Normega/sense-foraging-scale (Section 6, Code) and is the specification wherever this text is less precise; the places where it fixes a reading of the text are listed in Section 5 (Specifications fixed in the code).
 
 ## 1. Study information
 
@@ -34,7 +34,7 @@ Study 2b is the first test of the 8 in data it was not chosen on. It asks:
 
 ### Hypotheses
 
-Confirmatory hypotheses are H1–H6 on the 8. The 10 is reported beside it under the same rules, without its own hypotheses. H8 is exploratory (decision 30). Decision rules are in Section 5.
+Confirmatory hypotheses are H1–H6 on the 8. The 10 is reported beside it under the same rules, without its own hypotheses. H8 is exploratory. Decision rules are in Section 5.
 
 - **H1 (structure).** A one-factor model of the 8 with a random-intercept agreement factor fits.
 - **H2 (convergent).** The 8 correlates positively and at least moderately with each of FFMQ-15 Observing, SBI Savoring the Moment, BFI-2 Aesthetic Sensitivity and Brief MAIA-2 Noticing.
@@ -72,9 +72,9 @@ None. The optional pause is presented as a break; the debrief explains that whet
 One session of about 22 minutes, plus any pause taken, in this order:
 
 1. **Background questions:** the 13 questions from Study 1, unchanged.
-2. **The two modes** (`sf2b-vignettes`): a three-paragraph introduction to the doing and sensing modes; nine brief vignettes, three a page in a per-participant order with each page holding at least one of each kind, rated 1 Doing mode to 6 Sensing mode, without feedback; then a self-rating on the same anchors. The introduction, V2 and V7 are reworded from 2a (decision 6), so separation scores are not directly comparable with 2a's.
+2. **The two modes** (`sf2b-vignettes`): a three-paragraph introduction to the doing and sensing modes; nine brief vignettes, three a page in a per-participant order with each page holding at least one of each kind, rated 1 Doing mode to 6 Sensing mode, without feedback; then a self-rating on the same anchors. The introduction, V2 and V7 are reworded from 2a, so separation scores are not directly comparable with 2a's.
 3. **The scale** (`sf2b-scale`): the 10 (with the 8 inside it), three unscored reverse-keyed statements (N6, sfc_31, sf6_44) and one attention check, in one fixed order on two pages (Appendix A). Response scale 1 Strongly disagree to 6 Strongly agree, no midpoint, plus "Prefer not to answer".
-4. **The PSY240 trial's other statements** (`sf2b-end`): eight statements in the trial's own wording and one attention check, fixed order. With sf6_36 and sf6_44 in step 3, they complete the trial's 10-statement Access + Valuing score (decision 13).
+4. **The PSY240 trial's other statements** (`sf2b-end`): eight statements in the trial's own wording and one attention check, fixed order. With sf6_36 and sf6_44 in step 3, they complete the trial's 10-statement Access + Valuing score.
 5. **Validity block, first half,** in a per-participant random order: FFMQ-15; BIDR-16; SBI Savoring the Moment; BSSS-8; NCS-6; PHQ-4; SPSQ-SF Sensory Discomfort; PSS-4; life satisfaction (one item, six-point face scale).
 6. **The pause offer** (`sf2b-pause`): "If you'd like, you can take a short break here to look, listen and feel what's around you. There's nothing to do and nothing to report. It doesn't affect your payment." with two buttons, Take a pause and Continue the survey, their sides fixed per participant at random.
    - **Take a pause:** a quiet screen with "Take as long as you like. Tap 'I'm back' when you're ready." After 3 minutes on the page the line becomes "Whenever you're ready." After 10 minutes in all the pause ends itself. Then "Anything you noticed? (optional)".
@@ -85,7 +85,7 @@ One session of about 22 minutes, plus any pause taken, in this order:
 
 Every question about the participant offers "Prefer not to answer"; the three attention checks do not. The halves of the validity block are fixed; past-week behaviour comes after the pause so its question about deliberately pausing cannot prompt the offer. The pause sits at least 5 minutes after the scale.
 
-**Recruitment.** One Prolific posting with a neutral, general description (decision 24, amended by 34). No screening on practice: practice is measured in the background questions after consent.
+**Recruitment.** One Prolific posting with a neutral, general description. No screening on practice: practice is measured in the background questions after consent.
 
 ### Randomization
 
@@ -98,7 +98,7 @@ Every question about the participant offers "Prefer not to answer"; the three at
 
 ### Existing data
 
-**Registration prior to analysis of the data.** At filing, the only Study 2b data are the pilot's 60 sessions. Their answers have been seen only shuffled within each item (Pilot, below), which leaves no relation between any two answers. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (decision 14; WLSMV, theta, pairwise, the agreement factor as in Section 5):
+**Registration prior to analysis of the data.** At filing, the only Study 2b data are the pilot's 60 sessions. Their answers have been seen only shuffled within each item (Pilot, below), which leaves no relation between any two answers. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (WLSMV, theta, pairwise, the agreement factor as in Section 5):
 
 | Form | CFI | RMSEA (90% upper) | SRMR | Largest residual | ω (content) | α | Practitioner d |
 |---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2
 
 ### Sample size
 
-Target: 700 completed sessions (60 pilot + 640), in one posting (decision 34).
+Target: 700 completed sessions (60 pilot + 640), in one posting.
 
 ### Sample size rationale
 
@@ -147,7 +147,9 @@ By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, 
 | | true ΔR² .04, at the 410–470 complete cases | 92–93% |
 | H6 | true d .67 (382 vs 190) | 97% |
 
-The smallest contrast of interest in H3b is a difference of .15 (decision 32). Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported (decision 36). H2 needs a true correlation of about .45 for 95% power (63% at .40).
+The smallest contrast of interest in H3b is a difference of .15. Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported. H2 needs a true correlation of about .45 for 95% power (63% at .40).
+
+H5 uses complete cases (Section 5), and under the 80% rule (Section 5, Transformations) each of the 13 FFMQ-15 and Brief MAIA-2 subscales it adjusts for needs all three of its items. On simulated data with 1% of items unanswered at random, H5's complete-case sample fell from about 650 to 410–470; the table gives H5a's power at that n.
 
 H3d's power depends on the true multiple correlation R. That depends on two things no study has measured: the 8's correlation with each neighbour (.40–.50 simulated), and how much the neighbours share beyond the 8 (`study2/power/power_2b_h3d.R`; 300 simulated studies per condition).
 - **Neighbours sharing at least .30 with each other:** R is at most .73, and power is 83–100%.
@@ -155,7 +157,7 @@ H3d's power depends on the true multiple correlation R. That depends on two thin
 
 **[AT FILING]** Power for H4b, H5a and H6 at the pilot's observed pause take-up, missing-data rates and practice-group sizes (`study2/power/`).
 
-The simulation used the delta-method interval, because 2,000 bootstrap resamples for every simulated study would take days. In 16 studies that also had 300 bootstrap resamples, its upper bound was within .004 of the bootstrap's on average, and every decision was the same.
+H3d's simulation used the delta-method interval, because 2,000 bootstrap resamples for every simulated study would take days. In 16 studies that also had 300 bootstrap resamples, its upper bound was within .004 of the bootstrap's on average, and every decision was the same.
 
 ### Stopping rule
 
@@ -194,7 +196,7 @@ None.
 
 - **The 8 and the 10 (observed):** the mean of answered statements after reverse-scoring (7 − x), when at least 7 of the 8 (9 of the 10) are answered.
 - **The 8 and the 10 (latent):** the content factor of the H1 model.
-- **Engaged pause (H4b):** 1 when the participant chose the pause, stayed at least 20 seconds on the page, and was away (unfocused + hidden) for less than half the pause's total time; otherwise 0 (decision 22). A participant who did not reach the offer is missing.
+- **Engaged pause (H4b):** 1 when the participant chose the pause, stayed at least 20 seconds on the page, and was away (unfocused + hidden) for less than half the pause's total time; otherwise 0. A participant who did not reach the offer is missing.
 - **Separation (vignettes):** mean rating of the sensing vignettes minus mean of the doing vignettes, for participants with at least three of each; **tells the modes apart** = separation of 1 or more (2a's rule).
 - **Practice groups (H6):** current practitioner = regular practice "Yes" and current frequency 1–2 times a week or more; never = regular practice "No" (2a's definitions). Dedicated (3+ a week, a year or more, teacher-led training) is a sensitivity group.
 - **Practice frequency (H5b):** five ordered levels: none in the past three months or no regular practice; less than weekly; 1–2 a week; 3–5 a week; daily or near-daily.
@@ -205,9 +207,9 @@ None.
 
 ### Statistical models
 
-R with lavaan, psych and MASS; versions reported. Scale and validity items are ordinal: WLSMV, theta parameterization, pairwise-available data (`missing = "pairwise"`, set explicitly). Fit indices are the scaled ones. The agreement factor is a random intercept with loadings fixed at 1 on every unrecoded statement of the scale in the model, a free variance, and no correlation with any content or validity factor (decision 5).
+R with lavaan, psych and MASS; versions reported. Scale and validity items are ordinal: WLSMV, theta parameterization, pairwise-available data (`missing = "pairwise"`, set explicitly). Fit indices are the scaled ones. The agreement factor is a random intercept with loadings fixed at 1 on every unrecoded statement of the scale in the model, a free variance, and no correlation with any content or validity factor.
 
-1. **H1, structure.** One content factor on the 8 plus the agreement factor. **H1 is supported** when all three hold (decisions 17, 33):
+1. **H1, structure.** One content factor on the 8 plus the agreement factor. **H1 is supported** when all three hold:
    - CFI ≥ .95;
    - local fit: no residual correlation (observed minus model-implied polychoric) exceeds .10 in absolute value; or, if one does, freeing the largest as a residual covariance changes the content ω by less than .03 and every standardized content loading by less than .05;
    - the unbiased SRMR close-fit test (Maydeu-Olivares, Shi & Rosseel, 2018; lavaan `lavResiduals`, H₀: SRMR ≤ .05) is not rejected at α = .05.
@@ -286,7 +288,7 @@ Decision rules for H1–H6 are above. Two-tailed α = .05 unless stated, Holm-co
 
 ### Specifications fixed in the code
 
-Where this text allows more than one reading, the attached code fixes one (each is marked `PREREG:` in the scripts; decision 41):
+Where this text allows more than one reading, the code fixes one (each is marked `PREREG:` in the scripts):
 - **Validity scores:** the mean or sum each measure's manual specifies, with the 80% rule (Transformations).
 - **Practice groups:** regular practice "Yes" with current frequency "none" or "less than weekly" is in neither H6 group. A missing regular-practice answer leaves the participant out of every practice group.
 - **Gender:** H5 enters man, woman and other (non-binary or self-described) as a factor; "prefer not to say" leaves H5's complete-case sample. Gender invariance compares men and women.
@@ -304,10 +306,10 @@ Where this text allows more than one reading, the attached code fixes one (each 
 
 ### Exploratory analysis
 
-- **H8, understanding (decision 30).** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then thresholds, then loadings (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
+- **H8, understanding.** Invariance of the H1 model across people who do and do not tell the modes apart: configural, then thresholds, then loadings (Wu & Estabrook, 2016), with the agreement factor's loadings fixed at 1 in both groups and its variance free. A step is non-invariant when ΔCFI < −.010 and ΔRMSEA > .015. In 2a, in-sample, the loadings differed. If they differ again, the score means something different for people who do not tell the modes apart.
 - **The 10:** H1–H6's statistics for the 10, beside the 8's.
 - **The three exploratory statements** (N6, sfc_31, sf6_44): their loadings when added to the 10, and their correlations with the agreement factor.
-- **The trial's measure:** the correlation of the 8 with the trial's Access + Valuing score in its own wording, and of each with the validity measures, as a check that the 8 can stand in for the trial's measure (decision 13).
+- **The trial's measure:** the correlation of the 8 with the trial's Access + Valuing score in its own wording, and of each with the validity measures, as a check that the 8 can stand in for the trial's measure.
 - **The pause, further:** seconds on the page, log(1 + x); acceptance alone; the 8 in decliners giving "not interested" against "no time" or "not a good place"; the pause against tiredness, setting and device; the 8's association with the pause compared with tiredness's; the notes, coded blind to scores.
 - **Order effects:** a measure's position within its half against its mean and its correlation with the 8.
 - **The vignettes:** separation, the self-rating's correlation with the 8, and each vignette's mean.
@@ -320,19 +322,7 @@ Where this text allows more than one reading, the attached code fixes one (each 
 
 **Measures used for non-commercial academic research.** SBI, PSS-4, BSSS-8, NCS-6, the SPSQ-SF and ASI-3 items, the Brief MAIA-2, BFI-2, EQ, BIDR-16, FFMQ-15 and PHQ-4 are used under their research-use terms; SAMD is CC BY, and its authors are told of the use.
 
-**Choices made while drafting** (confirmed 12 November, decision 40, unless dated otherwise):
-- H3b holds when at least four of the five contrasts hold; each is also reported on its own.
-- H3e's bounds: BSSS-8 below .40, the other three within ±.30.
-- Validity measures enter the latent models as latent factors of their items, as simulated, not as observed scores.
-- H3b uses the delta-method CI, as simulated (the pre-2a draft used a 2,000-resample bootstrap); H3d keeps the bootstrap.
-- H4 is two-sided, Holm across (a) and (b); H6 uses 2a's current-practitioner group, with dedicated as sensitivity.
-- The pilot's 60 are included if nothing changes.
-- Flags: a longstring of 10+ of 14; more than 2 of 13 statements unanswered.
-- **Decided 10 November (decision 37):** the pilot is run first. The shuffled-answers run of the code is on its extraction, and this registration is filed after it. No unshuffled pilot answers are analysed.
-- **Decided 10 November (decision 38):** validity scores keep Study 2's 80% rule (Section 4, Transformations), so a 3-item FFMQ-15 or Brief MAIA-2 subscale needs all three items. H5 needs all 13 such subscales. In the simulated run, with 1% of items unanswered at random, its complete-case sample fell from about 650 to 410–470; Section 3 gives H5's power at that n.
-- **Decided 12 November (decision 39):** H3a's and H3d's bound is .80, after Rönkkö and Cho (2022), whose upper limits are reported in their classes (Section 5). H3d's power is 92–100% when the true R is .71 or below, 83% at .73 and 42% at .76 (Section 3). The low-power case is the one in the dry run of the code: neighbours related to each other only through the 8.
-
-**Code.** The analysis code (`study2b/analysis/`), the platform definitions of every measure (`study2b/materials/`, `study2/materials/`), the power simulations (`study2/power/`) and the decision log are attached as `sf2b_code_[AT FILING].zip`, an archive of the study repository at commit [AT FILING], SHA-256 [AT FILING].
+**Code.** The analysis code (`study2b/analysis/`), the platform definitions of every measure (`study2b/materials/`, `study2/materials/`), the power simulations (`study2/power/`) and the build of this document (`study2/filing/`) are public at https://github.com/Normega/sense-foraging-scale. This registration refers to that repository at commit [AT FILING].
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 

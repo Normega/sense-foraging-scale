@@ -1,6 +1,6 @@
 # Sense Foraging Study 2b: settings shared by every script.
 #
-# The analysis the Study 2b preregistration specifies (study2/preregistration_draft.md;
+# The analysis the Study 2b preregistration specifies (study2/preregistration_2b.md;
 # once filed, OSF governs). Section numbers in comments refer to it. The registration
 # says this code is the specification wherever its text is less precise; every place
 # where the text allows more than one reading carries a comment starting "PREREG:"

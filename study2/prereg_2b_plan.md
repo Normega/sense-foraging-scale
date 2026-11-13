@@ -1,6 +1,6 @@
 # Study 2b preregistration: plan
 
-Working notes for rewriting `preregistration_draft.md` (the 20-item, four-factor version) around the decisions in `decisions_after_2a.md`. Nothing here is registered. Items marked **[Norm]** need a decision before the rewrite.
+Working notes for rewriting `preregistration_draft.md` (the 20-item, four-factor version; since rewritten and renamed `preregistration_2b.md`) around the decisions in `decisions_after_2a.md`. Nothing here is registered. Items marked **[Norm]** need a decision before the rewrite.
 
 ## What changes from the draft
 
@@ -117,6 +117,6 @@ Everything is tested on the 8; the 10 is reported beside it with the same rules.
 ## Order of work
 
 1. Norm decides the open items above and in `decisions_after_2a.md` (fit rule; new measures; MAIA-2 trimming; criterion promotions; free-choice pause; the trial's 10).
-2. Rewrite `preregistration_draft.md` from this plan.
+2. Rewrite `preregistration_draft.md` (now `preregistration_2b.md`) from this plan.
 3. Simulated-data run of the 2b analysis scripts (as for 2a) before registering.
 4. Materials: V2 rewrite, new measure JSONs, consent/debrief for the changed battery, ethics amendment.

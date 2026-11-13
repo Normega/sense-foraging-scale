@@ -1,6 +1,6 @@
 # Study 2: Study 2b, confirmatory structure and construct validity of the 8-statement scale
 
-**Status (9 November 2026):** built on the RADlab platform, inactive ("Sense Foraging Study 2b (CFA + validity)", `radlab/scripts/sense_foraging/build_study2b.py`); REB amendment approved. The preregistration is rewritten for 2b (`preregistration_draft.md`, not filed); the 2b analysis code is written and validated on simulated data (`study2b/analysis/`). 700 adults on Prolific, one posting.
+**Status (9 November 2026):** built on the RADlab platform, inactive ("Sense Foraging Study 2b (CFA + validity)", `radlab/scripts/sense_foraging/build_study2b.py`); REB amendment approved. The preregistration is rewritten for 2b (`preregistration_2b.md`, not filed); the 2b analysis code is written and validated on simulated data (`study2b/analysis/`). 700 adults on Prolific, one posting.
 
 - `decisions_after_2a.md`: decisions 1–36, from 31 October to 9 November.
 - `prereg_2b_plan.md`: the plan the preregistration was rewritten from.

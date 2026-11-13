@@ -2,7 +2,7 @@
 
 Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysis/01`–`11`; the exploratory follow-ups that led to these decisions are `12`–`21`. The results and this plan are on senseforaging.com/research/study2a/results (data from `22_report_data.R`).
 
-`preregistration_draft.md` in this folder still describes the 20-item, four-factor short form. It is rewritten from this list before 2b is registered.
+`preregistration_draft.md` in this folder still describes the 20-item, four-factor short form. It is rewritten from this list before 2b is registered. (Since rewritten, and renamed `preregistration_2b.md`.)
 
 ## Decided (Norm, 31 October 2026)
 

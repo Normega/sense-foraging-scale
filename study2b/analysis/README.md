@@ -1,6 +1,6 @@
 # Sense Foraging Study 2b: analysis pipeline (R)
 
-The analysis the Study 2b preregistration specifies (`study2/preregistration_draft.md`; once filed, OSF governs): the confirmatory factor structure of the 8 (H1), convergent and discriminant validity (H2–H3), criterion validity including the in-session pause (H4), incremental validity (H5), known groups (H6), and the exploratory analyses, H8 among them. The 10 is reported beside the 8 throughout. The registration says this code is the specification wherever its text is less precise; every place where the text allows more than one reading carries a comment starting `PREREG:`, listed at the end.
+The analysis the Study 2b preregistration specifies (`study2/preregistration_2b.md`; once filed, OSF governs): the confirmatory factor structure of the 8 (H1), convergent and discriminant validity (H2–H3), criterion validity including the in-session pause (H4), incremental validity (H5), known groups (H6), and the exploratory analyses, H8 among them. The 10 is reported beside the 8 throughout. The registration says this code is the specification wherever its text is less precise; every place where the text allows more than one reading carries a comment starting `PREREG:`, listed at the end.
 
 ## Data (never in this repo)
 
@@ -49,9 +49,10 @@ Before the 640 open, Norm sees only this run's report: counts, rates, times, run
 
 **Filing, after the run.**
 1. Fill the preregistration's remaining `[AT FILING]` entries from the run's report: the header (filing date), the pilot report (Section 3, Pilot) and power at the observed rates (Section 3, Sample size rationale). Commit.
-2. `Rscript study2/filing/build_filing.R` from the repo root. It writes `F:/radlab_data/sf_study2b/filing/<commit>/`: the code archive, the preregistration as PDF and HTML, `osf_fields.txt` (one block per OSF template field) and a SHA-256 manifest. It fills the Code paragraph's commit and hash itself. Any open marker or uncommitted change makes it a DRAFT build; file only a build without that mark.
-3. On OSF: the Preregistration template, the fields pasted from `osf_fields.txt`, "Registration prior to analysis of the data", the archive and the PDF attached.
-4. Then open the 640 places.
+2. Push that commit to `origin main`, the public repository (https://github.com/Normega/sense-foraging-scale), and check it is there: the registration cites the repository at that commit, and nothing is attached in its place.
+3. `Rscript study2/filing/build_filing.R` from the repo root. It writes `F:/radlab_data/sf_study2b/filing/<commit>/`: the preregistration as PDF and HTML, `osf_fields.txt` (one block per OSF template field), a code archive kept as a private record, and a SHA-256 manifest. It fills the Code paragraph's commit itself. Any open marker or uncommitted change makes it a DRAFT build; file only a build without that mark.
+4. On OSF: the Preregistration template, the fields pasted from `osf_fields.txt`, "Registration prior to analysis of the data". No archive is attached; the PDF may be.
+5. Then open the 640 places.
 
 ## Steps (`run_all.R`, from the repo root)
 
