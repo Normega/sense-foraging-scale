@@ -65,7 +65,7 @@ Exclusions, attention checks, timing, posting and practice group are always the 
    - Correlations with the agreement index, spirituality, religiosity, practice and age; dedicated vs never, raw and adjusted.
    - Writes `12_access_valuing_study1.json`, which the findings page renders.
 
-**Correction (2026-10-12).** `psych::omega` re-reverses any item that loads negatively on the general factor unless `flip = FALSE`. Because the items are already keyed, that undid the keying of seven reversed items and inflated ω_h from .54 to .70 (pool) and from .50 to .66 (the 20 items). Every `omega()` call now passes `flip = FALSE`. The independent review that found it is in `docs/reviews/2026-10-12/`.
+**Correction (2026-10-12).** `psych::omega` re-reverses any item that loads negatively on the general factor unless `flip = FALSE`. Because the items are already keyed, that undid the keying of seven reversed items and inflated ω_h from .54 to .70 (pool) and from .50 to .66 (the 20 items). Every `omega()` call now passes `flip = FALSE`. It was found by an independent review (12 October 2026), whose re-analysis scripts are in `docs/reviews/2026-10-12/`.
 
 **Runtime:** about 15–20 minutes in all; the ordinal EFAs and ESEMs dominate.
 

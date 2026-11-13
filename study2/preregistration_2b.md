@@ -322,7 +322,7 @@ Where this text allows more than one reading, the code fixes one (each is marked
 
 **Measures used for non-commercial academic research.** SBI, PSS-4, BSSS-8, NCS-6, the SPSQ-SF and ASI-3 items, the Brief MAIA-2, BFI-2, EQ, BIDR-16, FFMQ-15 and PHQ-4 are used under their research-use terms; SAMD is CC BY, and its authors are told of the use.
 
-**Code.** The analysis code (`study2b/analysis/`), the platform definitions of every measure (`study2b/materials/`, `study2/materials/`), the power simulations (`study2/power/`) and the build of this document (`study2/filing/`) are public at https://github.com/Normega/sense-foraging-scale. This registration refers to that repository at commit [AT FILING].
+**Code.** The analysis code (`study2b/analysis/`), the platform definitions of every measure (`study2b/materials/`, `study2/materials/`), the power simulations (`study2/power/`) and the build of this document (`study2/filing/`) are public at https://github.com/Normega/sense-foraging-scale. This registration refers to that repository at commit [AT FILING]. The wording of the third-party questionnaires is withheld from the repository for copyright: their definitions keep the item ids, keying and scoring, and the wording is in the sources cited in Section 4 and the References.
 
 **Data sharing.** A de-identified dataset will be shared as described in the consent form: no exact timestamps, age in bands, coarsened rare demographic combinations, free text (the pause notes) recoded. The analysis code will be shared alongside it.
 

@@ -1,8 +1,8 @@
 # Independent review, 12 October 2026
 
-`sf_review.md` is an outside-style psychometric review of Study 1 and the Study 2 plan, written by a
-separate Claude agent briefed to check claims against the code and outputs. The `r1`–`r7` scripts are
-its re-analyses: they read Study 1's derived data and write nothing.
+An outside-style psychometric review of Study 1 and the Study 2 plan, written by a separate Claude agent
+briefed to check claims against the code and outputs. The review text is an internal document and is not in
+this repository. The `r1`–`r7` scripts are its re-analyses: they read Study 1's derived data and write nothing.
 
 Checked before acting:
 - Model A on Study 1 gives CFI .850 and RMSEA .086.
