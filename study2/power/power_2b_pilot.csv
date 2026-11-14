@@ -1,0 +1,16 @@
+test,rate,condition,n,power,power_variant,detail
+H4b,"engaged pause 3.3% (observed, 2 of 61)",latent r 0.20; Holm with H4a at latent r .20,700,49.2,49.4,power_variant = p < .05 without Holm; median 23 engaged of 700
+H4b,"engaged pause 3.3% (observed, 2 of 61)",latent r 0.30; Holm with H4a at latent r .20,700,82.8,83,power_variant = p < .05 without Holm; median 23 engaged of 700
+H4b,engaged pause 0.4% (95% CI lower end),latent r 0.20; Holm with H4a at latent r .20,700,11.8,11.8,power_variant = p < .05 without Holm; median 3 engaged of 700
+H4b,engaged pause 0.4% (95% CI lower end),latent r 0.30; Holm with H4a at latent r .20,700,22.4,22.4,power_variant = p < .05 without Holm; median 3 engaged of 700
+H4b,engaged pause 11.3% (95% CI upper end),latent r 0.20; Holm with H4a at latent r .20,700,81.7,81.8,power_variant = p < .05 without Holm; median 79 engaged of 700
+H4b,engaged pause 11.3% (95% CI upper end),latent r 0.30; Holm with H4a at latent r .20,700,99.2,99.2,power_variant = p < .05 without Holm; median 79 engaged of 700
+H4b,pause taken 4.9% (3 of 61; reference only),latent r 0.20; Holm with H4a at latent r .20,700,58.8,58.9,power_variant = p < .05 without Holm; median 34 took of 700
+H5a,each item's observed missing rate,true delta R2 0.03,677,82.5,82.5,delta R2 >= .02 and p < .05; power_variant = Holm worst case (.05/3)
+H5a,each item's observed missing rate,true delta R2 0.04,677,96.4,96.4,delta R2 >= .02 and p < .05; power_variant = Holm worst case (.05/3)
+H5a,"95% CI upper ends: validity items 0.13%, age 8.8%, gender 5.9%",true delta R2 0.03,568,80.6,80.6,delta R2 >= .02 and p < .05; power_variant = Holm worst case (.05/3)
+H5a,"95% CI upper ends: validity items 0.13%, age 8.8%, gender 5.9%",true delta R2 0.04,568,94.5,94.5,delta R2 >= .02 and p < .05; power_variant = Holm worst case (.05/3)
+H6,"current 42.6%, never 32.8% (observed, 26 and 20 of 61)",true d 0.55,528,71.2,,298 current vs 230 never; d >= .50 and p < .05
+H6,"current 42.6%, never 32.8% (observed, 26 and 20 of 61)",true d 0.67,528,97.4,,298 current vs 230 never; d >= .50 and p < .05
+H6,"current 30.0%, never 21.3% (both at their 95% CI lower ends)",true d 0.55,359,67.8,,210 current vs 149 never; d >= .50 and p < .05
+H6,"current 30.0%, never 21.3% (both at their 95% CI lower ends)",true d 0.67,359,94.4,,210 current vs 149 never; d >= .50 and p < .05

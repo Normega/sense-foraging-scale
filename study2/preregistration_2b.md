@@ -1,6 +1,6 @@
 # Sense Foraging Scale, Study 2b: confirmatory structure and construct validity of the 8-statement scale
 
-**Not yet filed.** Entries marked **[AT FILING]** are completed from the pilot run (Section 3, Pilot) before filing. Once filed, the OSF registration is the version of record.
+**Filing text, 14 November 2026.** Completed after the pilot's shuffled run (Section 3, Pilot) and filed before the remaining 639 places open. Once filed, the OSF registration is the version of record.
 
 - OSF Preregistration (standard template).
 - University of Toronto REB Protocol #00051180; the amendment covering Study 2b is approved.
@@ -69,7 +69,7 @@ None. The optional pause is presented as a break; the debrief explains that whet
 
 ### Study design
 
-One session of about 22 minutes, plus any pause taken, in this order:
+One session of about 23 minutes, plus any pause taken, in this order:
 
 1. **Background questions:** the 13 questions from Study 1, unchanged.
 2. **The two modes** (`sf2b-vignettes`): a three-paragraph introduction to the doing and sensing modes; nine brief vignettes, three a page in a per-participant order with each page holding at least one of each kind, rated 1 Doing mode to 6 Sensing mode, without feedback; then a self-rating on the same anchors. The introduction, V2 and V7 are reworded from 2a, so separation scores are not directly comparable with 2a's.
@@ -98,7 +98,7 @@ Every question about the participant offers "Prefer not to answer"; the three at
 
 ### Existing data
 
-**Registration prior to analysis of the data.** At filing, the only Study 2b data are the pilot's 60 sessions. Their answers have been seen only shuffled within each item (Pilot, below), which leaves no relation between any two answers. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (WLSMV, theta, pairwise, the agreement factor as in Section 5):
+**Registration prior to analysis of the data.** At filing, the only Study 2b data are the pilot's 61 sessions. Their answers have been seen only shuffled within each item (Pilot, below), which leaves no relation between any two answers. The 8 and the 10 were chosen on Study 2a's data, a separate sample. In 2a, in-sample (WLSMV, theta, pairwise, the agreement factor as in Section 5):
 
 | Form | CFI | RMSEA (90% upper) | SRMR | Largest residual | ω (content) | α | Practitioner d |
 |---|---|---|---|---|---|---|---|
@@ -111,7 +111,7 @@ The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2
 
 - **Participants:** Prolific participants aged 18+, fluent in English (Prolific's fluent-languages filter), in any country. Participants in Study 1 or Study 2a are excluded through Prolific's exclusion list.
 - **Platform:** the RADlab research platform (radlab.zone). Prolific IDs are held in a separate table, replaced by a random code in all study data, and deleted after payment.
-- **Compensation:** £12.71 an hour (the UK minimum wage), prorated, set from the pilot's median completion time (about £4.66 for 22 minutes), paid regardless of answers, of the attention checks and of the pause. Prolific's maximum time is set well beyond the median plus the 10-minute pause cap, so a long pause does not time out.
+- **Compensation:** £12.71 an hour (the UK minimum wage), prorated, set from the pilot's median completion time without the pause (£4.92 for 23.2 minutes, from arrival on the platform to the end of the debrief), paid regardless of answers, of the attention checks and of the pause. Prolific's maximum time is set well beyond the median plus the 10-minute pause cap, so a long pause does not time out; after the pilot it is raised to 90 minutes. The pilot's participants, posted at a provisional £4.66, receive the difference as a bonus.
 - **Pilot:** the first 60 places, identical materials, run before this registration is filed. Its extraction goes through the analysis code with every item's answers shuffled across participants, which keeps each item's distribution and destroys every relation between answers. Read from that run only:
   - completion and breakoff counts;
   - attention-check pass rates;
@@ -123,11 +123,21 @@ The same 8 in 2a: vignette self-rating r = .33; IUS-12 r = −.18. Study 1 and 2
 
   No unshuffled answers are analysed. The rules for each reading are set in advance in `study2b/analysis/README.md` ("The pilot run"). If nothing changes after the pilot, pilot participants are included. If the materials change, they are excluded and 60 places are added.
 
-  **[AT FILING]** The pilot run's report: sessions started and completed; breakoff by screen; each attention check's failure rate; median completion time and the resulting pay; pause take-up; practice-group sizes; and every code change the run required, by commit.
+  **Pilot report** (extraction of 13 November 2026, run through `study2b/analysis/` in permuted mode):
+  - **Sessions:** 62 enrollments: 61 from the posting and 1 staff test, which stopped after the scale and is excluded. All 61 sessions started were completed. The longest, 48 minutes, ended at Prolific's maximum time, so Prolific recorded it as timed out; the participant had completed the session and was paid, and the maximum was raised to 90 minutes for the remaining places.
+  - **Breakoff:** none at any of the 21 screens; no step crashed.
+  - **Attention checks failed:** the scale's 1 of 61 (1.6%), the trial statements' 0 of 61, BFI-2's 0 of 61. No one failed two, so no one is excluded on the checks: 61 analysable, 2 flagged (one check, one speeder).
+  - **Completion time:** median 23.2 minutes without the pause, from arrival on the platform to the end of the debrief (21.6 from the first question); pay £12.71 an hour × 23.2 minutes = £4.92.
+  - **Pause:** offered to 61, taken by 3 (4.9%), engaged by 2 (3.3%); pauses of 16–130 s, none ended by the cap. Device class at the offer: 47 desktop, 11 phone, 3 tablet.
+  - **Practice groups:** 26 current practitioners (43%), 20 never (33%), 15 in neither (25%); 3 dedicated.
+  - **"Prefer not to answer":** 4 of the 61 × 131 validity-item answers (0.05%), none on the scale or the trial statements.
+  - **The code:** read the export as written: every response key maps to an item, "Prefer not to answer" is read as missing, and no pause record lacks timing. The run required three changes, each so that a step finishes when a model fails on the shuffled data instead of stopping; none changes a rule or an estimate (committed with this text): `04_validity.R` keeps a cell whose model failed in the decision tables, as missing and not holding; `08_exploratory.R` summarises an invariance sequence whose configural model failed; `09_report.R` prints a missing Rönkkö and Cho class.
+
+  No stop rule tripped (largest attention-check failure 1.6%; largest share stopping at one screen 0%) and no material changed, so the 61 pilot participants are retained, and the target is 700 completed sessions including them.
 
 ### Sample size
 
-Target: 700 completed sessions (60 pilot + 640), in one posting.
+Target: 700 completed sessions (61 pilot + 639), in one posting.
 
 ### Sample size rationale
 
@@ -146,29 +156,32 @@ By simulation (`study2/power/`, 500 simulated studies per condition at N = 700, 
 | H3c | both BIDR correlations .10 / .15 / .20 | 98% / 85% / 49% |
 | H3e, all four bounds | BSSS-8 .20, the other three .10 (predicted) / all four .15 | 97% / 80% |
 | H4a | latent r .15 / .20, Holm with H4b | 92% / 99% |
-| H4b | latent r .20, take-up 15–50% | 88–97% |
-| H5a | true ΔR² .03, at 700 / at the 410–470 complete cases of the 80% rule | 84–85% / 76–78% |
-| | true ΔR² .04, at the 410–470 complete cases | 92–93% |
-| H5b | odds ratio 1.3 / 1.4 per SD, at 470 complete cases | 66% / 85% |
-| H6 | true d .55 / .67 (382 vs 190) | 70% / 97% |
+| H4b | latent r .20, engaged pause 15–50% (assumed before the pilot) / 3.3% (the pilot's rate) | 88–97% / 49% |
+| H5a | true ΔR² .03, at 700 / at the pilot's projected 568–677 complete cases | 84–85% / 81–83% |
+| | true ΔR² .04, at 568–677 complete cases | 95–96% |
+| H5b | odds ratio 1.3 / 1.4 per SD, at 470 / 650 complete cases | 66% / 85%; 80% / 94% |
+| H6 | true d .55 / .67, at 382 vs 190 (assumed before the pilot) / 298 vs 230 (the pilot's proportions) | 70% / 97%; 71% / 97% |
 
 H2 requires three of the four correlations, not all four: requiring all four multiplies four chances, 83% power at a true r of .45 each and 47% if one is .38 (`study2/power/power_2b_review.R`). H3c and H3e test bounds of ±.30 with CIs about ±.08 wide, so they hold when the true correlations are near zero, as predicted, and fail about half the time at .20.
 
 The smallest contrast of interest in H3b is a difference of .15. Contrast 4 compares two 3-item subscales that barely correlate, and has about 64% power; it is kept and its power reported. H2 needs a true correlation of about .45 for 95% power (63% at .40).
 
-H5 uses complete cases (Section 5), and under the 80% rule (Section 5, Transformations) each of the 13 FFMQ-15 and Brief MAIA-2 subscales it adjusts for needs all three of its items. On simulated data with 1% of items unanswered at random, H5's complete-case sample fell from about 650 to 410–470; the table gives H5a's power at that n.
+H5 uses complete cases (Section 5), and under the 80% rule (Section 5, Transformations) each of the 13 FFMQ-15 and Brief MAIA-2 subscales it adjusts for needs all three of its items. On simulated data with 1% of items unanswered at random, H5's complete-case sample fell from about 650 to 410–470. The pilot's missing rates were far lower (Pilot, above): the projected complete-case n is 677, or 568 at the upper ends of the rates' 95% intervals, and the table gives H5a's power at those n.
 
 H3d's power depends on the true multiple correlation R. That depends on two things no study has measured: the 8's correlation with each neighbour (.40–.50 simulated), and how much the neighbours share beyond the 8 (`study2/power/power_2b_h3d.R`; 300 simulated studies per condition).
 - **Neighbours sharing at least .30 with each other:** R is at most .73, and power is 83–100%.
 - **Neighbours related only through the 8, at .50 each:** R is .76, and power is 42%.
 
-**[AT FILING]** Power for H4b, H5a and H6 at the pilot's observed pause take-up, missing-data rates and practice-group sizes (`study2/power/`).
+**Power at the pilot's observed rates** (`study2/power/power_2b_pilot.R`, N = 700, 4,000 simulated studies per condition; in brackets, at the ends of each rate's exact 95% interval from 61 people):
+- **H4b:** engaged pause 3.3% (0.4–11.3%), about 23 of 700; latent r .20, Holm with H4a: 49% (12–82%); latent r .30: 83% (22–99%).
+- **H5a:** projected complete-case n 677 (568 at the upper ends of the missing rates: every item 0.13%, age 8.8%, gender 5.9%); true ΔR² .03: 82.5% (80.6%); .04: 96.4% (94.5%).
+- **H6:** 298 current practitioners vs 230 never (210 vs 149 with both proportions at their lower ends); true d .55: 71% (68%); .67: 97% (94%).
 
 H3d's simulation used the delta-method interval, because 2,000 bootstrap resamples for every simulated study would take days. In 16 studies that also had 300 bootstrap resamples, its upper bound was within .004 of the bootstrap's on average, and every decision was the same.
 
 ### Stopping rule
 
-The number of places is fixed on Prolific in advance: 60, then 640. Data collection stops when these are filled. There is no interim analysis, and excluded participants are not replaced.
+The number of places is fixed on Prolific in advance: 60 for the pilot (61 were completed), then 639. Data collection stops when these are filled. There is no interim analysis, and excluded participants are not replaced.
 
 ## 4. Variables
 

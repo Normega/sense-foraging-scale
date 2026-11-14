@@ -17,7 +17,7 @@ rows <- list(
 for (x in v$sf8$h2) rows[[length(rows) + 1]] <- list("H2", paste("r with", x$score, "> .30 (lower bound)"), yn(x$h2), sprintf("r %s %s", f(x$r), ci(x$lower, x$upper)))
 rows[[length(rows) + 1]] <- list("H2", sprintf("at least %d of the 4 lower bounds > .30", SF2B$h2_needed), yn(v$sf8$H2),
                                  paste(v$sf8$H2_correlations_holding, "of 4"))
-rows[[length(rows) + 1]] <- list("H3a", "each H2 upper bound < .80", yn(v$sf8$H3a), paste(vapply(v$sf8$h2, function(x) sprintf("%s (%s)", f(x$upper), x$rc_class), ""), collapse = ", "))
+rows[[length(rows) + 1]] <- list("H3a", "each H2 upper bound < .80", yn(v$sf8$H3a), paste(vapply(v$sf8$h2, function(x) sprintf("%s (%s)", f(x$upper), x$rc_class %||% "NA"), ""), collapse = ", "))
 for (x in v$sf8$h3b) rows[[length(rows) + 1]] <- list(paste0("H3b-", x$contrast), paste(x$first, ">", x$second), yn(x$holds),
                                                       sprintf("difference %s %s", f(x$difference), ci(x$lower, x$upper)))
 rows[[length(rows) + 1]] <- list("H3b", "at least 4 of the 5 contrasts", yn(v$sf8$H3b), paste(v$sf8$H3b_contrasts_holding, "of 5"))

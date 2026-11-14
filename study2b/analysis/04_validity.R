@@ -138,8 +138,11 @@ h3d_ci <- unname(quantile(boot, c(.025, .975), na.rm = TRUE))
 # absolute lower limit when the estimate is negative).
 rc_class <- function(est, lower, upper) { ul <- if (isTRUE(est < 0)) abs(lower) else upper
   if (is.null(ul) || is.na(ul)) NA_character_ else if (ul < .80) "no problem" else if (ul < .90) "marginal" else if (ul < 1) "moderate" else "severe" }
-cell <- function(sc, fm = "sf8", sm = "all") lat[score == sc & form == fm & sample == sm]
-dif_of <- function(k, fm = "sf8", sm = "all") R[label == paste0("dif_", k) & form == fm & sample == sm & ri_free == FALSE]
+# A cell whose model failed or was refused has no row: return one row of NA, so it stays in
+# the decision tables and counts as not holding.
+na_row <- function(x) if (nrow(x)) x else x[NA_integer_]
+cell <- function(sc, fm = "sf8", sm = "all") na_row(lat[score == sc & form == fm & sample == sm])
+dif_of <- function(k, fm = "sf8", sm = "all") na_row(R[label == paste0("dif_", k) & form == fm & sample == sm & ri_free == FALSE])
 decide <- function(fm, sm) {
   h2 <- rbindlist(lapply(SF2B_H2, function(s) { x <- cell(s, fm, sm); data.table(score = s, r = x$est, lower = x$ci.lower, upper = x$ci.upper,
                                                                                    h2 = isTRUE(x$ci.lower > SF2B$h2_lower), h3a = isTRUE(x$ci.upper < SF2B$h3a_upper),

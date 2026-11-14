@@ -103,6 +103,38 @@ A ±.30 bound at N = 700 has a CI half-width of about .08, so a true correlation
 
 (In brackets: covariates explaining 25% of the 8.) The simulated pipeline's own H5b estimate was an OR of 1.35 at n 474.
 
+## H4b, H5a and H6 at the pilot's observed rates (13 November, N = 700)
+
+`power_2b_pilot.R` (seed 20261114, 4,000 runs per condition): `power_2b_pilot.csv`, `power_2b_pilot_h5_n.csv`. The rates are the pilot's (61 completed sessions, extraction of 13 November, the permuted run's counts); the models are the earlier scripts', unchanged. A rate from 61 people is uncertain, so each test is also run at the ends of the rate's exact 95% interval. Power, %.
+
+**H4b**, the engaged pause (2 of 61 who reached the offer, 3.3%; 3 took the pause), Spearman, Holm with H4a (past-week pause days at latent r .20), as in `power_2b_review.R`:
+
+| Engaged pause | latent r .20 | latent r .30 |
+|---|---|---|
+| 3.3% (observed; about 23 of 700) | 49 | 83 |
+| 0.4% (95% lower end) | 12 | 22 |
+| 11.3% (95% upper end) | 82 | 99 |
+
+Any pause taken (3 of 61, 4.9%), latent r .20: 59. The earlier table assumed take-up of 15–50% (88–97%).
+
+**H5a** at the projected complete-case n. Each regression needs age, gender, all 39 FFMQ-15 and Brief MAIA-2 items (every 3-item subscale needs all three), the outcome's items and 7 of the 8. With missingness independent across items and people, n = 700 × the product of (1 − each item's missing rate). In the pilot: 4 "Prefer not to answer" in 61 × 131 validity items (one of them in Brief MAIA-2, none in FFMQ-15, PHQ-4, PSS-4 or life satisfaction), age missing for 1 of 61, gender withheld by none.
+
+| Missing rates | projected n | true ΔR² .03 | .04 |
+|---|---|---|---|
+| each item's observed rate | 677 | 82.5 | 96.4 |
+| 95% upper ends (every item 0.13%, age 8.8%, gender 5.9%) | 568 | 80.6 | 94.5 |
+
+Holm's worst case (.05/3) gives the same figures. The earlier simulation assumed 1% missing at random per item and got 410–470.
+
+**H6**, current vs never (26 and 20 of 61 analysable, 42.6% and 32.8%; 15 in neither), Student's t, d ≥ .50 and p < .05:
+
+| Groups at 700 | true d .55 | .67 |
+|---|---|---|
+| 298 vs 230 (observed) | 71.2 | 97.4 |
+| 210 vs 149 (both at their 95% lower ends) | 67.8 | 94.4 |
+
+The earlier table used 2a's groups (382 vs 190): 70 / 97.
+
 ## H1: the fit rule (decision 17)
 
 Pass rates, %. Populations: the model true (*fit*); 2b exactly like 2a (*observed*: 2a's polychoric correlations); two residual correlations of .30 (*small flaw*); three statements sharing a second factor loading .40 or .60.

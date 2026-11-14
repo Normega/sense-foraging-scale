@@ -25,6 +25,9 @@ out <- list()
 inv <- list(sf2b_run_mg(X, D$sf8, M$tells_apart, "H8: tells the modes apart (yes / no)"),
             sf2b_run_mg(X, D$sf8, M$gender2, "gender (man / woman)"))
 if (isTRUE(A$country_rule$analysed)) inv[[3]] <- sf2b_run_mg(X, D$sf8, M$country_group, "country group")
+# A sequence that stopped at a configural model that failed has no step to judge: give its
+# table the column, empty, so the summaries below still run.
+inv <- lapply(inv, function(r) { if (!"noninvariant" %in% names(r$table)) r$table[, noninvariant := NA]; r })
 fwrite(rbindlist(lapply(inv, `[[`, "table"), fill = TRUE), sf2b_out("08_invariance.csv"))
 mg <- rbindlist(lapply(inv, `[[`, "merges")); if (nrow(mg)) fwrite(mg, sf2b_out("08_invariance_category_merges.csv"))
 out$invariance <- lapply(inv, function(r) list(groups = r$groups, released = r$free,
