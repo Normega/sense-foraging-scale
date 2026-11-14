@@ -1,6 +1,6 @@
 # Sense Foraging Study 2b: analysis pipeline (R)
 
-The analysis the Study 2b preregistration specifies (`study2/preregistration_2b.md`; once filed, OSF governs): the confirmatory factor structure of the 8 (H1), convergent and discriminant validity (H2–H3), criterion validity including the in-session pause (H4), incremental validity (H5), known groups (H6), and the exploratory analyses, H8 among them. The 10 is reported beside the 8 throughout. The registration says this code is the specification wherever its text is less precise; every place where the text allows more than one reading carries a comment starting `PREREG:`, listed at the end.
+The analysis the Study 2b preregistration specifies (`study2/preregistration_2b.md`, filed at https://osf.io/d4a5u from commit d3e60c9; OSF governs): the confirmatory factor structure of the 8 (H1), convergent and discriminant validity (H2–H3), criterion validity including the in-session pause (H4), incremental validity (H5), known groups (H6), and the exploratory analyses, H8 among them. The 10 is reported beside the 8 throughout. The registration says this code is the specification wherever its text is less precise; every place where the text allows more than one reading carries a comment starting `PREREG:`, listed at the end.
 
 ## Data (never in this repo)
 

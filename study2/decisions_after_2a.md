@@ -79,7 +79,7 @@ The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- Nothing. The registration is filed from the commit after decision 44.
+- Nothing. Filed on OSF on 14 November 2026 at https://osf.io/d4a5u, from commit d3e60c9.
 
 ## Fit-rule background
 

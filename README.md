@@ -11,15 +11,15 @@ University of Toronto REB Protocol #00051180. PI: Norman Farb (RADlab, Universit
 |---|---|---|
 | [Study 1](study1/) | Exploratory factor analysis of a 48-item pool (item pool 6), Prolific, N = 500 | Preregistered at [osf.io/48r2y](https://osf.io/48r2y); data collected 2026-10-11; analysed |
 | [Study 2a](study2a/) | Factor structure of a revised 58-statement set, with vignettes checking that the two modes are understood, Prolific, N = 500 | Preregistered at [osf.io/vt7gn](https://osf.io/vt7gn) (29 October 2026); data collected and analysed |
-| [Study 2b](study2b/) | Confirmatory structure and construct validity of the 8-statement scale chosen in 2a: validity measures, an in-session pause as a behavioural criterion, known groups; Prolific, N = 700 planned | Designed; preregistration not yet filed; no data collected |
+| [Study 2b](study2b/) | Confirmatory structure and construct validity of the 8-statement scale chosen in 2a: validity measures, an in-session pause as a behavioural criterion, known groups; Prolific, N = 700 planned | Preregistered at [osf.io/d4a5u](https://osf.io/d4a5u) (14 November 2026, from commit d3e60c9); 61-person pilot run; main sample collecting |
 
 **Study 2a in brief.** The 58 statements showed one broad sensing factor, small reverse-keyed clusters and an
 agreement (acquiescence) factor; the hypothesized parts did not separate as subscales. From 2a, in-sample, came the
 scale Study 2b tests: **the 8**, scored as one number, and **the 10** (the 8 plus two statements) for studies of
 change. The decisions and the 2a results behind them are in `study2/decisions_after_2a.md`.
 
-**Study 2b.** The preregistration text is `study2/preregistration_2b.md` (not yet filed on OSF; entries marked
-[AT FILING] are completed from a 60-person pilot before filing). The analysis code is `study2b/analysis/`, validated
+**Study 2b.** The preregistration text is `study2/preregistration_2b.md` (filed on OSF at
+[osf.io/d4a5u](https://osf.io/d4a5u) from commit d3e60c9, after the 61-person pilot; OSF governs). The analysis code is `study2b/analysis/`, validated
 on simulated data; the platform definitions are `study2b/materials/`; the power simulations are `study2/power/`.
 
 ## Layout
