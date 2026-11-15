@@ -42,5 +42,6 @@ report <- list(mode = SF2B$mode, written = format(Sys.time(), "%Y-%m-%d %H:%M"),
                                psych = as.character(packageVersion("psych")), MASS = as.character(packageVersion("MASS"))),
                flow = fread(sf2b_out("01_flow.csv")), sample = rd("02_sample.json"), h1 = h1, validity = v, h4 = h4, h5 = h5, h6 = h6,
                exploratory = rd("08_exploratory.json"))
+if (SF2B$first_n > 0) report$sensitivity <- sprintf("decision 45: the first %d completed sessions by session start, not the registered sample", SF2B$first_n)
 write_json(report, sf2b_out("09_report_study2b.json"), auto_unbox = TRUE, pretty = TRUE, digits = NA)
 print(dec, nrows = 100)

@@ -70,6 +70,12 @@ Before the 640 open, Norm sees only this run's report: counts, rates, times, run
 
 Model settings in every fit (`sf2b_models.R`): ordinal, WLSMV, theta parameterization, `missing = "pairwise"`, `conditional.x = FALSE`; the agreement factor's loadings fixed at 1 on the unrecoded statements, variance free, uncorrelated with every other factor.
 
+## After filing: deviation analyses (decisions 45-46)
+
+Not registered; each was specified in `study2/decisions_after_2a.md` before its results existed.
+- **First 700 (decision 45):** `SF2B_FIRST_N=700` keeps the first 700 completed sessions by earliest step entry (plus anyone unfinished who started no later than the 700th) and writes to `output/<mode>_first700/`. Unset, the pipeline is unchanged.
+- **Brief MAIA-2 repair (decision 46):** `10_deviation_maia.R` refits the five models that contain the Brief MAIA-2 with `maia_12`'s standardized loading bounded at .949 (residual at least .10 of its variance), all else as registered, and writes `10_deviation_maia.csv`/`.json`. In the real run the bound is active, so its CIs are conditional on it.
+
 ## Validated
 
 On simulated data (seed 20261198, 9 November 2026, the registered 2,000 H3d resamples; 749 enrollments, 715 analysable): all 19 checks in `99_recovery.csv` pass.

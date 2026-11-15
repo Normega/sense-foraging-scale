@@ -49,6 +49,31 @@ meta_all <- meta_all[!duplicated(participant)]
 data_rows <- rows[src %in% c("questionnaire", "vas", "step")]
 by_person <- split(data_rows, vapply(data_rows, function(r) r$participant, ""))
 
+# ---- decision 45 sensitivity analysis: the first N completed sessions (SF2B_FIRST_N) -------
+# Not the registered analysis, which keeps every participant (decision 45). With
+# SF2B_FIRST_N unset this block does nothing. Session start = the earliest step entry
+# (participant_step_timings.entered_at) of the person's sessions; enrolled_at when there
+# is none. The first N people with a completed session by that time are kept, and so is
+# everyone without one who started no later than the Nth, so the registered rules
+# (exclusions, partial sessions) then apply to the sample as it stood at N completions.
+if (SF2B$first_n > 0) {
+  started <- vapply(meta_all$participant, function(p) {
+    st <- Filter(function(r) identical(r$source, "step"), by_person[[p]] %||% list())
+    t <- if (length(st)) suppressWarnings(min(ts_parse(lapply(st, `[[`, "entered_at")), na.rm = TRUE)) else NA
+    if (!is.finite(t)) t <- ts_parse(list(Filter(function(r) identical(r$participant, p), enr)[[1]]$enrolled_at))
+    as.numeric(t)
+  }, 0)
+  done <- meta_all$participant %in% vapply(Filter(function(r) !is.null(r$session_completed_at), enr), `[[`, "", "participant")
+  stopifnot(!anyNA(started), sum(done) >= SF2B$first_n)
+  cut_t <- sort(started[done])[SF2B$first_n]
+  keep <- !done & started <= cut_t
+  keep[done] <- rank(started[done], ties.method = "first") <= SF2B$first_n
+  sf2b_log("decision 45 sensitivity: first ", SF2B$first_n, " completed sessions by session start; kept ", sum(keep), " of ",
+           length(keep), " enrollments (", sum(keep & done), " completed, ", sum(keep & !done), " not completed); left out ",
+           sum(!keep & done), " later completed sessions and ", sum(!keep & !done), " later uncompleted ones")
+  meta_all <- meta_all[keep]
+}
+
 first_complete <- function(rs, slug, need) {
   cand <- Filter(function(r) identical(r$source, "questionnaire") && identical(r$slug, slug) &&
                    is.null(r$resubmission_of) && all(need %in% names(r$responses)), rs)

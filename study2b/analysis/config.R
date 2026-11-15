@@ -65,21 +65,29 @@ SF2B <- list(
 
   # ---- computation ------------------------------------------------------------------
   boot_h3d = as.integer(Sys.getenv("SF2B_BOOT", "2000")),   # registered: 2,000
-  cores    = as.integer(Sys.getenv("SF2B_CORES", as.character(max(1L, min(20L, parallel::detectCores() - 2L)))))
+  cores    = as.integer(Sys.getenv("SF2B_CORES", as.character(max(1L, min(20L, parallel::detectCores() - 2L))))),
+
+  # ---- decision 45 sensitivity analysis (a deviation, recorded 15 November 2026) -------
+  # SF2B_FIRST_N=700 repeats the analysis on the first 700 completed sessions by session
+  # start, the registered target (01_prepare.R applies it). Unset (0): the primary
+  # analysis of every participant, as registered. Outputs and derived objects carry the
+  # tag "<mode>_first<N>", so the primary run's files are never overwritten.
+  first_n  = as.integer(Sys.getenv("SF2B_FIRST_N", "0"))
 )
-stopifnot(SF2B$mode %in% c("permuted", "simulated", "real"))
+stopifnot(SF2B$mode %in% c("permuted", "simulated", "real"), !is.na(SF2B$first_n), SF2B$first_n >= 0)
+SF2B$tag <- if (SF2B$first_n > 0) sprintf("%s_first%d", SF2B$mode, SF2B$first_n) else SF2B$mode
 
 sf2b_path <- function(...) file.path(SF2B$data_dir, ...)
 sf2b_out  <- function(...) {
-  d <- sf2b_path("output", SF2B$mode)
+  d <- sf2b_path("output", SF2B$tag)
   dir.create(d, recursive = TRUE, showWarnings = FALSE)
   file.path(d, ...)
 }
 sf2b_derived <- function(name) {
   dir.create(sf2b_path("derived"), recursive = TRUE, showWarnings = FALSE)
-  sf2b_path("derived", sprintf("%s_%s.rds", name, SF2B$mode))
+  sf2b_path("derived", sprintf("%s_%s.rds", name, SF2B$tag))
 }
-sf2b_log <- function(...) cat(sprintf("[%s %s] ", SF2B$mode, format(Sys.time(), "%H:%M:%S")), ..., "\n", sep = "")
+sf2b_log <- function(...) cat(sprintf("[%s %s] ", SF2B$tag, format(Sys.time(), "%H:%M:%S")), ..., "\n", sep = "")
 `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
 r3 <- function(x) round(x, 3)
 
