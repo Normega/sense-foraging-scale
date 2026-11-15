@@ -72,6 +72,7 @@ Study 2a (osf.io/vt7gn) is analysed. The registered analysis is `study2a/analysi
 42. **H2 is supported when at least three of the four lower bounds exceed .30, each correlation still reported on its own** (Norm, 13 November): requiring all four gives 83% power at a true r of .45 each and 47% if one is .38; three of four gives 98% and 94% (`power/power_2b_review.R`).
 43. **Power is reported for H3c, H3e, H4a, H5b and for H6 at d = .55; no bound or rule changes as a result** (Norm, 13 November): H3c 98 / 85 / 49% with both correlations at .10 / .15 / .20; H3e 97% as predicted, 80% with all four at .15; H4a 92 / 99% at latent r .15 / .20; H5b 66 / 85% at an odds ratio of 1.3 / 1.4 (n 470); H6 70% at d = .55 (`power/power_2b_review.R`, `power/README.md`).
 44. **The pilot's results are accepted and the registration is filed as drafted** (Norm, 14 November): no stop rule tripped, so the 61 pilot participants are kept and 639 places remain (Prolific shows 61). H4b is filed unchanged although only 2 of 61 had an engaged pause, which puts its power at about 49% at a latent r of .20; the figure is stated in Section 3. Pay is £4.92 (£12.71 an hour for the 23.2-minute median from arrival, without the pause), with the difference paid to the pilot as a bonus. Prolific's maximum time goes to 90 minutes, because the longest pilot session (48 minutes) timed out there.
+45. **Deviations from the filed registration, recorded before any real answer is analysed** (Norm, 15 November). Data collection ran on 15 November and the study was closed that day (no platform activity for four hours before closing; 24 unfinished sessions marked missed). (a) **Prolific's maximum time stayed at about 48 minutes, not 90:** Prolific does not allow it to be changed on a running study without a new posting, so places were added instead to replace participants who timed out; timed-out participants who completed the session were paid. (b) **723 completed sessions, not 700** (61 pilot + 662), because of those added places and because many timed-out participants finished anyway. **All 723 are analysed**; the confirmatory tests are repeated on the first 700 by session start as a sensitivity analysis. (c) **Re-entry:** 5 participants who had finished were given a second session by `auto-enroll`'s single-session path; none completed it, so no one has two sets of answers. The analysis keeps each person's first complete submission, as registered.
 
 Correction to decision 13 (9 November): the trial's 10 needs **eight** extra statements in 2b, not seven. 2b asks only sf6_36 and sf6_44 in the trial's wording; the 8's sf6_27 is the reworded version. And 2a's `sf2a-end` had two of its six statements (sf6_7, sf6_27) in wordings that are not the trial's (`psy240-sf-short-20`), so 2a's "trial's 10" is not exactly the trial's measure (r with the 8 = .80, decision 14). 2b's `sf2b-end` uses the trial's wording.
 
@@ -79,7 +80,7 @@ The REB amendment is approved under the same protocol (#00051180).
 
 ## Still open
 
-- Nothing. Filed on OSF on 14 November 2026 at https://osf.io/d4a5u, from commit d3e60c9.
+- Nothing. Filed on OSF on 14 November 2026 at https://osf.io/d4a5u, from commit d3e60c9; deviations in decision 45.
 
 ## Fit-rule background
 
