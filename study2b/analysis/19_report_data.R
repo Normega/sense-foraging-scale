@@ -1,12 +1,12 @@
 # 19: the data behind senseforaging.com/research/study2b/results. Builds the site's data:
-# aggregates only, read from the real-mode outputs of 01-18 (and the first-700 sensitivity
-# run's 09_decisions.csv). Writes study2bResults.json to SF2B_REPORT_OUT (default: the
-# Handbook checkout's src/pages/research/). Fits nothing; rerun after any of 01-18 changes.
+# aggregates only, read from the real-mode outputs of 01-18, 20 and 21 (and the first-700
+# sensitivity run's 09_decisions.csv). Writes study2bResults.json to SF2B_REPORT_OUT (default:
+# the Handbook checkout's src/pages/research/). Fits nothing; rerun after any of them changes.
 #
 # Status of each block, as the page labels it:
 #   registered   01-09 (H1-H6, the registered exploratory H8 and descriptives in 08)
 #   deviation    10 (decision 46's Brief MAIA-2 repair) and the first-700 run (decision 45)
-#   exploratory  11-18: specified after the confirmatory run, not in osf.io/d4a5u
+#   exploratory  11-18, 20 and 21: specified after the confirmatory run, not in osf.io/d4a5u
 #
 # A few facts are not in any output file: they are the decision log's record of data
 # collection (study2/decisions_after_2a.md, decisions 44-46) and are written under
@@ -362,12 +362,121 @@ vignettes <- list(
                          p_holm = r(wald_p_holm))])
 )
 
+# Agreement across the battery (20) ---------
+aj <- oj("20_exploratory_battery_agreement.json")
+ac <- o("20_a_correlations_with_8.csv"); ah <- o("20_a_h3b_contrasts.csv"); ab <- o("20_b_h3d.csv")
+avs <- o("20_c_variance_share.csv"); arc <- o("20_c_residual_correlations.csv")
+arg <- o("20_d_regression.csv"); ard <- o("20_d_residual_correlations.csv"); apr <- o("20_d_practice.csv")
+aes <- o("20_e_summary.csv"); agl <- o("20_e_general_loadings.csv"); ang <- o("20_e_net_of_general.csv"); apg <- o("20_e_practice_group_net.csv")
+afd <- o("20_f_agreement_free_diagnostic.csv"); asz <- o("20_f_agreement_size.csv"); arv <- o("20_reversed_items_by_score.csv")
+a20 <- function(s) { x <- one(ac, score == s)
+  list(score = s, label = lab(s), registered = r(x$r_registered), ri_free = r(x$r_ri_free), battery = r(x$r_battery_A), lo = r(x$lower), hi = r(x$upper)) }
+c20 <- function(s) { x <- one(arc, score == s)
+  list(score = s, label = lab(s), registered = r(x$residual_r_registered), battery = r(x$residual_r_battery_A), lo = r(x$lower), hi = r(x$upper)) }
+d20 <- function(s) { x <- one(ard, score == s)
+  list(score = s, label = lab(s), registered = r(x$residual_r_registered), agreement_free = r(x$residual_r_agreement_free_18),
+       battery = r(x$residual_r_battery_A), lo = r(x$lower), hi = r(x$upper)) }
+h3d20 <- function(q) one(ab, quantity == q)
+es20 <- function(m) one(aes, matrix_source == m)
+ng20 <- function(m, s) r(one(ang, matrix_source == m & g_definition == "sl" & measure == s)$partial_r_net_of_G)
+pg20 <- function(m, g = "sl") r(one(apg, matrix_source == m & g_definition == g)$d_net_of_G)
+vs20 <- one(avs, quantity == "unexplained"); un4 <- one(arg, quantity == "unexplained"); dres <- one(apr, quantity == "d_residual")
+free_sig <- afd[usable == TRUE & p < .05][order(-abs(r_A_with_factor))]
+agreement <- list(
+  n = aj$n,
+  correlations = lapply(c("ffmq_observing", "maia_noticing", "sbi_moment", "bfi_aesthetic", "samd_md", "eq_decentering",
+                          "bidr_sde", "ncs6", "bsss8", "asi_pc"), a20),
+  h3b = lapply(seq_len(nrow(ah)), function(i) list(contrast = ah$contrast[i], first = lab(ah$first[i]), second = lab(ah$second[i]),
+                                                     registered = r(ah$difference_registered_refit[i]), battery = r(ah$difference_battery_A[i]),
+                                                     lo = r(ah$lower[i]), hi = r(ah$upper[i]), above_zero = ah$above_zero[i])),
+  h3d = list(registered = r(h3d20("R registered (04, bootstrap CI)")$est), registered_lo = r(h3d20("R registered (04, bootstrap CI)")$lower),
+             registered_hi = r(h3d20("R registered (04, bootstrap CI)")$upper),
+             battery = r(h3d20("R battery A (bootstrap CI, 04's resamples)")$est), lo = r(h3d20("R battery A (bootstrap CI, 04's resamples)")$lower),
+             hi = r(h3d20("R battery A (bootstrap CI, 04's resamples)")$upper),
+             resamples_ok = h3d20("R battery A (bootstrap CI, 04's resamples)")$resamples_ok,
+             resamples = h3d20("R battery A (bootstrap CI, 04's resamples)")$resamples,
+             upper_below_80 = h3d20("R battery A (bootstrap CI, 04's resamples)")$upper_below_80,
+             agreement_free = r(h3d20("R agreement free (18's agreement_free form, delta CI)")$est)),
+  after_observing = list(unexplained_registered = r(vs20$est_registered), unexplained = r(vs20$est_battery_A), lo = r(vs20$lower), hi = r(vs20$upper),
+                         rows = lapply(c("sbi_moment", "bfi_aesthetic", "pss4", "crit_pause_days", "ncs6", "bidr_sde"), c20)),
+  after_four = list(unexplained_registered = r(un4$est_registered), unexplained_agreement_free = r(un4$est_agreement_free_18),
+                    unexplained = r(un4$est_battery_A), lo = r(un4$lower), hi = r(un4$upper),
+                    rows = lapply(c("vig_self", "crit_pause_days", "spsq_sd", "maia_bodylistening", "ffmq_nonreactivity", "ncs6", "bidr_sde"), d20),
+                    practice = list(n = dres$n, registered = r(dres$est_registered), agreement_free = r(dres$est_agreement_free_18),
+                                    battery = r(dres$est_battery_A), lo = r(dres$lower), hi = r(dres$upper), p = r(dres$p))),
+  general = list(group_factors = es20("battery A")$group_factors, smallest_eigenvalue = r(es20("battery A")$smallest_eigenvalue),
+                 smallest_eigenvalue_13 = r(es20("13 (registered agreement, reproduction check)")$smallest_eigenvalue),
+                 heywood = lab(strsplit(es20("battery A")$heywood, " ")[[1]]),
+                 share_common = r(es20("battery A")$g_share_of_common),
+                 g8_registered = r(one(agl, measure == "sf8")$sl_g_13), g8 = r(one(agl, measure == "sf8")$sl_g_battery_A),
+                 g8_calibrated = r(one(agl, measure == "sf8")$sl_g_calibrated),
+                 g_obs_registered = r(one(agl, measure == "ffmq_observing")$sl_g_13), g_obs = r(one(agl, measure == "ffmq_observing")$sl_g_battery_A),
+                 obs_net_registered = ng20("13", "ffmq_observing"), obs_net = ng20("battery A", "ffmq_observing"),
+                 obs_net_calibrated = ng20("battery A, calibrated", "ffmq_observing"),
+                 practice_net_registered = pg20("13"), practice_net = pg20("battery A"), practice_net_calibrated = pg20("battery A, calibrated"),
+                 practice_net_min = r(min(apg[matrix_source == "battery A", d_net_of_G])), practice_net_max = r(max(apg[matrix_source == "battery A", d_net_of_G]))),
+  agreement_share_8 = r(one(asz, instrument == "sf8")$a_share_mean),
+  free = lapply(seq_len(nrow(free_sig)), function(i) list(score = free_sig$score[i], label = lab(free_sig$score[i]),
+                                                            r = r(free_sig$r_A_with_factor[i]), lo = r(free_sig$lower[i]), hi = r(free_sig$upper[i]))),
+  free_maia_unusable = all(!afd[grepl("^maia_", score), usable]),   # the Brief MAIA-2 diagnostic gave no usable fit
+  all_reversed = lab(arv[reversed == items & reversed > 0, score]),
+  none_reversed_neighbours = lab(arv[reversed == 0 & score %in% c("ffmq_observing", "maia_noticing"), score])
+)
+
+# Subsets of the 13 statements (21) ---------
+sj <- oj("21_exploratory_subsets.json")
+bs <- o("21_best_subsets.csv"); bt <- o("21_bootstrap_test_half.csv"); ss <- o("21_stability_summary.csv")
+sst <- o("21_stability_splits.csv"); ssub <- o("21_stability_subsets.csv"); sstm <- o("21_stability_statements.csv"); sch <- o("21_stability_chosen.csv")
+bench <- function(role_name) {
+  f <- function(v) one(bs, role == role_name & sample == "full" & version == v)
+  x <- f("i"); y <- f("ii")
+  list(statements = x$statements, k = x$k, omega = r(x$omega), r_obs = r(x$r_obs), r_obs_af = r(y$r_obs), R = r(x$R_h3d),
+       pause = r(x$r_pause_days), vig = r(x$r_vig_self), h6_d = r(x$h6_d))
+}
+p1 <- sst[split == 1]
+chosen <- lapply(seq_len(nrow(p1)), function(i) {
+  x <- p1[i]; b <- one(bt, version == x$version & objective == x$objective)
+  t <- one(bs, id == b$id & sample == "test" & version == x$version)
+  list(version = x$version, objective = x$objective, statements = x$statements, k = x$k,
+       search = r(x$chosen_search), test = r(x$chosen_test), the8_search = r(x$the8_search), the8_test = r(x$the8_test),
+       gain_search = r(x$gain_search), gain_test = r(x$gain_test), boot_lo = r(b$difference_lower), boot_hi = r(b$difference_upper),
+       boot_used = b$used, boot_resamples = b$resamples, test_h1 = x$test_h1_met, test_omega = r(x$test_omega), test_constraints_met = x$test_proper,
+       convergent_flag = t$convergent_flag, test_h6_d = r(t$h6_d), material = x$material_in_test)
+})
+top5 <- function(v, objs) {   # the five best per objective in the primary split, full-sample rows
+  pat <- paste0("best [1-5] on (", paste(objs, collapse = "|"), "), version ", v, "($|;)")
+  bs[sample == "full" & version == v & grepl(pat, role)]
+}
+reg_top <- top5("i", c("r_obs", "R")); af_ch <- sch[version == "ii" & rank == 1]
+share_of <- function(v, obj, code) r(one(sstm, version == v & objective == obj & statement == code & top == 1)$share)
+miss <- function(v) { x <- one(bs, statements == "N4 sfc_36 sfc_35 N6 sf6_44" & sample == "test" & version == v)
+  list(gain = r(x$d_r_obs), omega = r(x$omega), h1 = x$h1_rule_met, flag = x$convergent_flag, proper = !isTRUE(x$improper_validity)) }
+subsets <- list(
+  n = sj$n, candidates = sj$candidates, splits = sj$splits, half_n = sj$primary_split$search_n,
+  material_primary = length(sj$material_in_primary_test_half),
+  benchmarks = list(the8 = bench("benchmark: the_8"), the10 = bench("benchmark: the_10"), the7 = bench("benchmark: the_7_without_U4")),
+  chosen = chosen,
+  stability = lapply(seq_len(nrow(ss)), function(i) { x <- ss[i]
+    list(version = x$version, objective = x$objective, distinct = x$distinct_subsets, max_chosen = max(ssub[version == x$version & objective == x$objective, times_chosen]),
+         gain_search = r(x$mean_gain_search), gain_test = r(x$mean_gain_test), test_omega_ok = x$test_omega_ok) }),
+  max_chosen = max(ssub$times_chosen),
+  registered_winners = list(h6_min = r(min(reg_top$h6_d)), h6_max = r(max(reg_top$h6_d)), pause_min = r(min(reg_top$r_pause_days)),
+                            pause_max = r(max(reg_top$r_pause_days)),
+                            share = lapply(c("sf6_36", "sfc_x2"), function(s) list(code = s, r_obs = share_of("i", "r_obs", s), R = share_of("i", "R", s)))),
+  af_winners = list(k_min = min(af_ch$k), k_max = max(af_ch$k), omega_median = r(median(af_ch$omega)),
+                    # 21's test_proper is every constraint: the H1 rule, omega >= .75, proper, oriented as keyed
+                    test_constraints_failed = sum(!sst[version == "ii", test_proper]), test_n = nrow(sst[version == "ii"]),
+                    share = lapply(c("N4", "sfc_35", "sf6_44", "sfc_36"), function(s) list(code = s, r_obs = share_of("ii", "r_obs", s), R = share_of("ii", "R", s)))),
+  nearest_miss = list(statements = "N4 sfc_36 sfc_35 N6 sf6_44", k = 5L, registered = miss("i"), agreement_free = miss("ii"))
+)
+
 # Write ---------
 out <- list(
   generated = as.character(Sys.Date()),
-  commit_note = "Analysis code: Normega/sense-foraging-scale, study2b/analysis (registered 01-09; deviation 10; exploratory 11-18; this file 19).",
+  commit_note = "Analysis code: Normega/sense-foraging-scale, study2b/analysis (registered 01-09; deviation 10; exploratory 11-18, 20 and 21; this file 19).",
   recorded = recorded, sample = sample, decisions = decisions, h1 = h1, validity = validity, h4 = h4, h5 = h5, h6 = h6, h8 = h8,
-  pause = pause, overlap = overlap, residual4 = residual4, general = general, items = items, swap = swap, practice = practice, vignettes = vignettes
+  pause = pause, overlap = overlap, residual4 = residual4, general = general, items = items, swap = swap, practice = practice, vignettes = vignettes,
+  agreement = agreement, subsets = subsets
 )
 writeLines(toJSON(out, auto_unbox = TRUE, pretty = TRUE, digits = NA, na = "null", null = "null"), dest, useBytes = TRUE)
 sf2b_log("wrote ", dest)
