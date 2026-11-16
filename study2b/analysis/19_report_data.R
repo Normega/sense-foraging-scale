@@ -363,12 +363,15 @@ vignettes <- list(
 )
 
 # Agreement across the battery (20) ---------
-aj <- oj("20_exploratory_battery_agreement.json")
-ac <- o("20_a_correlations_with_8.csv"); ah <- o("20_a_h3b_contrasts.csv"); ab <- o("20_b_h3d.csv")
-avs <- o("20_c_variance_share.csv"); arc <- o("20_c_residual_correlations.csv")
-arg <- o("20_d_regression.csv"); ard <- o("20_d_residual_correlations.csv"); apr <- o("20_d_practice.csv")
-aes <- o("20_e_summary.csv"); agl <- o("20_e_general_loadings.csv"); ang <- o("20_e_net_of_general.csv"); apg <- o("20_e_practice_group_net.csv")
-afd <- o("20_f_agreement_free_diagnostic.csv"); asz <- o("20_f_agreement_size.csv"); arv <- o("20_reversed_items_by_score.csv")
+# Read from 20's JSON, not its CSVs: the CSVs round to 3 decimals, which the page would round again (.7045 shown as .71).
+# The registered and ri_free columns carry 04/12/13/18's own 3-decimal values either way.
+aj <- fromJSON(sf2b_out("20_exploratory_battery_agreement.json"), simplifyVector = TRUE)
+tb <- function(x) as.data.table(x)
+ac <- tb(aj$a$correlations); ah <- tb(aj$a$h3b); ab <- tb(aj$b$h3d)
+avs <- tb(aj$c$variance_share); arc <- tb(aj$c$residual_correlations)
+arg <- tb(aj$d$regression); ard <- tb(aj$d$residual_correlations); apr <- tb(aj$d$practice_group)
+aes <- tb(aj$e$summary); agl <- tb(aj$e$loadings); ang <- tb(aj$e$net_of_G); apg <- tb(aj$e$practice_group_net)
+afd <- tb(aj$f$free_correlation_diagnostic); asz <- tb(aj$f$size); arv <- tb(aj$reversed_items_by_score)
 a20 <- function(s) { x <- one(ac, score == s)
   list(score = s, label = lab(s), registered = r(x$r_registered), ri_free = r(x$r_ri_free), battery = r(x$r_battery_A), lo = r(x$lower), hi = r(x$upper)) }
 c20 <- function(s) { x <- one(arc, score == s)
@@ -449,8 +452,9 @@ top5 <- function(v, objs) {   # the five best per objective in the primary split
 }
 reg_top <- top5("i", c("r_obs", "R")); af_ch <- sch[version == "ii" & rank == 1]
 share_of <- function(v, obj, code) r(one(sstm, version == v & objective == obj & statement == code & top == 1)$share)
+# The page shows the nearest miss at 3 decimals, so it is rounded here at 3 (4 then 3 would round -.04448 to -.045).
 miss <- function(v) { x <- one(bs, statements == "N4 sfc_36 sfc_35 N6 sf6_44" & sample == "test" & version == v)
-  list(gain = r(x$d_r_obs), omega = r(x$omega), h1 = x$h1_rule_met, flag = x$convergent_flag, proper = !isTRUE(x$improper_validity)) }
+  list(gain = r(x$d_r_obs, 3), omega = r(x$omega), h1 = x$h1_rule_met, flag = x$convergent_flag, proper = !isTRUE(x$improper_validity)) }
 subsets <- list(
   n = sj$n, candidates = sj$candidates, splits = sj$splits, half_n = sj$primary_split$search_n,
   material_primary = length(sj$material_in_primary_test_half),
