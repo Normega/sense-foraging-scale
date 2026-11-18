@@ -74,6 +74,7 @@ Model settings in every fit (`sf2b_models.R`): ordinal, WLSMV, theta parameteriz
 
 Not registered; each was specified in `study2/decisions_after_2a.md` before its results existed.
 - **First 700 (decision 45):** `SF2B_FIRST_N=700` keeps the first 700 completed sessions by earliest step entry (plus anyone unfinished who started no later than the 700th) and writes to `output/<mode>_first700/`. Unset, the pipeline is unchanged.
+- **Main sample only (exploratory, card S3-29, added 18 November 2026):** `SF2B_AFTER="2026-11-14 00:00"` keeps the sessions started after that UTC time, which leaves out the 62 pilot enrollments of 13 November, and writes to `output/<mode>_after/`. Not registered. Unset, the pipeline is unchanged.
 - **Brief MAIA-2 repair (decision 46):** `10_deviation_maia.R` refits the five models that contain the Brief MAIA-2 with `maia_12`'s standardized loading bounded at .949 (residual at least .10 of its variance), all else as registered, and writes `10_deviation_maia.csv`/`.json`. In the real run the bound is active, so its CIs are conditional on it.
 
 ## Validated

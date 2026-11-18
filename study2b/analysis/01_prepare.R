@@ -74,6 +74,25 @@ if (SF2B$first_n > 0) {
   meta_all <- meta_all[keep]
 }
 
+# ---- main-sample sensitivity analysis (SF2B_AFTER; EXPLORATORY, card S3-29) ---------------
+# Not registered. With SF2B_AFTER unset this block does nothing. Keeps the enrollments whose
+# session started (decision 45's definition, above) after SF2B_AFTER (UTC), i.e. drops the
+# pilot of 13 November; the registered rules then apply to what is left.
+if (nzchar(SF2B$after)) {
+  cut_after <- as.numeric(as.POSIXct(SF2B$after, tz = "UTC", format = "%Y-%m-%d %H:%M"))
+  stopifnot(!is.na(cut_after))
+  started_a <- vapply(meta_all$participant, function(p) {
+    st <- Filter(function(r) identical(r$source, "step"), by_person[[p]] %||% list())
+    t <- if (length(st)) suppressWarnings(min(ts_parse(lapply(st, `[[`, "entered_at")), na.rm = TRUE)) else NA
+    if (!is.finite(t)) t <- ts_parse(list(Filter(function(r) identical(r$participant, p), enr)[[1]]$enrolled_at))
+    as.numeric(t)
+  }, 0)
+  stopifnot(!anyNA(started_a))
+  sf2b_log("main-sample sensitivity: kept ", sum(started_a > cut_after), " of ", length(started_a),
+           " enrollments started after ", SF2B$after, " UTC; left out ", sum(started_a <= cut_after))
+  meta_all <- meta_all[started_a > cut_after]
+}
+
 first_complete <- function(rs, slug, need) {
   cand <- Filter(function(r) identical(r$source, "questionnaire") && identical(r$slug, slug) &&
                    is.null(r$resubmission_of) && all(need %in% names(r$responses)), rs)

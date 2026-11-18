@@ -72,10 +72,19 @@ SF2B <- list(
   # start, the registered target (01_prepare.R applies it). Unset (0): the primary
   # analysis of every participant, as registered. Outputs and derived objects carry the
   # tag "<mode>_first<N>", so the primary run's files are never overwritten.
-  first_n  = as.integer(Sys.getenv("SF2B_FIRST_N", "0"))
+  first_n  = as.integer(Sys.getenv("SF2B_FIRST_N", "0")),
+
+  # ---- main-sample sensitivity analysis (EXPLORATORY, added 18 November 2026, card S3-29) ----
+  # SF2B_AFTER="2026-11-14 00:00" keeps only sessions started after that UTC time: the
+  # main sample, without the 62 pilot enrollments of 13 November (01_prepare.R applies it;
+  # session start as decision 45 defines it). Unset (""): every participant, as registered.
+  # Outputs and derived objects carry the tag "<mode>_after", so no other run is overwritten.
+  after    = Sys.getenv("SF2B_AFTER", "")
 )
 stopifnot(SF2B$mode %in% c("permuted", "simulated", "real"), !is.na(SF2B$first_n), SF2B$first_n >= 0)
 SF2B$tag <- if (SF2B$first_n > 0) sprintf("%s_first%d", SF2B$mode, SF2B$first_n) else SF2B$mode
+stopifnot(!(SF2B$first_n > 0 && nzchar(SF2B$after)))
+if (nzchar(SF2B$after)) SF2B$tag <- paste0(SF2B$mode, "_after")
 
 sf2b_path <- function(...) file.path(SF2B$data_dir, ...)
 sf2b_out  <- function(...) {
